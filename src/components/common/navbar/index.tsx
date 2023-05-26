@@ -23,26 +23,8 @@ function Topbar() {
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll">
             <Nav className="justify-content-end flex-grow-1 pe-3" navbarScroll>
-              <NavDropdown title="Home" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Home</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Services" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Home</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="#action1">Home</Nav.Link>
+              <Nav.Link href="#action1">Services</Nav.Link>
               <Nav.Link href="#action1">Work</Nav.Link>
               <Nav.Link href="#action2">About</Nav.Link>
               <Nav.Link href="#">Blog</Nav.Link>
