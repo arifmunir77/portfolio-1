@@ -26,6 +26,9 @@ import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 
 function Footer() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
   return (
     <FooterWrapper>
       <MainContainer>
@@ -68,7 +71,9 @@ function Footer() {
 
       <MainContainer className="footer-container">
         <FooterFlex>
-          <FooterCopyWrite>Copyright 2020 All rights reserved</FooterCopyWrite>
+          <FooterCopyWrite>
+            Copyright © {currentYear} All rights reserved
+          </FooterCopyWrite>
           <FooterIcons>
             <FiFacebook className="icon" />
             <AiOutlineInstagram className="icon" />
