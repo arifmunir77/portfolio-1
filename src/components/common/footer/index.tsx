@@ -33,13 +33,13 @@ function Footer() {
     <FooterWrapper>
       <MainContainer>
         <MainRow>
-          <MainCol lg={4}>
+          <MainCol lg={3}>
             <FooterImageDiv>
               <img className="img-fluid logo" src={logo} />
             </FooterImageDiv>
             <FooterText>We are more than a digital agency</FooterText>
           </MainCol>
-          <MainCol lg={4}>
+          <MainCol lg={3}>
             <FooterContactHeading>Contact Us</FooterContactHeading>
             <TelephoneWrapper>
               <BsTelephone className="margin" />
@@ -58,12 +58,20 @@ function Footer() {
               <CalenderWrapper>Monday to Friday</CalenderWrapper>
             </CalenderWrapper>
           </MainCol>
-          <MainCol lg={4}>
+          <MainCol lg={3}>
             <ServicesHeading>Services</ServicesHeading>
             <ServicesText>Service 1</ServicesText>
             <ServicesText>Service 2</ServicesText>
             <ServicesText>Service 3</ServicesText>
-            <ServicesText>Service 4</ServicesText>
+            <ServicesText>Service 3</ServicesText>
+          </MainCol>
+
+          <MainCol lg={3}>
+            <ServicesHeading>Links</ServicesHeading>
+            <ServicesText>Link 1</ServicesText>
+            <ServicesText>Link 2</ServicesText>
+            <ServicesText>Link 3</ServicesText>
+            <ServicesText>Link 4</ServicesText>
           </MainCol>
         </MainRow>
       </MainContainer>
