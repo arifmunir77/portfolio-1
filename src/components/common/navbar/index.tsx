@@ -7,6 +7,7 @@ import { logo } from "assets";
 import Form from "react-bootstrap/Form";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { FaSearch } from "react-icons/fa";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Topbar() {
   return (
@@ -17,7 +18,9 @@ function Topbar() {
             {" "}
             <Image fluid src={logo} />
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle aria-controls="navbarScroll">
+            <RxHamburgerMenu className="humbargurIcon" />
+          </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll">
             <Nav className="justify-content-end flex-grow-1 pe-3" navbarScroll>
               <NavDropdown title="Home" id="navbarScrollingDropdown">
@@ -42,14 +45,12 @@ function Topbar() {
               </NavDropdown>
               <Nav.Link href="#action1">Work</Nav.Link>
               <Nav.Link href="#action2">About</Nav.Link>
-              <Nav.Link href="#" disabled>
-                Blog
-              </Nav.Link>
+              <Nav.Link href="#">Blog</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <NavbarButton>Contact</NavbarButton>
             </Form>
-            <FaSearch />
+            <FaSearch className="searchIcon" />
           </Navbar.Collapse>
         </MainContainer>
       </Navbar>
