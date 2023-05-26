@@ -10,15 +10,6 @@ export const ServicesCardWrapper = styled.div`
     &:hover {
       border-bottom: 4px solid #66fcf1;
     }
-
-    .bg {
-      background-color: #66fcf1;
-      color: #121212 !important;
-    }
-
-    .iconColor {
-      color: #121212;
-    }
   }
 
   .card-body {
