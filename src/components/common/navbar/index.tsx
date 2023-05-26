@@ -4,9 +4,6 @@ import Navbar from "react-bootstrap/Navbar";
 import { MainContainer } from "components/common";
 import { Image } from "react-bootstrap";
 import { logo } from "assets";
-import Form from "react-bootstrap/Form";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { FaSearch } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Topbar() {

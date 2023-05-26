@@ -9,7 +9,7 @@ import {
 const HeroCard = ({ item, index }) => {
   return (
     <div key={item.id}>
-      <HeroCardWrapper className={index == 0 && "margin-class"}>
+      <HeroCardWrapper className={index === 0 && "margin-class"}>
         <HeroCardIcon>{item.icon} </HeroCardIcon>
         <HeroCardHeading>{item.heading}</HeroCardHeading>
         <BorderBottom />

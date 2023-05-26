@@ -24,11 +24,6 @@ export const NavbarWrapper = styled.div`
     transition: 0.3s ease-in-out all;
     margin-left: 1rem;
 
-    &:hover {
-      border-bottom: 2px solid #66fcf1;
-      transition: 0.3s ease-in-out all;
-    }
-
     @media (max-width: 991.98px) {
       text-align: center;
       border-bottom: none;

@@ -1,4 +1,4 @@
-import { Navbar } from "components/common";
+import { Footer, Navbar } from "components/common";
 import HeroSection from "./heroSection";
 import ServicesSection from "./servicesSection";
 
@@ -7,6 +7,7 @@ const HomeCom = () => {
     <div>
       <HeroSection />
       <ServicesSection />
+      <Footer />
     </div>
   );
 };

@@ -1,64 +1,81 @@
 import { MainCol, MainContainer, MainRow } from "components/common";
 import {
-  CopyrightText,
+  CalenderWrapper,
+  EmailText,
+  EmailWrapper,
+  FooterBorder,
+  FooterContactHeading,
+  FooterCopyWrite,
+  FooterFlex,
+  FooterIcons,
   FooterImageDiv,
+  FooterText,
   FooterWrapper,
-  IconContainer,
-  IconHolder,
-  TermsText,
-  TextContainer,
-  BtnContainer,
-  JoinNow,
+  IconNumber,
+  LocationText,
+  LocationWrapper,
+  ServicesHeading,
+  ServicesText,
+  TelephoneWrapper,
 } from "./element";
-import { FaTelegramPlane, FaTwitter, FaYoutube } from "react-icons/fa";
+import { logo } from "assets";
+import { BsTelephone } from "react-icons/bs";
+import { GoMail, GoCalendar } from "react-icons/go";
+import { IoLocationOutline } from "react-icons/io5";
+import { FiFacebook, FiTwitter } from "react-icons/fi";
+import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 
 function Footer() {
   return (
     <FooterWrapper>
       <MainContainer>
         <MainRow>
-          <MainCol lg={3}>
+          <MainCol lg={4}>
             <FooterImageDiv>
-              <img className="img-fluid logo" src="" />
-              <p className="brandText">dalle inu</p>
+              <img className="img-fluid logo" src={logo} />
             </FooterImageDiv>
+            <FooterText>We are more than a digital agency</FooterText>
           </MainCol>
-          <MainCol lg={6}>
-            <BtnContainer>
-              <JoinNow>Buy $Dalle</JoinNow>
-            </BtnContainer>
-            <TextContainer>
-              <CopyrightText>
-                Copyright © [{new Date().getFullYear()}]All rights reserved.
-              </CopyrightText>
-              <TermsText>Contact: info@dalleinu.ai</TermsText>
-            </TextContainer>
+          <MainCol lg={4}>
+            <FooterContactHeading>Contact Us</FooterContactHeading>
+            <TelephoneWrapper>
+              <BsTelephone className="margin" />
+              <IconNumber>+92 222 222</IconNumber>
+            </TelephoneWrapper>
+            <EmailWrapper>
+              <GoMail className="Mail" />
+              <EmailText>example@gmail.com</EmailText>
+            </EmailWrapper>
+            <LocationWrapper>
+              <IoLocationOutline className="Mail" />
+              <LocationText>Your Location</LocationText>
+            </LocationWrapper>
+            <CalenderWrapper>
+              <GoCalendar className="Mail" />
+              <CalenderWrapper>Monday to Friday</CalenderWrapper>
+            </CalenderWrapper>
           </MainCol>
-          <MainCol lg={3}>
-            <IconContainer>
-              {/* <IconHolder>
-                <FaDiscord className="footerIcon" />
-              </IconHolder> */}
-
-              <IconHolder>
-                <a href="https://t.me/Dalleainu" target="_blank">
-                  <FaTelegramPlane className="footerIcon" />
-                </a>
-              </IconHolder>
-
-              <IconHolder>
-                <a href=" https://twitter.com/Dalle_Inu" target="_blank">
-                  <FaTwitter className="footerIcon" />
-                </a>
-              </IconHolder>
-              <IconHolder>
-                <a href="https://www.youtube.com/@dalleinu" target="_blank">
-                  <FaYoutube className="footerIcon" />
-                </a>
-              </IconHolder>
-            </IconContainer>
+          <MainCol lg={4}>
+            <ServicesHeading>Services</ServicesHeading>
+            <ServicesText>Service 1</ServicesText>
+            <ServicesText>Service 2</ServicesText>
+            <ServicesText>Service 3</ServicesText>
+            <ServicesText>Service 4</ServicesText>
           </MainCol>
         </MainRow>
+      </MainContainer>
+      <FooterBorder />
+
+      <MainContainer className="footer-container">
+        <FooterFlex>
+          <FooterCopyWrite>Copyright 2020 All rights reserved</FooterCopyWrite>
+          <FooterIcons>
+            <FiFacebook className="icon" />
+            <AiOutlineInstagram className="icon" />
+            <FiTwitter className="icon" />
+            <AiOutlineLinkedin className="icon" />
+          </FooterIcons>
+        </FooterFlex>
       </MainContainer>
     </FooterWrapper>
   );

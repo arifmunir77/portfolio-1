@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   overflow: hidden;
-  background: #2b2b2b;
+  background: #0b0c10;
   backdrop-filter: blur(126.5px);
+  border-top: 2px solid #66fcf1;
 
   .logo {
     width: 40px;
@@ -28,6 +29,11 @@ export const FooterWrapper = styled.div`
       animation-name: heartBeat;
       animation-duration: 1s;
     }
+  }
+
+  .footer-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -60,98 +66,135 @@ export const FooterImageDiv = styled.div`
   }
 `;
 
-export const TextContainer = styled.div`
+export const FooterText = styled.p`
+  margin-top: 4rem;
+  color: #fff;
   @media (max-width: 991.98px) {
-    margin-top: 1rem;
+    margin-top: 2rem;
+
+    text-align: center;
   }
 `;
 
-export const TermsText = styled.h2`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #ffffff;
-  text-align: center;
+export const FooterContactHeading = styled.h1`
+  font-family: "Teko" !important;
+  font-size: 28px;
+  color: #fff;
+  @media (max-width: 991.98px) {
+    margin-top: 2rem;
+    text-align: center;
+  }
 `;
 
-export const CopyrightText = styled.h4`
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 20px;
-`;
-
-export const IconContainer = styled.div`
+export const TelephoneWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2.5rem;
-
+  gap: 10px;
+  color: #fff;
+  .margin {
+    margin-top: 3px;
+    color: #66fcf1;
+  }
   @media (max-width: 991.98px) {
     justify-content: center;
-    margin-top: 1rem;
   }
+`;
 
-  .footerIcon {
-    color: #2b2b2b;
-    font-size: 22px;
+export const IconNumber = styled.p``;
+
+export const EmailWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  .Mail {
+    margin-top: 3px;
+    color: #66fcf1;
+    font-size: 20px;
+  }
+  @media (max-width: 991.98px) {
+    justify-content: center;
+  }
+`;
+
+export const EmailText = styled.p``;
+
+export const LocationWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  .Mail {
+    margin-top: 3px;
+    color: #66fcf1;
+    font-size: 20px;
+  }
+  @media (max-width: 991.98px) {
+    justify-content: center;
+  }
+`;
+
+export const LocationText = styled.p``;
+
+export const CalenderWrapper = styled.div`
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  .Mail {
+    margin-top: 3px;
+    color: #66fcf1;
+    font-size: 20px;
+  }
+  @media (max-width: 991.98px) {
+    justify-content: center;
+  }
+`;
+
+export const CalenderText = styled.p``;
+
+export const ServicesHeading = styled.h1`
+  font-family: "Teko" !important;
+  font-size: 28px;
+  color: #fff;
+  @media (max-width: 991.98px) {
+    margin-top: 2rem;
+    text-align: center;
+  }
+`;
+
+export const ServicesText = styled.p`
+  color: #fff;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+`;
+
+export const FooterBorder = styled.div`
+  border-bottom: 1px solid #262626;
+`;
+
+export const FooterFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 767.98px) {
+    flex-direction: column;
+  }
+`;
+
+export const FooterCopyWrite = styled.p`
+  color: #fff;
+`;
+
+export const FooterIcons = styled.p`
+  color: #fff;
+
+  .icon {
+    font-size: 25px;
+    margin-right: 10px;
     cursor: pointer;
-    transition: 0.3s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 
     &:hover {
-      scale: 1.2;
-      transition: 0.3s all ease-in-out;
+      color: #66fcf1;
     }
-  }
-`;
-
-export const IconHolder = styled.div`
-  height: 35px;
-  width: 35px;
-  background-color: #fff;
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const JoinNow = styled.button`
-  background: #ffd452;
-  border-radius: 5px;
-  border: none;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: capitalize;
-  color: #2e4756;
-  padding: 15px 20px;
-  transition: 0.3s all ease-in-out;
-  border-radius: 20px;
-
-  @media (max-width: 575.98px) {
-    padding: 0;
-    height: 40px;
-    width: 150px;
-  }
-
-  &:hover {
-    scale: 1.05;
-    transition: 0.3s all ease-in-out;
-  }
-`;
-
-export const BtnContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 1199.98px) {
-    margin-top: 1rem;
   }
 `;

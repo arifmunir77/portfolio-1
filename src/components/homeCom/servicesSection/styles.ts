@@ -15,8 +15,14 @@ export const ServicesHeading = styled.h1`
   color: #fff;
   font-size: 80px;
   margin-bottom: 0;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
 `;
 
 export const ServicesText = styled.p`
   color: #66fcf1;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
 `;
