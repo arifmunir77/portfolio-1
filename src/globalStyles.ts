@@ -10,17 +10,18 @@ const GlobalStyle = createGlobalStyle`
 {
   overflow-x: hidden !important;
   font-family: 'Poppins', sans-serif;
+  background-color: #000;
    
 }
 
 iframe
 {
-  position: absolute !important;
+  /* position: absolute !important;
   width: none !important;
   top: none !important;
   left: none !important;
   right: none !important;
-  z-index: -5 !important;
+  z-index: -5 !important; */
 }
 
  /* Loader */
@@ -90,7 +91,9 @@ iframe
   /* Models styles */
 
 
-   
+.bottom-container {
+  margin-bottom: 4rem;
+}
  
 `;
 

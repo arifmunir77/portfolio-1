@@ -5,7 +5,6 @@ import ServicesSection from "./servicesSection";
 const HomeCom = () => {
   return (
     <div>
-      <Navbar />
       <HeroSection />
       <ServicesSection />
     </div>

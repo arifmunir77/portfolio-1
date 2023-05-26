@@ -3,10 +3,14 @@ import styled from "styled-components";
 export const ServicesWrapper = styled.div`
   background-color: #0b0c10;
   overflow: hidden;
+
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 `;
 
 export const ServicesHeading = styled.h1`
-  margin-top: 5rem;
   font-family: "Teko";
   color: #fff;
   font-size: 80px;

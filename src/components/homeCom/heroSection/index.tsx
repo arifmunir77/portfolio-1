@@ -8,17 +8,22 @@ import {
 
 import { heroCardData } from "components/data";
 import { HeroCard } from "components/common/card";
+import { Navbar } from "components/common";
 
 function HeroSection() {
   return (
-    <HeroSectionWrapper>
-      <MainContainer>
-        <HeroCreativeText>CREATIVE MIND, CREATIVE WORKS.</HeroCreativeText>
-        <HeroHeading>
-          We are digital <br /> agency.
-        </HeroHeading>
-        <HeroButton>GETTING STARTED</HeroButton>
-
+    <div>
+      <HeroSectionWrapper>
+        <Navbar />
+        <MainContainer className="top-container">
+          <HeroCreativeText>CREATIVE MIND, CREATIVE WORKS.</HeroCreativeText>
+          <HeroHeading>
+            We are digital <br /> agency.
+          </HeroHeading>
+          <HeroButton>GETTING STARTED</HeroButton>
+        </MainContainer>
+      </HeroSectionWrapper>
+      <MainContainer className="bottom-container">
         <MainRow>
           {heroCardData.map((item, index) => (
             <MainCol lg={4}>
@@ -27,7 +32,7 @@ function HeroSection() {
           ))}
         </MainRow>
       </MainContainer>
-    </HeroSectionWrapper>
+    </div>
   );
 }
 

@@ -3,19 +3,24 @@ import { heroSectionImg } from "assets";
 
 export const HeroSectionWrapper = styled.div`
   background-image: url(${heroSectionImg});
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+  min-height: 100vh;
+
+  @media (max-width: 991.98px) {
+    min-height: 00vh;
+  }
 `;
 
 export const HeroCreativeText = styled.p`
   color: #66fcf1;
-  margin-top: 5rem;
+  margin-top: 10rem;
 
   @media (max-width: 991.98px) {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
 `;
 
