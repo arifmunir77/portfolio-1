@@ -7,15 +7,26 @@ export const NavbarWrapper = styled.div`
 
   .bg-light {
     background: #000 !important;
+    border-bottom: 2px solid #66fcf1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media (max-width: 991.98px) {
+      padding-bottom: 20px;
+    }
   }
 
   a.nav-link {
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 18px;
     border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out all;
+    margin-left: 1rem;
 
     &:hover {
       border-bottom: 2px solid #66fcf1;
+      transition: 0.3s ease-in-out all;
     }
 
     @media (max-width: 991.98px) {
@@ -38,9 +49,6 @@ export const NavbarWrapper = styled.div`
   }
 
   @media (max-width: 991.98px) {
-    a#navbarScrollingDropdown {
-      text-align: center;
-    }
   }
 
   .searchIcon {
@@ -64,6 +72,7 @@ export const NavbarButton = styled.button`
   background-color: #000;
   color: #fff;
   font-weight: 500;
+  font-size: 18px;
 
   @media (max-width: 991.98px) {
     display: block;

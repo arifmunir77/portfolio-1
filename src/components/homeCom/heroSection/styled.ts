@@ -9,11 +9,13 @@ export const HeroSectionWrapper = styled.div`
   overflow: hidden;
 `;
 
-export const HeroTextCrative = styled.p`
+export const HeroCreativeText = styled.p`
   color: #66fcf1;
   margin-top: 5rem;
-  @media (max-width: 767.98px) {
+
+  @media (max-width: 991.98px) {
     text-align: center;
+    margin-top: 2rem;
   }
 `;
 
@@ -22,10 +24,12 @@ export const HeroHeading = styled.h1`
   color: #fff;
   font-size: 80px;
   font-weight: 700;
-  @media (max-width: 767.98px) {
+
+  @media (max-width: 991.98px) {
     text-align: center;
     font-size: 70px;
   }
+
   @media (max-width: 575.98px) {
     font-size: 50px;
   }
@@ -36,7 +40,8 @@ export const HeroButton = styled.button`
   border: 2px solid #66fcf1;
   background: transparent;
   color: #fff;
-  @media (max-width: 767.98px) {
+
+  @media (max-width: 991.98px) {
     display: block;
     margin-left: auto;
     margin-right: auto;

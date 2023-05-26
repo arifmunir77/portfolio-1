@@ -15,24 +15,22 @@ function Topbar() {
       <Navbar bg="light" expand="lg">
         <MainContainer>
           <Navbar.Brand href="#">
-            {" "}
             <Image fluid src={logo} />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll">
             <RxHamburgerMenu className="humbargurIcon" />
           </Navbar.Toggle>
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="justify-content-end flex-grow-1 pe-3" navbarScroll>
+            <Nav className="mx-auto">
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action1">Services</Nav.Link>
               <Nav.Link href="#action1">Work</Nav.Link>
               <Nav.Link href="#action2">About</Nav.Link>
               <Nav.Link href="#">Blog</Nav.Link>
             </Nav>
-            <Form className="d-flex">
+            <>
               <NavbarButton>Contact</NavbarButton>
-            </Form>
-            <FaSearch className="searchIcon" />
+            </>
           </Navbar.Collapse>
         </MainContainer>
       </Navbar>

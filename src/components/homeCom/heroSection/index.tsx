@@ -3,7 +3,7 @@ import {
   HeroButton,
   HeroHeading,
   HeroSectionWrapper,
-  HeroTextCrative,
+  HeroCreativeText,
 } from "./styled";
 
 import { heroCardData } from "components/data";
@@ -13,7 +13,7 @@ function HeroSection() {
   return (
     <HeroSectionWrapper>
       <MainContainer>
-        <HeroTextCrative>CREATIVE MIND, CREATIVE WORKS.</HeroTextCrative>
+        <HeroCreativeText>CREATIVE MIND, CREATIVE WORKS.</HeroCreativeText>
         <HeroHeading>
           We are digital <br /> agency.
         </HeroHeading>
