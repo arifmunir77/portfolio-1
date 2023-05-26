@@ -1,13 +1,13 @@
 import { Navbar } from "components/common";
 import HeroSection from "./heroSection";
-import AboutUS from "./aboutUs";
+import ServicesSection from "./servicesSection";
 
 const HomeCom = () => {
   return (
     <div>
       <Navbar />
       <HeroSection />
-      <AboutUS />
+      <ServicesSection />
     </div>
   );
 };
