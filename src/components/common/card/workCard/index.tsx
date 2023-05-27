@@ -1,10 +1,11 @@
 import Card from "react-bootstrap/Card";
-import { WorkFlex, WorkFlexImg } from "./element";
+import { WorkFlex } from "./element";
+import { Image } from "react-bootstrap";
 
 const WorkCard = ({ item }) => {
   return (
     <WorkFlex key={item.id}>
-      <WorkFlexImg src={item.img} />
+      <Image fluid src={item.img} />
     </WorkFlex>
   );
 };

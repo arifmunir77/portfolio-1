@@ -1,14 +1,18 @@
 import WorkCard from "components/common/card/workCard";
 import { WorkWrapper } from "./element";
 import { workCardData } from "components/data";
-import useItems from "antd/es/menu/hooks/useItems";
+import { MainCol, MainRow } from "components/common";
 
 const WorkSection = () => {
   return (
     <WorkWrapper>
-      {workCardData.map((item) => (
-        <WorkCard item={item} />
-      ))}
+      <MainRow>
+        {workCardData.map((item) => (
+          <MainCol className={"main-col"}>
+            <WorkCard item={item} />
+          </MainCol>
+        ))}
+      </MainRow>
     </WorkWrapper>
   );
 };

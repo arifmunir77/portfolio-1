@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const WorkFlex = styled.div`
-  display: flex;
-  align-items: center;
-`;
+  img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.3s;
 
-export const WorkFlexImg = styled.img`
-  flex: 1;
-  height: 300px;
-  width: 300px;
-  position: relative;
-  transition: all 300ms ease-in-out;
+    @media (max-width: 991.98px) {
+      height: auto;
+      width: auto;
+    }
 
-  &:hover {
-    flex: 4.3;
-    background-color: red;
+    &:hover {
+      transform: scale(1.25, 1.23);
+      transition: all 0.3s;
+
+      @media (max-width: 991.98px) {
+        transform: none;
+      }
+    }
   }
 `;
