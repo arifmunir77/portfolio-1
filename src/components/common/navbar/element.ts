@@ -27,6 +27,7 @@ export const NavbarWrapper = styled.div`
     @media (max-width: 991.98px) {
       text-align: center;
       border-bottom: none;
+      margin-left: 0rem;
 
       &:hover {
         border-bottom: none;
