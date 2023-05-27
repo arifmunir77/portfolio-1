@@ -45,9 +45,6 @@ export const NavbarWrapper = styled(motion.div)`
     background-image: url("data:image/svg+xml;..") !important;
   }
 
-  @media (max-width: 991.98px) {
-  }
-
   .searchIcon {
     color: #fff;
     margin-left: 20px;

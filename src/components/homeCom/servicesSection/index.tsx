@@ -1,5 +1,11 @@
 import { MainCol, MainContainer, MainRow } from "components/common";
-import { ServicesHeading, ServicesText, ServicesWrapper } from "./styles";
+import {
+  FlexBorderDiv,
+  FlexDiv,
+  ServicesHeading,
+  ServicesText,
+  ServicesWrapper,
+} from "./styles";
 import ServicesCard from "components/common/card/servicesCard";
 import { servicesCardData } from "components/data";
 
@@ -7,7 +13,10 @@ const ServicesSection = () => {
   return (
     <ServicesWrapper>
       <MainContainer>
-        <ServicesHeading>Services</ServicesHeading>
+        <FlexDiv>
+          <FlexBorderDiv />
+          <ServicesHeading>Services</ServicesHeading>
+        </FlexDiv>
         <ServicesText>OUR SERVICES FOR CLIENTS</ServicesText>
 
         <MainRow>

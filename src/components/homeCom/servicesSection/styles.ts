@@ -26,3 +26,21 @@ export const ServicesText = styled.p`
     text-align: center;
   }
 `;
+
+export const FlexDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: 991.98px) {
+    justify-content: center;
+  }
+`;
+
+export const FlexBorderDiv = styled.div`
+  width: 5%;
+  border-top: 2px solid #66fcf1;
+  @media (max-width: 991.98px) {
+    width: 0%;
+    border: none;
+  }
+`;
