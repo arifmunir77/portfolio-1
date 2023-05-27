@@ -38,35 +38,35 @@ function Topbar() {
               <NavLink
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 1.2, duration: 1 }}
               >
                 Home
               </NavLink>
               <NavLink
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 1.3, duration: 1 }}
               >
                 About
               </NavLink>
               <NavLink
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 1.4, duration: 1 }}
               >
                 Work
               </NavLink>
               <NavLink
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 1.5, duration: 1 }}
               >
                 Services
               </NavLink>
               <NavLink
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
+                transition={{ delay: 1.6, duration: 1 }}
               >
                 Contact
               </NavLink>
