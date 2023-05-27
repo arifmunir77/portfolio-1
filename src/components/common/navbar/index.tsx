@@ -29,7 +29,12 @@ function Topbar() {
           </IconHolderDiv>
 
           {navCollapsed && (
-            <CollapsedNav>
+            <CollapsedNav
+              initial={{ y: -1000, x: 1000, opacity: 0 }}
+              animate={{ y: 0, x: 0, opacity: 1 }}
+              transition={{ duration: 0, type: "spring", stiffness: 120 }}
+              exit={{ y: -1000, x: 1000, opacity: 0 }}
+            >
               <NavLink>Home</NavLink>
               <NavLink>About</NavLink>
               <NavLink>Work</NavLink>

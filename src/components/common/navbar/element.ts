@@ -109,7 +109,7 @@ export const IconHolderDiv = styled.div`
   }
 `;
 
-export const CollapsedNav = styled.div`
+export const CollapsedNav = styled(motion.div)`
   position: fixed;
   top: 0px;
   right: 0px;
