@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-export const NavbarWrapper = styled.div`
+export const NavbarWrapper = styled(motion.div)`
   .img-fluid {
     height: 60px;
   }

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { heroSectionImg } from "assets";
+import { motion } from "framer-motion";
 
-export const HeroSectionWrapper = styled.div`
+export const HeroSectionWrapper = styled(motion.div)`
   background-image: url(${heroSectionImg});
   background-position: center top;
   background-repeat: no-repeat;
@@ -13,6 +14,8 @@ export const HeroSectionWrapper = styled.div`
     min-height: 00vh;
   }
 `;
+
+export const TextDiv = styled(motion.div)``;
 
 export const HeroCreativeText = styled.p`
   color: #66fcf1;

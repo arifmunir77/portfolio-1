@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { Provider } from "react-redux";
+import "animate.css/animate.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/reset.css";
 

@@ -5,10 +5,34 @@ import { MainContainer } from "components/common";
 import { Image } from "react-bootstrap";
 import { logo } from "assets";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 
 function Topbar() {
+  const { ref, inView } = useInView();
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        transition: {
+          duration: 1,
+        },
+      });
+    }
+
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+      });
+    }
+  }, [inView]);
+
   return (
-    <NavbarWrapper>
+    <NavbarWrapper ref={ref} animate={animation}>
       <Navbar bg="light" expand="lg">
         <MainContainer>
           <Navbar.Brand href="#">
