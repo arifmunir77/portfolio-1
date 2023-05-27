@@ -1,60 +1,44 @@
-import { NavbarButton, NavbarWrapper } from "./element";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { MainContainer } from "components/common";
-import { Image } from "react-bootstrap";
-import { logo } from "assets";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { AnimationOnScroll } from "react-animation-on-scroll";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useAnimation } from "framer-motion";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { MainContainer } from "../mainStyle/mainStyle";
+import {
+  CollapsedNav,
+  IconHolderDiv,
+  MainDiv,
+  NavLink,
+  NavbarWrapper,
+} from "./element";
+import { useState, useEffect } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import styled, { keyframes } from "styled-components";
+import { MenuButton } from "./icon";
 
 function Topbar() {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        opacity: 1,
-        transition: {
-          duration: 1,
-        },
-      });
-    }
-
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView]);
+  const [navCollapsed, setNavCollapsed] = useState(false);
 
   return (
-    <NavbarWrapper ref={ref} animate={animation}>
-      <Navbar bg="light" expand="lg">
-        <MainContainer>
-          <Navbar.Brand href="#">
-            <Image fluid src={logo} />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll">
-            <RxHamburgerMenu className="humbargurIcon" />
-          </Navbar.Toggle>
-          <Navbar.Collapse id="navbarScroll">
-            <Nav className="mx-auto">
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action1">Services</Nav.Link>
-              <Nav.Link href="#action1">Work</Nav.Link>
-              <Nav.Link href="#action2">About</Nav.Link>
-              <Nav.Link href="#">Blog</Nav.Link>
-            </Nav>
-            <>
-              <NavbarButton>Contact</NavbarButton>
-            </>
-          </Navbar.Collapse>
-        </MainContainer>
-      </Navbar>
+    <NavbarWrapper>
+      <MainContainer fluid>
+        <MainDiv>
+          <IconHolderDiv onClick={() => setNavCollapsed(!navCollapsed)}>
+            <MenuButton
+              isOpen={navCollapsed}
+              onClick={() => setNavCollapsed(!navCollapsed)}
+              color="#000"
+              transition={{ ease: "easeOut", duration: 0.5 }}
+            />
+          </IconHolderDiv>
+
+          {navCollapsed && (
+            <CollapsedNav>
+              <NavLink>Home</NavLink>
+              <NavLink>About</NavLink>
+              <NavLink>Work</NavLink>
+              <NavLink>Services</NavLink>
+              <NavLink>Contact</NavLink>
+            </CollapsedNav>
+          )}
+        </MainDiv>
+      </MainContainer>
     </NavbarWrapper>
   );
 }
