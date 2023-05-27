@@ -8,6 +8,15 @@ import { AiOutlineGlobal } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { TfiBarChart } from "react-icons/tfi";
 
+import {
+  workImgOne,
+  workImgTwo,
+  workImgThree,
+  workImgFour,
+  workImgFive,
+  workImgSix,
+} from "assets";
+
 export const heroCardData = [
   {
     id: 1,
@@ -65,5 +74,32 @@ export const servicesCardData = [
     icon: <TfiBarChart />,
     heading: "Media Pairing",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+  },
+];
+
+export const workCardData = [
+  {
+    id: 1,
+    img: workImgOne,
+  },
+  {
+    id: 2,
+    img: workImgTwo,
+  },
+  {
+    id: 3,
+    img: workImgThree,
+  },
+  {
+    id: 4,
+    img: workImgFour,
+  },
+  {
+    id: 5,
+    img: workImgFive,
+  },
+  {
+    id: 6,
+    img: workImgSix,
   },
 ];
