@@ -131,7 +131,7 @@ export const CollapsedNav = styled(motion.div)`
   }
 `;
 
-export const NavLink = styled.h4`
+export const NavLink = styled(motion.h4)`
   font-family: "Teko" !important;
   font-size: 32px;
   font-weight: 400;
