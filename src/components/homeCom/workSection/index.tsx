@@ -1,18 +1,24 @@
 import WorkCard from "components/common/card/workCard";
-import { WorkWrapper } from "./element";
+import { WorkHeading, WorkText, WorkWrapper } from "./element";
 import { workCardData } from "components/data";
-import { MainCol, MainRow } from "components/common";
+import { MainCol, MainContainer, MainRow } from "components/common";
 
 const WorkSection = () => {
   return (
     <WorkWrapper>
-      <MainRow>
-        {workCardData.map((item) => (
-          <MainCol className={"main-col"}>
-            <WorkCard item={item} />
-          </MainCol>
-        ))}
-      </MainRow>
+      <div className="workContainer">
+        <MainContainer>
+          <WorkHeading>Work</WorkHeading>
+          <WorkText>THINGS WE'VE MADE</WorkText>
+        </MainContainer>
+        <MainRow>
+          {workCardData.map((item) => (
+            <MainCol className={"main-col"}>
+              <WorkCard item={item} />
+            </MainCol>
+          ))}
+        </MainRow>
+      </div>
     </WorkWrapper>
   );
 };

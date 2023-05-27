@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const WorkFlex = styled.div`
+  margin-top: 2rem;
+  position: relative;
+
   img {
     height: 400px;
     width: 100%;
@@ -19,5 +22,26 @@ export const WorkFlex = styled.div`
         transform: none;
       }
     }
+  }
+`;
+
+export const TextContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+
+  ${WorkFlex}:hover & {
+    visibility: visible;
   }
 `;
