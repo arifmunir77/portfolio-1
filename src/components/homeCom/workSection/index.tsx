@@ -9,6 +9,7 @@ import {
 } from "./element";
 import { workCardData } from "components/data";
 import { MainCol, MainContainer, MainRow } from "components/common";
+import { Link } from "react-router-dom";
 
 const WorkSection = () => {
   return (
@@ -20,7 +21,9 @@ const WorkSection = () => {
               <BorderDiv />
               <WorkHeading>Work</WorkHeading>
             </div>
-            <WorkButton>VEIW ALL</WorkButton>
+            <Link to="/work">
+              <WorkButton>VEIW ALL</WorkButton>
+            </Link>
           </FlexDiv>
 
           <WorkText>THINGS WE'VE MADE</WorkText>
