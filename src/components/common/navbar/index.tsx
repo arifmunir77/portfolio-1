@@ -9,6 +9,7 @@ import {
 import { useState } from "react";
 import { MenuButton } from "./icon";
 import { AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Topbar() {
   const [navCollapsed, setNavCollapsed] = useState(false);
@@ -43,13 +44,15 @@ function Topbar() {
                   transition: { duration: 0.5, ease: "easeInOut" },
                 }}
               >
-                <NavLink
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1, duration: 1 }}
-                >
-                  Home
-                </NavLink>
+                <Link to="/">
+                  <NavLink
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1, duration: 1 }}
+                  >
+                    Home
+                  </NavLink>
+                </Link>
                 <NavLink
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -57,13 +60,16 @@ function Topbar() {
                 >
                   About
                 </NavLink>
-                <NavLink
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1.3, duration: 1.2 }}
-                >
-                  Work
-                </NavLink>
+
+                <Link to="/work">
+                  <NavLink
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1.3, duration: 1.2 }}
+                  >
+                    Work
+                  </NavLink>
+                </Link>
                 <NavLink
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

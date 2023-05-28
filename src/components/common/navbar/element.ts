@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 
 export const NavbarWrapper = styled(motion.div)`
   position: relative;
+  a {
+    text-decoration: none;
+  }
   .img-fluid {
     height: 60px;
   }
@@ -80,9 +83,6 @@ export const MainDiv = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-top: 2rem;
-  margin-right: 2rem;
-  cursor: pointer;
 `;
 
 export const IconHolderDiv = styled(motion.div)`

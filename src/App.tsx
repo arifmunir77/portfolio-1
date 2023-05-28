@@ -32,13 +32,11 @@ function App() {
         }}
       />
       <Navbar />
-      <Router>
-        <GlobalStyle />
-        <Routes>
-          <Route path="/" element={<HomeCom />} />
-          <Route path="/work" element={<WorkCom />} />
-        </Routes>
-      </Router>
+      <GlobalStyle />
+      <Routes>
+        <Route path="/" element={<HomeCom />} />
+        <Route path="/work" element={<WorkCom />} />
+      </Routes>
       <InQuirySection />
       <Footer />
     </div>
