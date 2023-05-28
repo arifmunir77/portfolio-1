@@ -31,11 +31,11 @@ function Topbar() {
               borderRadius: ["50%", "50%", "50%", "50%", "50%"],
             }}
             transition={{
-              duration: 2,
+              duration: 3,
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
               repeat: Infinity,
-              repeatDelay: 1,
+              repeatDelay: 2,
             }}
           >
             <MenuButton
