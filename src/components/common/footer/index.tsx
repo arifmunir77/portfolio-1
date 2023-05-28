@@ -18,7 +18,7 @@ import {
   ServicesText,
   TelephoneWrapper,
 } from "./element";
-import { logo } from "assets";
+import { logo, videoLogo } from "assets";
 import { BsTelephone } from "react-icons/bs";
 import { GoMail, GoCalendar } from "react-icons/go";
 import { IoLocationOutline } from "react-icons/io5";
@@ -35,7 +35,7 @@ function Footer() {
         <MainRow>
           <MainCol lg={3}>
             <FooterImageDiv>
-              <img className="img-fluid logo" src={logo} />
+              <img className="img-fluid logo" src={videoLogo} />
             </FooterImageDiv>
             <FooterText>We are more than a digital agency</FooterText>
           </MainCol>

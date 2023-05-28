@@ -5,22 +5,39 @@ import {
   MainDiv,
   NavLink,
   NavbarWrapper,
+  VideoContainer,
 } from "./element";
 import { useState } from "react";
 import { MenuButton } from "./icon";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
+import { logo, videoLogo } from "assets";
+import { Image } from "react-bootstrap";
 
 function Topbar() {
   const [navCollapsed, setNavCollapsed] = useState(false);
 
   return (
     <NavbarWrapper>
-      <MainContainer fluid>
+      <MainContainer>
         <MainDiv>
+          <VideoContainer>
+            <Image fluid src={videoLogo} className="image" />
+          </VideoContainer>
           <IconHolderDiv
             onClick={() => setNavCollapsed(!navCollapsed)}
-            whileHover={{ scale: 1.25 }}
+            animate={{
+              scale: [1, 1.2, 1.2, 1, 1],
+              rotate: [0, 0, 180, 180, 0],
+              borderRadius: ["50%", "50%", "50%", "50%", "50%"],
+            }}
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              repeatDelay: 2,
+            }}
           >
             <MenuButton
               isOpen={navCollapsed}
