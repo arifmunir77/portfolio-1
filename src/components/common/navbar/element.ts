@@ -137,6 +137,12 @@ export const NavLink = styled(motion.h4)`
   font-weight: 400;
   color: #000;
   letter-spacing: 1px;
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    transition: 0.3s ease-in-out all;
+    scale: 1.2;
+  }
 
   @media (max-width: 991.98px) {
     font-size: 24px;

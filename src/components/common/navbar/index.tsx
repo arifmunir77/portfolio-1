@@ -40,14 +40,13 @@ function Topbar() {
                   y: -1000,
                   x: 1000,
                   opacity: 0,
-                  transition: { duration: 1, ease: "easeInOut" },
+                  transition: { duration: 0.5, ease: "easeInOut" },
                 }}
               >
                 <NavLink
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1, duration: 1 }}
-                  whileHover={{ scale: 1.5 }}
                 >
                   Home
                 </NavLink>
