@@ -4,3 +4,4 @@ export { default as Navbar } from "./navbar";
 export { default as Footer } from "./footer";
 export { default as ToastMessage } from "./toastMessage";
 export { default as Loader } from "./loader";
+export { default as InQuirySection } from "./inQuirySection";

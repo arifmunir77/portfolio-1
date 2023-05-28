@@ -1,7 +1,6 @@
-import ContacUs from "./contactUs";
 import HeroSection from "./heroSection";
 import ServicesSection from "./servicesSection";
-import { Footer } from "components/common";
+import { Footer, InQuirySection } from "components/common";
 import WorkSection from "./workSection";
 
 const HomeCom = () => {
@@ -10,8 +9,6 @@ const HomeCom = () => {
       <HeroSection />
       <WorkSection />
       <ServicesSection />
-      <ContacUs />
-      <Footer />
     </div>
   );
 };

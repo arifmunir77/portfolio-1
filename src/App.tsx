@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GlobalStyle from "globalStyles";
 import { useEffect } from "react";
-import { HomeCom } from "components";
+import { HomeCom, WorkCom } from "components";
 import { motion, useMotionValue, useSpring } from "framer-motion";
+import { Footer, InQuirySection, Navbar } from "components/common";
 
 function App() {
   const cursorX = useMotionValue(-100);
@@ -30,12 +31,16 @@ function App() {
           translateY: cursorYSpring,
         }}
       />
+      <Navbar />
       <Router>
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<HomeCom />} />
+          <Route path="/work" element={<WorkCom />} />
         </Routes>
       </Router>
+      <InQuirySection />
+      <Footer />
     </div>
   );
 }
