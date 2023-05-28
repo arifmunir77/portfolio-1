@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   overflow: hidden;
-  background: #0b0c10;
+  background: #000;
   backdrop-filter: blur(126.5px);
   border-top: 2px solid #66fcf1;
 
   .logo {
-    width: 40px;
+    height: 100px;
   }
   .container {
     margin-top: 4rem;
