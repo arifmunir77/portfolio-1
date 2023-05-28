@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   overflow: hidden;
-  background: #000;
+  background: #121212;
   backdrop-filter: blur(126.5px);
   border-top: 2px solid #66fcf1;
 
