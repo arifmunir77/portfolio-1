@@ -5,7 +5,10 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   font-family: 'Barlow', sans-serif;
+
   } 
+
+
  body
 {
   overflow-x: hidden !important;
@@ -93,6 +96,24 @@ iframe
 
 .bottom-container {
   margin-bottom: 4rem;
+}
+
+
+
+
+
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate3d(-50%, -50%, 0);
+  background-color:rgb(102, 252, 241, 0.2);
 }
  
 `;
