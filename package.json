@@ -27,7 +27,7 @@
     "axios": "^1.4.0",
     "bootstrap": "^5.2.3",
     "date-fns": "^2.30.0",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^10.6.1",
     "ipfs-http-client": "^60.0.0",
     "moralis": "^2.21.0",
     "papaparse": "^5.4.1",

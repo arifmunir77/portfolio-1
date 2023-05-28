@@ -1,4 +1,3 @@
-import { GiHamburgerMenu } from "react-icons/gi";
 import { MainContainer } from "../mainStyle/mainStyle";
 import {
   CollapsedNav,
@@ -7,10 +6,9 @@ import {
   NavLink,
   NavbarWrapper,
 } from "./element";
-import { useState, useEffect } from "react";
-import { AiOutlineClose } from "react-icons/ai";
-import styled, { keyframes } from "styled-components";
+import { useState } from "react";
 import { MenuButton } from "./icon";
+import { AnimatePresence } from "framer-motion";
 
 function Topbar() {
   const [navCollapsed, setNavCollapsed] = useState(false);
@@ -19,7 +17,10 @@ function Topbar() {
     <NavbarWrapper>
       <MainContainer fluid>
         <MainDiv>
-          <IconHolderDiv onClick={() => setNavCollapsed(!navCollapsed)}>
+          <IconHolderDiv
+            onClick={() => setNavCollapsed(!navCollapsed)}
+            whileHover={{ scale: 1.25 }}
+          >
             <MenuButton
               isOpen={navCollapsed}
               onClick={() => setNavCollapsed(!navCollapsed)}
@@ -28,50 +29,59 @@ function Topbar() {
             />
           </IconHolderDiv>
 
-          {navCollapsed && (
-            <CollapsedNav
-              initial={{ y: -1000, x: 1000, opacity: 0 }}
-              animate={{ y: 0, x: 0, opacity: 1 }}
-              transition={{ duration: 0, type: "spring", stiffness: 120 }}
-              exit={{ y: -1000, x: 1000, opacity: 0 }}
-            >
-              <NavLink
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.2, duration: 1 }}
+          <AnimatePresence>
+            {navCollapsed && (
+              <CollapsedNav
+                key={"nav"}
+                initial={{ y: -1000, x: 1000, opacity: 0 }}
+                animate={{ y: 0, x: 0, opacity: 1 }}
+                transition={{ type: "spring", bounce: 0.4 }}
+                exit={{
+                  y: -1000,
+                  x: 1000,
+                  opacity: 0,
+                  transition: { duration: 1, ease: "easeInOut" },
+                }}
               >
-                Home
-              </NavLink>
-              <NavLink
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.3, duration: 1 }}
-              >
-                About
-              </NavLink>
-              <NavLink
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.4, duration: 1 }}
-              >
-                Work
-              </NavLink>
-              <NavLink
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.5, duration: 1 }}
-              >
-                Services
-              </NavLink>
-              <NavLink
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1.6, duration: 1 }}
-              >
-                Contact
-              </NavLink>
-            </CollapsedNav>
-          )}
+                <NavLink
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1, duration: 1 }}
+                  whileHover={{ scale: 1.5 }}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.2, duration: 1.1 }}
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.3, duration: 1.2 }}
+                >
+                  Work
+                </NavLink>
+                <NavLink
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.4, duration: 1.3 }}
+                >
+                  Services
+                </NavLink>
+                <NavLink
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.5, duration: 1.4 }}
+                >
+                  Contact
+                </NavLink>
+              </CollapsedNav>
+            )}
+          </AnimatePresence>
         </MainDiv>
       </MainContainer>
     </NavbarWrapper>

@@ -85,7 +85,7 @@ export const MainDiv = styled.div`
   cursor: pointer;
 `;
 
-export const IconHolderDiv = styled.div`
+export const IconHolderDiv = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;

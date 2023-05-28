@@ -23,7 +23,7 @@ export const HeroCreativeText = styled.p`
 
   @media (max-width: 991.98px) {
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 `;
 
