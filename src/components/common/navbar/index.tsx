@@ -37,7 +37,6 @@ function Topbar() {
               repeat: Infinity,
               repeatDelay: 1,
             }}
-            whileHover={{ scale: 1.25 }}
           >
             <MenuButton
               isOpen={navCollapsed}
