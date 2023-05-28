@@ -7,3 +7,4 @@ export { default as workImgThree } from "./images/workImgThree.png";
 export { default as workImgFour } from "./images/workImgFour.png";
 export { default as workImgFive } from "./images/workImgFive.png";
 export { default as workImgSix } from "./images/workImgSix.png";
+export { default as videoLogo } from "./images/logo.gif";

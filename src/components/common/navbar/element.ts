@@ -78,7 +78,7 @@ export const NavbarButton = styled.button`
 
 export const MainDiv = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
   margin-right: 2rem;
@@ -147,5 +147,11 @@ export const NavLink = styled(motion.h4)`
   @media (max-width: 991.98px) {
     font-size: 24px;
     margin-left: 2rem;
+  }
+`;
+
+export const VideoContainer = styled.div`
+  .image {
+    height: 100px;
   }
 `;

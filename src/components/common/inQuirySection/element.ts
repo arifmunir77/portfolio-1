@@ -8,6 +8,7 @@ export const ContacUsWrapper = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   overflow: hidden;
+
   .contact-container {
     margin-top: 4rem;
     margin-bottom: 4rem;
