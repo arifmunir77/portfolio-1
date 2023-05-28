@@ -38,6 +38,7 @@ function HeroSection() {
   return (
     <div>
       <HeroSectionWrapper>
+        <Navbar />
         <MainContainer className="top-container">
           <TextDiv animate={animation} ref={ref}>
             <HeroCreativeText>CREATIVE MIND, CREATIVE WORKS.</HeroCreativeText>

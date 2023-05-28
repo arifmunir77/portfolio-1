@@ -31,7 +31,6 @@ function App() {
           translateY: cursorYSpring,
         }}
       />
-      <Navbar />
       <GlobalStyle />
       <Routes>
         <Route path="/" element={<HomeCom />} />

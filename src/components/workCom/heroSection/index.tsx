@@ -1,9 +1,13 @@
+import { MainContainer, Navbar } from "components/common";
 import { HeroHeading, HeroWrapper } from "./element";
 
 function HeroSection() {
   return (
     <HeroWrapper>
-      <HeroHeading className="top-container">Our Works.</HeroHeading>
+      <Navbar />
+      <MainContainer className="top-container">
+        <HeroHeading>Our Works.</HeroHeading>
+      </MainContainer>
     </HeroWrapper>
   );
 }

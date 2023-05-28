@@ -10,4 +10,4 @@ export { default as workImgSix } from "./images/workImgSix.png";
 export { default as workHeroSectionImg } from "./images/workHeroSectionImg.png";
 export { default as tabImgOne } from "./images/tabImgOne.png";
 export { default as tabImgTwo } from "./images/tabImgTwo.png";
-export { default as videoLogo } from "./images/logo.gif";
+export { default as videoLogo } from "./images/logo-unscreen.gif";

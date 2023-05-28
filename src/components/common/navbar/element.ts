@@ -153,5 +153,6 @@ export const NavLink = styled(motion.h4)`
 export const VideoContainer = styled.div`
   .image {
     height: 100px;
+    margin-top: 2rem;
   }
 `;
