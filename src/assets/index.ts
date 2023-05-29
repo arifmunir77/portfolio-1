@@ -13,3 +13,6 @@ export { default as tabImgTwo } from "./images/tabImgTwo.png";
 export { default as videoLogo } from "./images/logo-unscreen.gif";
 export { default as servicesBg } from "./images/servicesBg.png";
 export { default as sericesWorkImg } from "./images/sericesWorkImg.png";
+export { default as WorkBgImg } from "./images/WorkBgImg.png";
+export { default as bg } from "./images/bg.png";
+export { default as AboutUsHero } from "./images/AboutUsHero.png";

@@ -40,21 +40,3 @@ export const TabWrapper = styled.div`
     padding: 10px 30px;
   }
 `;
-
-//All Tab styling start
-
-export const AllTabWrapper = styled.div``;
-
-export const AlltabImgOne = styled.img`
-  width: 40%;
-  margin-right: 20px;
-`;
-
-export const AlltabImgTwo = styled.img`
-  min-height: 100vh;
-  max-width: 40%;
-  -o-object-fit: cover;
-  object-fit: cover;
-`;
-
-//All Tab styling end

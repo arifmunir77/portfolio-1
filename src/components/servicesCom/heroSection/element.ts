@@ -17,7 +17,11 @@ export const ServicesBg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   overflow: hidden;
+  @media (max-width: 991.98px) {
+    min-height: 0;
+  }
 `;
 
 export const HeroSectionHeading = styled.h1`
