@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { HomeCom, WorkCom } from "components";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { Footer, InQuirySection, Navbar } from "components/common";
+import ServicesCom from "components/servicesCom";
 
 function App() {
   const cursorX = useMotionValue(-100);
@@ -35,6 +36,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeCom />} />
         <Route path="/work" element={<WorkCom />} />
+        <Route path="/services" element={<ServicesCom />} />
       </Routes>
       <InQuirySection />
       <Footer />

@@ -87,13 +87,16 @@ function Topbar() {
                     Work
                   </NavLink>
                 </Link>
-                <NavLink
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1.4, duration: 1.3 }}
-                >
-                  Services
-                </NavLink>
+
+                <Link to="/services">
+                  <NavLink
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 1.4, duration: 1.3 }}
+                  >
+                    Services
+                  </NavLink>
+                </Link>
                 <NavLink
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
