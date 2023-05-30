@@ -1,7 +1,20 @@
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
-import { ModalWrapper, WorkModalContainer } from "./element";
+import { ModalWrapper, SwiperWrapper, WorkModalContainer } from "./element";
 import { BsArrowRight } from "react-icons/bs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { OurWorkImgOne } from "assets";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper";
+import "swiper/swiper-bundle.min.css";
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
 const WorkModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -30,7 +43,53 @@ const WorkModal = () => {
         centered
         width={1000}
       >
-        <WorkModalContainer>sddsds</WorkModalContainer>
+        <WorkModalContainer>
+          <SwiperWrapper>
+            <Swiper
+              // activeSlideKey='2'
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
+              autoplay={{ delay: 1000, disableOnInteraction: false }}
+              slidesPerView={"auto"}
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+              }}
+              // scrollbar={{draggable:true}}
+              navigation={true}
+              initialSlide={2}
+              pagination={true}
+              modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={OurWorkImgOne} />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={OurWorkImgOne} />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={OurWorkImgOne} />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={OurWorkImgOne} />
+              </SwiperSlide>
+            </Swiper>
+          </SwiperWrapper>
+        </WorkModalContainer>
       </Modal>
     </ModalWrapper>
   );
