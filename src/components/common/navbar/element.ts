@@ -97,6 +97,7 @@ export const IconHolderDiv = styled(motion.div)`
   top: 40px;
   right: 80px;
   z-index: 20;
+  cursor: pointer;
 
   @media (max-width: 991.98px) {
     top: 20px;

@@ -17,8 +17,13 @@ export const ServicesBg = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 60vh;
   overflow: hidden;
+
+  @media (max-width: 1399.98px) {
+    min-height: 100vh;
+  }
+
   @media (max-width: 991.98px) {
     min-height: 0;
   }

@@ -8,7 +8,7 @@ export const HeroSectionWrapper = styled(motion.div)`
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 60vh;
 
   @media (max-width: 991.98px) {
     min-height: 00vh;

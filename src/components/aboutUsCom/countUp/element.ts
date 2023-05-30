@@ -31,11 +31,25 @@ export const IconWrapper = styled.div`
     color: #fff;
     margin-bottom: 0;
     @media (max-width: 991.98px) {
-      text-align: center;
+    }
+  }
+
+  .flex {
+    @media (max-width: 991.98px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 `;
-export const IconHeading = styled.h1``;
+export const IconHeading = styled.h1`
+  font-family: "Teko";
+  font-size: 56px;
+  color: #fff;
+  margin-bottom: 0;
+  @media (max-width: 991.98px) {
+  }
+`;
 
 export const IconText = styled.p`
   color: #66fcf1;
