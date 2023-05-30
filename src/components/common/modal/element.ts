@@ -20,7 +20,7 @@ export const WorkModalContainer = styled(motion.div)`
   box-shadow: 0 0 20px 10px rgba(102, 252, 241, 0.8);
 `;
 
-export const SwiperWrapper = styled.div`
+export const SwiperWrapper = styled(motion.div)`
   .swiper {
     width: 100%;
     padding-top: 50px;

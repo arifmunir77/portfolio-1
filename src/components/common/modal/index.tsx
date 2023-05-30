@@ -56,13 +56,17 @@ const WorkModal = () => {
               transition={{ duration: 0.75, ease: "easeInOut" }}
               key={"container"}
             >
-              <SwiperWrapper>
+              <SwiperWrapper
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1, delay: 1 }}
+              >
                 <Swiper
                   // activeSlideKey='2'
                   effect={"coverflow"}
                   grabCursor={true}
                   centeredSlides={true}
-                  autoplay={{ delay: 1000, disableOnInteraction: false }}
+                  autoplay={{ delay: 2000, disableOnInteraction: false }}
                   slidesPerView={"auto"}
                   coverflowEffect={{
                     rotate: 0,
