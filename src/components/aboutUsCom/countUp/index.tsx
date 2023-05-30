@@ -1,6 +1,9 @@
 import { CountUpWrapper, IconHeading, IconText, IconWrapper } from "./element";
 import { MainCol, MainContainer, MainRow } from "components/common";
 import { RiContactsLine } from "react-icons/ri";
+import CountUpComponent from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
+
 import { AiOutlineSetting, AiOutlineCalendar } from "react-icons/ai";
 
 const CountUp = () => {
@@ -11,8 +14,17 @@ const CountUp = () => {
           <MainCol lg={4}>
             <IconWrapper>
               <RiContactsLine className="IconContact" />
+
               <div>
-                <IconHeading>258+</IconHeading>
+                <CountUpComponent end={258} duration={2} useEasing={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span className="Icon-heading" ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUpComponent>
+                <span className="Icon-heading">+</span>
+
                 <IconText>Happy Cients</IconText>
               </div>
             </IconWrapper>
@@ -21,7 +33,14 @@ const CountUp = () => {
             <IconWrapper>
               <AiOutlineSetting className="IconContact" />
               <div>
-                <IconHeading>50+</IconHeading>
+                <CountUpComponent end={50} duration={2} useEasing={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span className="Icon-heading" ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUpComponent>
+                <span className="Icon-heading">+</span>
                 <IconText>Project Completed</IconText>
               </div>
             </IconWrapper>
@@ -30,7 +49,14 @@ const CountUp = () => {
             <IconWrapper>
               <AiOutlineCalendar className="IconContact" />
               <div>
-                <IconHeading>10+</IconHeading>
+                <CountUpComponent end={10} duration={5} useEasing={true}>
+                  {({ countUpRef, start }) => (
+                    <VisibilitySensor onChange={start} delayedCall>
+                      <span className="Icon-heading" ref={countUpRef} />
+                    </VisibilitySensor>
+                  )}
+                </CountUpComponent>
+                <span className="Icon-heading">+</span>
                 <IconText>Years of Experience</IconText>
               </div>
             </IconWrapper>

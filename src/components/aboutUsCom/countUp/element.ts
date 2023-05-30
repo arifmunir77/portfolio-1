@@ -24,16 +24,18 @@ export const IconWrapper = styled.div`
     border: 1px solid #40424d;
     color: #66fcf1;
   }
-`;
-export const IconHeading = styled.h1`
-  font-family: "Teko";
-  font-size: 56px;
-  color: #fff;
-  margin-bottom: 0;
-  @media (max-width: 991.98px) {
-    text-align: center;
+
+  .Icon-heading {
+    font-family: "Teko";
+    font-size: 56px;
+    color: #fff;
+    margin-bottom: 0;
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
   }
 `;
+export const IconHeading = styled.h1``;
 
 export const IconText = styled.p`
   color: #66fcf1;
