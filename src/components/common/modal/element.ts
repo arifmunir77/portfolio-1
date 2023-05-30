@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const ModalWrapper = styled.div`
   button.ant-btn.css-dev-only-do-not-override-w8mnev.ant-btn-primary {
@@ -20,7 +21,7 @@ export const ModalWrapper = styled.div`
   }
 `;
 
-export const WorkModalContainer = styled.div`
+export const WorkModalContainer = styled(motion.div)`
   background-color: #121212;
   min-height: 500px;
   box-shadow: 0 0 20px 10px rgba(102, 252, 241, 0.8);
