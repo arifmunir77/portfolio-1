@@ -1,4 +1,4 @@
-import { CountUpWrapper, IconHeading, IconText, IconWrapper } from "./element";
+import { CountUpWrapper, IconText, IconWrapper } from "./element";
 import { MainCol, MainContainer, MainRow } from "components/common";
 import { RiContactsLine } from "react-icons/ri";
 import CountUpComponent from "react-countup";

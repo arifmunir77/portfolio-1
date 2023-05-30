@@ -15,6 +15,7 @@ import {
   workImgFour,
   workImgFive,
   workImgSix,
+  OurWorkImgOne,
 } from "assets";
 
 export const heroCardData = [
@@ -101,5 +102,26 @@ export const workCardData = [
   {
     id: 6,
     img: workImgSix,
+  },
+];
+
+export const OurWorkData = [
+  {
+    id: 1,
+    img: OurWorkImgOne,
+    heading: "Project Name",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fuga! Ratione explicabo odio accusantium eos! ",
+  },
+  {
+    id: 2,
+    img: OurWorkImgOne,
+    heading: "Project Name",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fuga! Ratione explicabo odio accusantium eos! ",
+  },
+  {
+    id: 3,
+    img: OurWorkImgOne,
+    heading: "Project Name",
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fuga! Ratione explicabo odio accusantium eos! ",
   },
 ];

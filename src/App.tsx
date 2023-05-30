@@ -1,11 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GlobalStyle from "globalStyles";
 import { useEffect } from "react";
-import { HomeCom, WorkCom } from "components";
+import { HomeCom, WorkCom, ServicesCom, AboutUsCom } from "components";
 import { motion, useMotionValue, useSpring } from "framer-motion";
-import { Footer, InQuirySection, Navbar } from "components/common";
-import ServicesCom from "components/servicesCom";
-import AboutUsCom from "components/aboutUsCom";
+import { Footer, InQuirySection } from "components/common";
 
 function App() {
   const cursorX = useMotionValue(-100);
