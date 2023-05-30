@@ -7,6 +7,19 @@ export const OurWorkWrapper = styled.div`
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
+
+  .left {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 30px;
+    @media (max-width: 991.98px) {
+      margin-left: 0;
+    }
+  }
+
+  .TopMargin {
+    margin-top: 2rem;
+  }
 `;
 
 export const OurWorkHeading = styled.h1`
@@ -22,21 +35,34 @@ export const OurWorkText = styled.p`
   color: #66fcf1;
 `;
 
-export const TabWrapper = styled.div`
-  .ant-tabs-top > .ant-tabs-nav::before {
-    border-bottom: none !important;
-  }
+export const OurWorkImg = styled.img`
+  border-radius: 15px;
+`;
 
-  .ant-tabs .ant-tabs-tab-btn {
-    color: #fff;
-    outline: none;
-    transition: all 0.3s;
+export const OurWorkProjectHeading = styled.h1`
+  font-size: 80px;
+  font-family: "Teko";
+  color: #fff;
+  margin-bottom: 0;
+  @media (max-width: 991.98px) {
+    text-align: center;
   }
+`;
+export const OurWorkProjectText = styled.p`
+  color: #fff;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+`;
 
-  .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #000;
-    text-shadow: 0 0 0.25px currentcolor;
-    background: #66fcf1;
-    padding: 10px 30px;
+export const OurWorkProjectButton = styled.button`
+  color: #66fcf1;
+  background: transparent;
+  border: none;
+  margin-top: 2rem;
+  @media (max-width: 991.98px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;

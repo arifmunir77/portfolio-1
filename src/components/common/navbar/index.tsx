@@ -11,7 +11,7 @@ import { useState } from "react";
 import { MenuButton } from "./icon";
 import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import { logo, videoLogo } from "assets";
+import { videoLogo } from "assets";
 import { Image } from "react-bootstrap";
 
 function Topbar() {
@@ -70,7 +70,7 @@ function Topbar() {
                     Home
                   </NavLink>
                 </Link>
-                <Link to="/aboutus">
+                <Link to="/about-us">
                   <NavLink
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}

@@ -16,3 +16,4 @@ export { default as sericesWorkImg } from "./images/sericesWorkImg.png";
 export { default as WorkBgImg } from "./images/WorkBgImg.png";
 export { default as bg } from "./images/bg.png";
 export { default as AboutUsHero } from "./images/AboutUsHero.png";
+export { default as OurWorkImgOne } from "./images/OurWorkImgOne.png";
