@@ -17,7 +17,11 @@ export const ModalWrapper = styled.div`
   }
 
   .ant-modal > .ant-modal-content {
-    /* background-color: transparent !important; */
-    box-shadow: none !important;
   }
+`;
+
+export const WorkModalContainer = styled.div`
+  background-color: #121212;
+  min-height: 500px;
+  box-shadow: 0 0 20px 10px rgba(102, 252, 241, 0.8);
 `;

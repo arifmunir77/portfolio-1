@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Modal } from "antd";
-import { ModalWrapper } from "./element";
+import { ModalWrapper, WorkModalContainer } from "./element";
 import { BsArrowRight } from "react-icons/bs";
 
 const WorkModal = () => {
@@ -24,14 +24,13 @@ const WorkModal = () => {
         Veiw Detail <BsArrowRight className="arrow-icon" />
       </Button>
       <Modal
-        title="Basic Modal"
         open={isModalOpen}
         onOk={handleOk}
         onCancel={handleCancel}
+        centered
+        width={1000}
       >
-        <p className="bb">Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+        <WorkModalContainer>sddsds</WorkModalContainer>
       </Modal>
     </ModalWrapper>
   );
