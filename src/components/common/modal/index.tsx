@@ -14,6 +14,7 @@ import SwiperCore, {
 } from "swiper";
 import "swiper/swiper-bundle.min.css";
 import { Image } from "react-bootstrap";
+import { motion, AnimatePresence } from "framer-motion";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
@@ -37,71 +38,83 @@ const WorkModal = () => {
       <Button type="primary" onClick={showModal}>
         Veiw Detail <BsArrowRight className="arrow-icon" />
       </Button>
-      <Modal
-        open={isModalOpen}
-        onOk={handleOk}
-        onCancel={handleCancel}
-        centered
-        width={1000}
-      >
-        <WorkModalContainer>
-          <SwiperWrapper>
-            <Swiper
-              // activeSlideKey='2'
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              autoplay={{ delay: 1000, disableOnInteraction: false }}
-              slidesPerView={"auto"}
-              coverflowEffect={{
-                rotate: 0,
-                stretch: 0,
-                depth: 100,
-                modifier: 2,
-                slideShadows: true,
-              }}
-              // scrollbar={{draggable:true}}
-              navigation={true}
-              initialSlide={2}
-              pagination={true}
-              modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
-              className="mySwiper"
-            >
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
 
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-              <SwiperSlide>
-                <Image fluid src={OurWorkImgOne} />
-              </SwiperSlide>
-            </Swiper>
-          </SwiperWrapper>
-        </WorkModalContainer>
-      </Modal>
+      <AnimatePresence>
+        {isModalOpen && (
+          <Modal
+            open={isModalOpen}
+            onOk={handleOk}
+            onCancel={handleCancel}
+            centered
+            width={1000}
+          >
+            <WorkModalContainer
+              style={{ overflow: "hidden" }}
+              initial={{ scaleY: 0, minHeight: 0 }}
+              animate={{ scaleY: 1, minHeight: "500px" }}
+              exit={{ scaleY: 0 }}
+              transition={{ duration: 0.75, ease: "easeInOut" }}
+              key={"container"}
+            >
+              <SwiperWrapper>
+                <Swiper
+                  // activeSlideKey='2'
+                  effect={"coverflow"}
+                  grabCursor={true}
+                  centeredSlides={true}
+                  autoplay={{ delay: 1000, disableOnInteraction: false }}
+                  slidesPerView={"auto"}
+                  coverflowEffect={{
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 2,
+                    slideShadows: true,
+                  }}
+                  // scrollbar={{draggable:true}}
+                  navigation={true}
+                  initialSlide={2}
+                  pagination={true}
+                  modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <Image fluid src={OurWorkImgOne} />
+                  </SwiperSlide>
+                </Swiper>
+              </SwiperWrapper>
+            </WorkModalContainer>
+          </Modal>
+        )}
+      </AnimatePresence>
     </ModalWrapper>
   );
 };

@@ -155,5 +155,9 @@ export const VideoContainer = styled.div`
   .image {
     height: 100px;
     margin-top: 2rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 1rem;
+    }
   }
 `;
