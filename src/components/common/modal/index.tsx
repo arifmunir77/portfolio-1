@@ -13,6 +13,7 @@ import SwiperCore, {
   EffectCoverflow,
 } from "swiper";
 import "swiper/swiper-bundle.min.css";
+import { Image } from "react-bootstrap";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
@@ -67,25 +68,35 @@ const WorkModal = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <img src={OurWorkImgOne} />
+                <Image fluid src={OurWorkImgOne} />
               </SwiperSlide>
 
               <SwiperSlide>
-                <img src={OurWorkImgOne} />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src={OurWorkImgOne} />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img src={OurWorkImgOne} />
+                <Image fluid src={OurWorkImgOne} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={OurWorkImgOne} />
+                <Image fluid src={OurWorkImgOne} />
               </SwiperSlide>
               <SwiperSlide>
-                <img src={OurWorkImgOne} />
+                <Image fluid src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image fluid src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image fluid src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image fluid src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image fluid src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image fluid src={OurWorkImgOne} />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image fluid src={OurWorkImgOne} />
               </SwiperSlide>
             </Swiper>
           </SwiperWrapper>
