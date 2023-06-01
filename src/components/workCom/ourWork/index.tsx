@@ -9,7 +9,7 @@ import {
 } from "./element";
 import { MainCol, MainContainer, MainRow } from "components/common";
 import { OurWorkData } from "components/data";
-import WorkModal from "components/common/modal";
+import { WorkModal } from "components/common";
 
 const OurWork = () => {
   return (

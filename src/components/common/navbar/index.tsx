@@ -13,6 +13,7 @@ import { AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import { videoLogo } from "assets";
 import { Image } from "react-bootstrap";
+import { ContactModal } from "components/common";
 
 function Topbar() {
   const [navCollapsed, setNavCollapsed] = useState(false);
@@ -104,7 +105,7 @@ function Topbar() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.5, duration: 1.4 }}
                 >
-                  Contact
+                  <ContactModal />
                 </NavLink>
               </CollapsedNav>
             )}
