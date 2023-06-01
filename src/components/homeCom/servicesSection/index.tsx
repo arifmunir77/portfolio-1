@@ -8,6 +8,7 @@ import {
 } from "./styles";
 import ServicesCard from "components/common/card/servicesCard";
 import { servicesCardData } from "components/data";
+import { motion } from "framer-motion";
 
 const ServicesSection = () => {
   return (
@@ -22,7 +23,13 @@ const ServicesSection = () => {
         <MainRow>
           {servicesCardData.map((item, index) => (
             <MainCol lg={4}>
-              <ServicesCard item={item} index={index} />
+              <motion.div
+                initial={{ scale: 0 }}
+                whileInView={{ scale: 1 }}
+                transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
+              >
+                <ServicesCard item={item} index={index} />
+              </motion.div>
             </MainCol>
           ))}
         </MainRow>

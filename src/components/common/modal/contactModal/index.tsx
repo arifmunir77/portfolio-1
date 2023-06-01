@@ -30,7 +30,7 @@ const ContactModal = () => {
 
   return (
     <ModalWrapper>
-      <NavLink onClick={showModal}>contact</NavLink>
+      <NavLink onClick={showModal}>Contact</NavLink>
 
       <AnimatePresence>
         {isModalOpen && (
