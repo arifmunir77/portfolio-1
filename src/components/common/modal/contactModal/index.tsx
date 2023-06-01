@@ -2,7 +2,7 @@ import { useState } from "react";
 import {
   ModalWrapper,
   TextDiv,
-  WorkHeadingIcon,
+  WorkModalIcon,
   WorkModalContainer,
   WorkModalHeading,
   WorkModalText,
@@ -56,12 +56,12 @@ const ContactModal = () => {
               >
                 <WorkModalText>Contact Us</WorkModalText>
                 <WorkModalHeading>example@gmail.com</WorkModalHeading>
-                <WorkHeadingIcon>
+                <WorkModalIcon>
                   <FiFacebook className="icon" />
                   <AiOutlineInstagram className="icon" />
                   <FiTwitter className="icon" />
                   <AiOutlineLinkedin className="icon" />
-                </WorkHeadingIcon>
+                </WorkModalIcon>
               </TextDiv>
             </WorkModalContainer>
           </Modal>

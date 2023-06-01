@@ -43,7 +43,7 @@ export const WorkModalHeading = styled.h1`
   }
 `;
 
-export const WorkHeadingIcon = styled.div`
+export const WorkModalIcon = styled.div`
   text-align: center;
   .icon {
     color: #fff;
