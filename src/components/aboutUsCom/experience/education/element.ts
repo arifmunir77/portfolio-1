@@ -70,8 +70,6 @@ export const EducationRightHeading = styled.h1`
 
 export const EducationRightSubHeading = styled.p`
   color: #fff;
-  font-size: 16px;
-  font-weight: 400;
 
   @media (max-width: 991.98px) {
     text-align: center;
@@ -82,7 +80,6 @@ export const EducationRightText = styled.p`
   color: #66fcf1;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6em;
   @media (max-width: 991.98px) {
     text-align: center;
   }

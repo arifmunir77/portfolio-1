@@ -31,9 +31,7 @@ const Experience = () => {
         </ButtonWrapper>
         {education ? (
           <div>
-            <h1>
-              <Education />
-            </h1>
+            <Education />
           </div>
         ) : (
           <div>
