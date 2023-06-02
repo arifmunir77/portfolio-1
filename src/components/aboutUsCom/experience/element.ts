@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const ExperienceWrapper = styled.div`
+  overflow: hidden;
+
   .wrapper-margin {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -22,16 +24,16 @@ export const ButtonWrapper = styled.div`
 
 export const EducationButton = styled.button`
   flex: 1;
-  padding: 8px 16px;
+  padding: 16px 16px;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   transition: 300ms all ease-in-out;
   color: #fff;
-  font-size: 50px;
+  font-size: 32px;
 
   &.education-active {
     background-color: #121212;
-    border: 2px solid #66fcf1;
+    border: 1px solid #66fcf1;
     transition: 300ms all ease-in-out;
     color: #66fcf1;
   }
@@ -46,7 +48,7 @@ export const ExperienceButton = styled(EducationButton)`
   &.experience-active {
     background-color: #121212;
     color: #66fcf1;
-    border: 2px solid #66fcf1;
+    border: 1px solid #66fcf1;
     transition: 300ms all ease-in-out;
   }
 `;

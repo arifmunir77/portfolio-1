@@ -7,7 +7,7 @@ import {
 } from "./element";
 import { useState } from "react";
 import Education from "./education";
-import ButtonExperience from "./buttonExperience";
+import ButtonExperience from "./experience";
 
 const Experience = () => {
   const [education, setEducation] = useState(true);
