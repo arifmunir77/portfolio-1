@@ -1,5 +1,6 @@
 import AboutMe from "./aboutMe";
 import CountUp from "./countUp";
+import Experience from "./experience";
 import HeroSection from "./heroSection";
 
 const AboutUsCom = () => {
@@ -7,6 +8,7 @@ const AboutUsCom = () => {
     <div>
       <HeroSection />
       <AboutMe />
+      <Experience />
       <CountUp />
     </div>
   );

@@ -125,3 +125,51 @@ export const OurWorkData = [
     text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, fuga! Ratione explicabo odio accusantium eos! ",
   },
 ];
+
+export const EducationData = [
+  {
+    id: 1,
+    date: "2009 - 2019",
+    heading: "Heading",
+    subHeading: "sub heading",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+  },
+  {
+    id: 2,
+    date: "2009 - 2019",
+    heading: "Heading",
+    subHeading: "sub heading",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+  },
+  {
+    id: 3,
+    date: "2009 - 2019",
+    heading: "Heading",
+    subHeading: "sub heading",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+  },
+];
+
+export const ExperienceData = [
+  {
+    id: 1,
+    date: "2009 ",
+    heading: "Heading",
+    subHeading: "sub heading",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+  },
+  {
+    id: 2,
+    date: "2009 ",
+    heading: "Heading",
+    subHeading: "sub heading",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+  },
+  {
+    id: 3,
+    date: "2009 - 2019",
+    heading: "Heading",
+    subHeading: "sub heading",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
+  },
+];
