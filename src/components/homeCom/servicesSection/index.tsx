@@ -23,13 +23,7 @@ const ServicesSection = () => {
         <MainRow>
           {servicesCardData.map((item, index) => (
             <MainCol lg={4}>
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
-              >
-                <ServicesCard item={item} index={index} />
-              </motion.div>
+              <ServicesCard item={item} index={index} />
             </MainCol>
           ))}
         </MainRow>

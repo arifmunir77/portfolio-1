@@ -17,3 +17,4 @@ export { default as WorkBgImg } from "./images/WorkBgImg.png";
 export { default as bg } from "./images/bg.png";
 export { default as AboutUsHero } from "./images/AboutUsHero.png";
 export { default as OurWorkImgOne } from "./images/OurWorkImgOne.png";
+export { default as workProcess } from "./images/workProcess.png";

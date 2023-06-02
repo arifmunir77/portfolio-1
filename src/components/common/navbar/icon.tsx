@@ -56,8 +56,7 @@ const MenuButton = ({
       viewBox={`0 0 ${unitWidth} ${unitHeight}`}
       overflow="visible"
       preserveAspectRatio="none"
-      width={width}
-      height={height}
+      className="nav-icon"
       {...props}
     >
       <motion.line

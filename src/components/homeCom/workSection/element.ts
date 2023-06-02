@@ -5,8 +5,13 @@ export const WorkWrapper = styled.div`
   background-color: rgb(18, 18, 18);
 
   .workContainer {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 
   .main-col {

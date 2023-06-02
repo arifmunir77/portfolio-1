@@ -115,6 +115,17 @@ iframe
   transform: translate3d(-50%, -50%, 0);
   background-color:rgb(102, 252, 241, 0.2);
 }
+
+.nav-icon {
+  width: 34px;
+  height: 34px;
+
+  @media (max-width: 991.98px) { 
+    width: 24px;
+  height: 24px;
+   }
+
+}
  
 `;
 

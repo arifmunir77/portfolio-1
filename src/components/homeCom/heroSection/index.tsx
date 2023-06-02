@@ -15,32 +15,12 @@ import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 function HeroSection() {
-  const { ref, inView } = useInView();
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        x: 0,
-        transition: {
-          delay: 0.5,
-          duration: 1,
-        },
-      });
-    }
-
-    if (!inView) {
-      animation.start({
-        x: -1200,
-      });
-    }
-  }, [inView]);
   return (
     <div>
       <HeroSectionWrapper>
         <Navbar />
         <MainContainer className="top-container">
-          <TextDiv animate={animation} ref={ref}>
+          <TextDiv>
             <HeroCreativeText>CREATIVE MIND, CREATIVE WORKS.</HeroCreativeText>
             <HeroHeading>
               We are digital <br /> agency.
