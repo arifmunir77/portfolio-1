@@ -10,7 +10,7 @@ export const EducationFlex = styled.div`
 
   @media (max-width: 991.98px) {
     flex-direction: column;
-    gap: 20px;
+    gap: 3rem;
   }
 
   .border-none {
@@ -51,6 +51,7 @@ export const EducationLeftText = styled.p`
   color: #fff;
   font-size: 18px;
   margin: 0;
+  font-weight: 400;
 `;
 
 export const EducationFlexRight = styled.div`
@@ -70,6 +71,8 @@ export const EducationRightHeading = styled.h1`
 export const EducationRightSubHeading = styled.p`
   color: #fff;
   font-size: 16px;
+  font-weight: 400;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
@@ -78,6 +81,8 @@ export const EducationRightSubHeading = styled.p`
 export const EducationRightText = styled.p`
   color: #66fcf1;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
   @media (max-width: 991.98px) {
     text-align: center;
   }
