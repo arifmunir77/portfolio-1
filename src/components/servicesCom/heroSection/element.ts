@@ -6,9 +6,15 @@ export const HeroSectionWrapper = styled.div`
     text-decoration: none;
   }
   overflow: hidden;
+
   .top-container {
     margin-top: 10rem;
     margin-bottom: 10rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 `;
 
@@ -57,9 +63,15 @@ export const HeroSectionText = styled.p`
 export const ServicesWrapper = styled.div`
   overflow: hidden;
   background: #0b0c10;
+
   .services-container {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 `;
 
@@ -83,9 +95,15 @@ export const ServicesWorkSection = styled.div`
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
+
   .serviceswork-container {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 `;
 

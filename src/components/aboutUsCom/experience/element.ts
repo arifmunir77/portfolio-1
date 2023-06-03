@@ -4,8 +4,13 @@ export const ExperienceWrapper = styled.div`
   overflow: hidden;
 
   .wrapper-margin {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 `;
 

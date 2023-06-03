@@ -3,9 +3,15 @@ import styled from "styled-components";
 export const AboutMeWrapper = styled.div`
   background-color: #0b0c10;
   overflow: hidden;
+
   .top-container {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: 991.98px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
   }
 
   .card {

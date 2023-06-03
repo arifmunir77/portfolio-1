@@ -18,8 +18,8 @@ export const HeroSectionWrapper = styled(motion.div)`
 export const TextDiv = styled(motion.div)``;
 
 export const HeroCreativeText = styled.p`
-  color: #66fcf1;
-  margin-top: 10rem;
+  color: #fff;
+  margin-top: 6rem;
 
   @media (max-width: 991.98px) {
     text-align: center;
@@ -32,6 +32,10 @@ export const HeroHeading = styled.h1`
   color: #fff;
   font-size: 80px;
   font-weight: 700;
+
+  span {
+    color: #66fcf1;
+  }
 
   @media (max-width: 991.98px) {
     text-align: center;

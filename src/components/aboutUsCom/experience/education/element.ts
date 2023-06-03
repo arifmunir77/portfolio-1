@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
 export const EducationWrapper = styled.div`
-  margin-top: 4rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  @media (max-width: 991.98px) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
 `;
 
 export const EducationFlex = styled.div`

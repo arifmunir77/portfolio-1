@@ -20,14 +20,21 @@ function HeroSection() {
       <HeroSectionWrapper>
         <Navbar />
         <MainContainer className="top-container">
-          <TextDiv>
-            <HeroCreativeText>CREATIVE MIND, CREATIVE WORKS.</HeroCreativeText>
-            <HeroHeading>
-              We are digital <br /> agency.
-            </HeroHeading>
+          <MainRow>
+            <MainCol lg={6}>
+              <TextDiv>
+                <HeroCreativeText>
+                  CREATIVE MIND, CREATIVE WORKS.
+                </HeroCreativeText>
+                <HeroHeading>
+                  Hey, I Am Abdullah - <br />{" "}
+                  <span>A Full Stack Web Developer.</span>
+                </HeroHeading>
 
-            <HeroButton>GETTING STARTED</HeroButton>
-          </TextDiv>
+                <HeroButton>GETTING STARTED</HeroButton>
+              </TextDiv>
+            </MainCol>
+          </MainRow>
         </MainContainer>
       </HeroSectionWrapper>
       <MainContainer className="bottom-container">
