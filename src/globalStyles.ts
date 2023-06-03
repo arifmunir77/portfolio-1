@@ -14,6 +14,20 @@ const GlobalStyle = createGlobalStyle`
   overflow-x: hidden !important;
   font-family: 'Poppins', sans-serif;
   background-color: #000;
+
+  &::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background-color: #000;
+            border: 1px solid #66fcf1;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            border-radius: 8px;
+            background-color: #66fcf1;
+        }
    
 }
 
