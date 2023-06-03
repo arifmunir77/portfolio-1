@@ -22,7 +22,7 @@ const WorkSection = () => {
               <WorkHeading>Work</WorkHeading>
             </div>
             <Link to="/work">
-              <WorkButton>VEIW ALL</WorkButton>
+              <WorkButton>VIEW ALL</WorkButton>
             </Link>
           </FlexDiv>
 

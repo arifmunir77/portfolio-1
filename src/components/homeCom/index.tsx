@@ -3,6 +3,7 @@ import ServicesSection from "./servicesSection";
 import { Footer, InQuirySection } from "components/common";
 import WorkSection from "./workSection";
 import WorkingProcess from "./workingProcess";
+import SkillsAndTools from "./skillsAndTools";
 
 const HomeCom = () => {
   return (
@@ -11,6 +12,7 @@ const HomeCom = () => {
       <WorkSection />
       <ServicesSection />
       <WorkingProcess />
+      <SkillsAndTools />
     </div>
   );
 };
