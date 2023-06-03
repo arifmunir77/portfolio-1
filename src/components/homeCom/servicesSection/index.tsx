@@ -1,14 +1,16 @@
 import { MainCol, MainContainer, MainRow } from "components/common";
 import {
-  FlexBorderDiv,
+  BorderDiv,
   FlexDiv,
-  ServicesHeading,
-  ServicesText,
   ServicesWrapper,
+  WorkButton,
+  WorkHeading,
+  WorkText,
 } from "./styles";
 import ServicesCard from "components/common/card/servicesCard";
 import { servicesCardData } from "components/data";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
@@ -20,14 +22,20 @@ const ServicesSection = () => {
           transition={{ duration: 0.75, delay: 0.5 }}
         >
           <FlexDiv>
-            <FlexBorderDiv />
-            <ServicesHeading>Services</ServicesHeading>
+            <div className="flex">
+              <BorderDiv />
+              <WorkHeading>Services</WorkHeading>
+            </div>
+            <Link to="/services">
+              <WorkButton>VIEW ALL</WorkButton>
+            </Link>
           </FlexDiv>
-          <ServicesText>OUR SERVICES FOR CLIENTS</ServicesText>
+
+          <WorkText>OUR SERVICES FOR CLIENTS</WorkText>
         </motion.div>
 
         <MainRow>
-          {servicesCardData.map((item, index) => (
+          {servicesCardData.slice(0, 3).map((item, index) => (
             <MainCol lg={4}>
               <motion.div
                 initial={{ opacity: 0, x: -100 }}
