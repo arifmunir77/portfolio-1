@@ -31,7 +31,7 @@ export const HeroHeading = styled.h1`
   font-family: "Teko" !important;
   color: #fff;
   font-size: 80px;
-  font-weight: 700;
+  font-weight: 600;
 
   span {
     color: #66fcf1;
