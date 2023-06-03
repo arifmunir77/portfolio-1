@@ -20,6 +20,7 @@ export const SkillsAndToolsContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
+    cursor: grab;
   }
 `;
 

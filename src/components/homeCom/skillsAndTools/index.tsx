@@ -124,6 +124,7 @@ function SkillsAndTools() {
                   initial={{ opacity: 0, x: -100 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
+                  drag
                 >
                   <IconHolder>{item.icon}</IconHolder>
                   <IconText>{item.text}</IconText>
