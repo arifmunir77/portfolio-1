@@ -23,7 +23,9 @@ function Topbar() {
       <MainContainer>
         <MainDiv>
           <VideoContainer>
-            <Image fluid src={videoLogo} className="image" />
+            <Link to="/">
+              <Image fluid src={videoLogo} className="image" />
+            </Link>
           </VideoContainer>
           <IconHolderDiv
             onClick={() => setNavCollapsed(!navCollapsed)}

@@ -10,25 +10,43 @@ import {
 import { heroCardData } from "components/data";
 import { HeroCard } from "components/common/card";
 import { Navbar } from "components/common";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { useEffect, useRef } from "react";
+import { init } from "ityped";
 
 function HeroSection() {
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1500,
+      strings: [
+        "Full Stack Magician.",
+        "Problem Solver.",
+        "Visual Storyteller.",
+        "Pixel Perfectionist.",
+        "Knowledge Seeker.",
+        "Continuous Learner.",
+        "Big Thinker.",
+        "Dream Chaser.",
+      ],
+    });
+  }, []);
+
   return (
     <div>
       <HeroSectionWrapper>
         <Navbar />
         <MainContainer className="top-container">
           <MainRow>
-            <MainCol lg={6}>
+            <MainCol lg={8}>
               <TextDiv>
                 <HeroCreativeText>
                   CREATIVE MIND, CREATIVE WORKS.
                 </HeroCreativeText>
                 <HeroHeading>
-                  Hey, I Am Abdullah - <br />{" "}
-                  <span>A Full Stack Web Developer.</span>
+                  Hey, I'm Abdullah - <br /> A &nbsp;
+                  <span ref={textRef}></span>
                 </HeroHeading>
 
                 <HeroButton>GETTING STARTED</HeroButton>
