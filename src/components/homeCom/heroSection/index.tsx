@@ -12,6 +12,7 @@ import { HeroCard } from "components/common/card";
 import { Navbar } from "components/common";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
+import { motion } from "framer-motion";
 
 function HeroSection() {
   const textRef = useRef();
@@ -40,7 +41,12 @@ function HeroSection() {
         <MainContainer className="top-container">
           <MainRow>
             <MainCol lg={8}>
-              <TextDiv>
+              <TextDiv
+                initial={{ opacity: 0, x: -300, scale: 0.1, y: -100 }}
+                animate={{ opacity: 1, x: 0, scale: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.5 }}
+                exit={{ transition: { duration: 0.2 } }}
+              >
                 <HeroCreativeText>
                   CREATIVE MIND, CREATIVE WORKS.
                 </HeroCreativeText>
@@ -59,7 +65,13 @@ function HeroSection() {
         <MainRow>
           {heroCardData.map((item, index) => (
             <MainCol lg={4}>
-              <HeroCard item={item} index={index} />
+              <motion.div
+                initial={{ opacity: 0, y: 200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+              >
+                <HeroCard item={item} index={index} />
+              </motion.div>
             </MainCol>
           ))}
         </MainRow>

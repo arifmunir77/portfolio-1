@@ -30,6 +30,7 @@ import { BsGit } from "react-icons/bs";
 import { MdDevices } from "react-icons/md";
 import { vscode } from "assets";
 import { Image } from "react-bootstrap";
+import { motion } from "framer-motion";
 
 const skillsData = [
   {
@@ -110,9 +111,16 @@ function SkillsAndTools() {
         <IconContainer>
           <MainRow>
             {skillsData.map((item, index) => (
-              <MainCol sm={6} lg={3} className={`main-col `}>
-                <IconHolder>{item.icon}</IconHolder>
-                <IconText>{item.text}</IconText>
+              <MainCol sm={6} lg={3}>
+                <motion.div
+                  className="main-col"
+                  initial={{ opacity: 0, x: -100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+                  <IconHolder>{item.icon}</IconHolder>
+                  <IconText>{item.text}</IconText>
+                </motion.div>
               </MainCol>
             ))}
           </MainRow>

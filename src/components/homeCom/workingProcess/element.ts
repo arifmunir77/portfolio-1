@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const WorkingProcessWrapper = styled.div`
   overflow: hidden;
@@ -19,7 +20,7 @@ export const WorkingProcessWrapper = styled.div`
   }
 `;
 
-export const LeftDiv = styled.div`
+export const LeftDiv = styled(motion.div)`
   position: relative;
 
   @media (max-width: 991.98px) {

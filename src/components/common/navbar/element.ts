@@ -79,7 +79,7 @@ export const NavbarButton = styled.button`
   }
 `;
 
-export const MainDiv = styled.div`
+export const MainDiv = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,7 +153,7 @@ export const NavLink = styled(motion.h4)`
   }
 `;
 
-export const VideoContainer = styled.div`
+export const VideoContainer = styled(motion.div)`
   .image {
     height: 100px;
     margin-top: 2rem;

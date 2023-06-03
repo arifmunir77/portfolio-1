@@ -14,6 +14,7 @@ import {
 } from "./element";
 import { workProcess } from "assets";
 import Card from "react-bootstrap/Card";
+import { motion } from "framer-motion";
 
 function WorkingProcess() {
   const cardData = [
@@ -49,7 +50,11 @@ function WorkingProcess() {
         <div className="wrapper">
           <Row>
             <Col xl={4}>
-              <LeftDiv>
+              <LeftDiv
+                initial={{ opacity: 0, y: 200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >
                 <img className="img-fluid working" src={workProcess} />
                 <WorkingLayoutDiv>
                   <WorkingProcessMainText>
@@ -62,15 +67,21 @@ function WorkingProcess() {
             <Col xl={8}>
               <RightDiv>
                 <Row>
-                  {cardData.map((item) => (
+                  {cardData.map((item, index) => (
                     <Col key={item.id} lg={6}>
-                      <Card>
-                        <Card.Body>
-                          <h4 className="cardNumber">{item.id}.</h4>
-                          <Card.Title>{item.header}</Card.Title>
-                          <Card.Text>{item.text}</Card.Text>
-                        </Card.Body>
-                      </Card>
+                      <motion.div
+                        initial={{ opacity: 0, x: -200 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                      >
+                        <Card>
+                          <Card.Body>
+                            <h4 className="cardNumber">{item.id}.</h4>
+                            <Card.Title>{item.header}</Card.Title>
+                            <Card.Text>{item.text}</Card.Text>
+                          </Card.Body>
+                        </Card>
+                      </motion.div>
                     </Col>
                   ))}
                 </Row>
