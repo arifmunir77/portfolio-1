@@ -44,7 +44,11 @@ function HeroSection() {
               <TextDiv
                 initial={{ opacity: 0, x: -300, scale: 0.1, y: -100 }}
                 animate={{ opacity: 1, x: 0, scale: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.5 }}
+                transition={{
+                  delay: 0.5,
+                  type: "spring",
+                  stiffness: 220,
+                }}
                 exit={{ transition: { duration: 0.2 } }}
               >
                 <HeroCreativeText>
