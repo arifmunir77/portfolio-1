@@ -133,6 +133,7 @@ export const FlexDiv = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
+
   @media (max-width: 991.98px) {
     justify-content: center;
   }

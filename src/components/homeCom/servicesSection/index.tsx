@@ -14,11 +14,17 @@ const ServicesSection = () => {
   return (
     <ServicesWrapper>
       <MainContainer>
-        <FlexDiv>
-          <FlexBorderDiv />
-          <ServicesHeading>Services</ServicesHeading>
-        </FlexDiv>
-        <ServicesText>OUR SERVICES FOR CLIENTS</ServicesText>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.75, delay: 0.5 }}
+        >
+          <FlexDiv>
+            <FlexBorderDiv />
+            <ServicesHeading>Services</ServicesHeading>
+          </FlexDiv>
+          <ServicesText>OUR SERVICES FOR CLIENTS</ServicesText>
+        </motion.div>
 
         <MainRow>
           {servicesCardData.map((item, index) => (

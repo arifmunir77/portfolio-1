@@ -100,14 +100,21 @@ function SkillsAndTools() {
   return (
     <SkillsAndToolsContainer>
       <MainContainer>
-        <FlexDiv>
-          <FlexBorderDiv />
-          <MainHeading>SKILLS & TOOLS</MainHeading>
-        </FlexDiv>
-        <SubText>
-          The skills, tools and technologies I use to bring your products to
-          life
-        </SubText>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.75, delay: 0.5 }}
+        >
+          <FlexDiv>
+            <FlexBorderDiv />
+            <MainHeading>SKILLS & TOOLS</MainHeading>
+          </FlexDiv>
+
+          <SubText>
+            The skills, tools and technologies I use to bring your products to
+            life
+          </SubText>
+        </motion.div>
         <IconContainer>
           <MainRow>
             {skillsData.map((item, index) => (

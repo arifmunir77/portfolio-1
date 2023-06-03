@@ -40,13 +40,20 @@ function WorkingProcess() {
     },
   ];
   return (
-    <WorkingProcessWrapper id="work-process">
+    <WorkingProcessWrapper>
       <Container>
-        <FlexDiv>
-          <FlexBorderDiv />
-          <ServicesHeading> Work Process</ServicesHeading>
-        </FlexDiv>
-        <ServicesText>Work Process & Life Cycle Of A Project</ServicesText>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.75, delay: 0.5 }}
+        >
+          <FlexDiv>
+            <FlexBorderDiv />
+            <ServicesHeading> Work Process</ServicesHeading>
+          </FlexDiv>
+          <ServicesText>Work Process & Life Cycle Of A Project</ServicesText>
+        </motion.div>
+
         <div className="wrapper">
           <Row>
             <Col xl={4}>
