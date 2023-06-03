@@ -35,6 +35,7 @@ export const HeroHeading = styled.h1`
 
   span {
     color: #66fcf1;
+    font-family: "Teko" !important;
   }
 
   @media (max-width: 991.98px) {
