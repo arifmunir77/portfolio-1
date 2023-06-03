@@ -21,12 +21,11 @@ const GlobalStyle = createGlobalStyle`
         
         &::-webkit-scrollbar-track {
             background-color: #000;
-            border: 1px solid #66fcf1;
         }
         
         &::-webkit-scrollbar-thumb {
             border-radius: 8px;
-            background-color: #66fcf1;
+            background-color: #fff;
         }
    
 }
