@@ -2,6 +2,7 @@ import { Tabs } from "antd";
 import { TabsWrapper } from "./element";
 import WorkTabContent from "./workTabContent";
 import { useState } from "react";
+import { NoDataCom } from "components";
 
 const items = [
   {
@@ -27,7 +28,6 @@ const items = [
 ];
 
 const data = [
-  // Your array of project data
   {
     title: "UI/Ux",
     category: "ui/ux",
@@ -40,13 +40,6 @@ const data = [
     image: "project2.jpg",
     description: "frontend description",
   },
-  {
-    title: "Full stack",
-    category: "full stack",
-    image: "project2.jpg",
-    description: "full stack description",
-  },
-  // Add more project objects as needed
 ];
 
 function Worktabs() {
@@ -56,14 +49,6 @@ function Worktabs() {
     const item = items.find((item) => item.key === key);
     return item ? item.category : null;
   };
-
-  // Filter the data based on the active tab category
-  const filteredData =
-    activeTab === items[0].key // If "ALL" tab is active, show all data
-      ? data
-      : data.filter(
-          (project) => project.category === getCategoryByKey(activeTab)
-        );
 
   // Handle tab change event
   const handleTabChange = (key) => {
@@ -78,11 +63,24 @@ function Worktabs() {
         onChange={handleTabChange}
         centered
       >
-        {items.map((item) => (
-          <Tabs.TabPane key={item.key} tab={item.label}>
-            <WorkTabContent filteredData={filteredData} />
-          </Tabs.TabPane>
-        ))}
+        {items.map((item) => {
+          const tabData =
+            item.key === items[0].key
+              ? data // For "ALL" tab, show all data
+              : data.filter(
+                  (project) => project.category === getCategoryByKey(item.key)
+                );
+
+          return (
+            <Tabs.TabPane key={item.key} tab={item.label}>
+              {tabData.length > 0 ? (
+                <WorkTabContent filteredData={tabData} />
+              ) : (
+                <NoDataCom />
+              )}
+            </Tabs.TabPane>
+          );
+        })}
       </Tabs>
     </TabsWrapper>
   );

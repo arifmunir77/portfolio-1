@@ -21,21 +21,6 @@ const OurWork = () => {
         </div>
 
         <Worktabs />
-
-        {/* {OurWorkData.map((item) => (
-          <MainRow className="TopMargin">
-            <MainCol lg={6}>
-              <OurWorkImg className="img-fluid" src={item.img} />
-            </MainCol>
-            <MainCol lg={6} className="Left">
-              <OurWorkProjectHeading>{item.heading}</OurWorkProjectHeading>
-              <OurWorkProjectText>{item.text}</OurWorkProjectText>
-              <OurWorkProjectButton>
-                <WorkModal />
-              </OurWorkProjectButton>
-            </MainCol>
-          </MainRow>
-        ))} */}
       </MainContainer>
     </OurWorkWrapper>
   );

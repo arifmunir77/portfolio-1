@@ -14,14 +14,6 @@ import {
 import { OurWorkImgOne } from "assets";
 import { MainCol, MainRow, WorkModal } from "components/common";
 
-const data = [
-  {
-    id: 1,
-  },
-  { id: 2 },
-  { id: 3 },
-];
-
 function WorkTabContent({ filteredData }) {
   return (
     <WorkContentTabDiv>
