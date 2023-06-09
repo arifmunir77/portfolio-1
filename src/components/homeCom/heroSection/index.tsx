@@ -102,7 +102,7 @@ function HeroSection() {
       <MainContainer className="bottom-container">
         <MainRow>
           {heroCardData.map((item, index) => (
-            <MainCol lg={5}>
+            <MainCol lg={4}>
               <motion.div
                 initial={{ opacity: 0, y: 200 }}
                 whileInView={{ opacity: 1, y: 0 }}
