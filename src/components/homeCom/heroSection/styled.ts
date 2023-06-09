@@ -48,7 +48,7 @@ export const HeroHeading = styled.h1`
   }
 `;
 
-export const HeroButton = styled.button`
+export const HeroButton = styled(motion.button)`
   padding: 20px 30px;
   border: 2px solid #66fcf1;
   background: transparent;
