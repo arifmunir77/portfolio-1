@@ -4,6 +4,7 @@ import { Footer, InQuirySection } from "components/common";
 import WorkSection from "./workSection";
 import WorkingProcess from "./workingProcess";
 import SkillsAndTools from "./skillsAndTools";
+import Testimonials from "./testimonials";
 
 const HomeCom = () => {
   return (
@@ -13,6 +14,7 @@ const HomeCom = () => {
       <ServicesSection />
       <WorkingProcess />
       <SkillsAndTools />
+      <Testimonials />
     </div>
   );
 };

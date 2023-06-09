@@ -190,7 +190,7 @@ export const InformationContentDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #0b0c10;
   margin-top: 1rem;
   min-height: 120px;
   border-radius: 10px;

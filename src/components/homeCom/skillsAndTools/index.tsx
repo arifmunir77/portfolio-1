@@ -107,7 +107,7 @@ function SkillsAndTools() {
         >
           <FlexDiv>
             <FlexBorderDiv />
-            <MainHeading>SKILLS & TOOLS</MainHeading>
+            <MainHeading>Skills & Tools</MainHeading>
           </FlexDiv>
 
           <SubText>

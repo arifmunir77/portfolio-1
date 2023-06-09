@@ -20,3 +20,5 @@ export { default as OurWorkImgOne } from "./images/OurWorkImgOne.png";
 export { default as workProcess } from "./images/workProcess.png";
 export { default as vscode } from "./images/vscode.svg";
 export { default as nodatafound } from "./images/nodatafound.svg";
+export { default as user } from "./images/user.png";
+export { default as femaleuser } from "./images/femaleuser.png";

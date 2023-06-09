@@ -173,3 +173,66 @@ export const ExperienceData = [
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been indus dard dummy text ever since the 1500 when an uniknown prnter took galley of type and scrambled make specimen book has not only five centuries the into electronic.",
   },
 ];
+
+export const testimonialsData = [
+  {
+    id: 1,
+    text: `Abdul's frontend skills are unmatched. He transformed our website into a seamless and visually appealing platform. Highly recommended!`,
+    author: "female",
+    name: "Aisha Mahmood",
+  },
+  {
+    id: 2,
+    text: `Abdul's expertise in frontend web development exceeded our expectations. He delivered a website that perfectly captures our brand. Thank you, Abdul!`,
+    author: "male",
+    name: "Ahmed Malik",
+  },
+  {
+    id: 3,
+    text: `Abdul's attention to detail and technical prowess in web development are impressive. He created a user-friendly website that perfectly aligns with our goals.`,
+    author: "female",
+    name: "Fatima Abbas",
+  },
+  {
+    id: 4,
+    text: `Abdul's web development skills are exceptional. He brought creativity and innovation to our website, resulting in increased traffic and engagement.`,
+    author: "male",
+    name: "Mark Roberts",
+  },
+  {
+    id: 5,
+    text: `Abdul's dedication to his work is truly commendable. He built an intuitive website that has significantly improved our user experience.`,
+    author: "male",
+    name: "Michael Reynolds",
+  },
+  {
+    id: 6,
+    text: `Abdul's expertise in web development was invaluable in enhancing our online presence. He delivered a stunning website that resonates with our audience.`,
+    author: "female",
+    name: "Lisa Thompson",
+  },
+  {
+    id: 7,
+    text: `Abdul's web development skills are outstanding. He took our website to the next level, incorporating modern design elements and ensuring seamless functionality.`,
+    author: "male",
+    name: "Faheem Ishtiaq",
+  },
+  {
+    id: 8,
+    text: `Abdul simply loves what he does. He delivered a website that perfectly represents our brand and captivates our target audience. Thank you, Abdul!`,
+    author: "male",
+    name: "Muhammad Faisal",
+  },
+  {
+    id: 9,
+    text: `Abdul's attention to detail and commitment to excellence in web development were evident throughout the project. Our website now stands out among the competition.`,
+    author: "male",
+    name: "Tom Cooper",
+  },
+  {
+    id: 10,
+    text: `Abdul's dedication and skill in web development are truly commendable. He transformed our website into a visually stunning and responsive platform.`,
+    author: "male",
+    name: "William Harrison",
+  },
+];
