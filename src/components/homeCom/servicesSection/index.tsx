@@ -17,8 +17,8 @@ const ServicesSection = () => {
     <ServicesWrapper>
       <MainContainer>
         <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.75, delay: 0.5 }}
         >
           <FlexDiv>
@@ -38,9 +38,9 @@ const ServicesSection = () => {
           {servicesCardData.slice(0, 3).map((item, index) => (
             <MainCol lg={4}>
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
+                initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
+                transition={{ duration: 0.5, delay: index * 0.45 }}
               >
                 <ServicesCard item={item} index={index} />
               </motion.div>
