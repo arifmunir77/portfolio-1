@@ -74,10 +74,11 @@ function Testimonials() {
       >
         <Swiper
           breakpoints={breakpoints}
-          modules={[Navigation, Pagination]}
+          modules={[Navigation, Pagination, Autoplay]}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           spaceBetween={30}
           pagination={true}
-          navigation={false}
+          navigation={true}
           grabCursor={true}
           preventClicks={true}
           preventClicksPropagation={true}

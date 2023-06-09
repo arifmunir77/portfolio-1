@@ -74,4 +74,20 @@ export const SwiperWrapper = styled(motion.div)`
   .swiper-pagination-bullet-active {
     background-color: #66fcf1;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: #66fcf1;
+    border-radius: 1000px;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 18px;
+    color: #000;
+    font-weight: 900;
+  }
 `;
