@@ -6,16 +6,27 @@ import {
   HeroCreativeText,
   TextDiv,
 } from "./styled";
-
+import Lottie from "react-lottie";
 import { heroCardData } from "components/data";
 import { HeroCard } from "components/common/card";
 import { Navbar } from "components/common";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
 import { motion } from "framer-motion";
+import animationData from "../../../assets/lotties/srtars.json";
 
 function HeroSection() {
   const textRef = useRef();
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+      color: "#fff",
+    },
+  };
 
   useEffect(() => {
     init(textRef.current, {
@@ -40,7 +51,7 @@ function HeroSection() {
         <Navbar />
         <MainContainer className="top-container">
           <MainRow>
-            <MainCol lg={8}>
+            <MainCol lg={7}>
               <TextDiv
                 initial={{ opacity: 0, x: -300, scale: 0.1, y: -100 }}
                 animate={{ opacity: 1, x: 0, scale: 1, y: 0 }}
@@ -72,13 +83,26 @@ function HeroSection() {
                 GETTING STARTED
               </HeroButton>
             </MainCol>
+            <MainCol lg={5}>
+              <motion.div
+                initial={{ opacity: 0, y: 200, scale: 1 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.5,
+                }}
+                exit={{ transition: { duration: 0.2 } }}
+              >
+                <Lottie options={defaultOptions} />
+              </motion.div>
+            </MainCol>
           </MainRow>
         </MainContainer>
       </HeroSectionWrapper>
       <MainContainer className="bottom-container">
         <MainRow>
           {heroCardData.map((item, index) => (
-            <MainCol lg={4}>
+            <MainCol lg={5}>
               <motion.div
                 initial={{ opacity: 0, y: 200 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -3,7 +3,6 @@ import { heroSectionImg } from "assets";
 import { motion } from "framer-motion";
 
 export const HeroSectionWrapper = styled(motion.div)`
-  background-image: url(${heroSectionImg});
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
