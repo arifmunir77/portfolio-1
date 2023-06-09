@@ -26,6 +26,12 @@ export const OurWorkWrapper = styled.div`
   .TopMargin {
     margin-top: 2rem;
   }
+
+  .bottom-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const OurWorkHeading = styled.h1`
@@ -46,29 +52,156 @@ export const OurWorkImg = styled.img`
 `;
 
 export const OurWorkProjectHeading = styled.h1`
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Teko";
   color: #fff;
   margin-bottom: 0;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
 `;
 export const OurWorkProjectText = styled.p`
   color: #fff;
+  font-size: 18px;
+
   @media (max-width: 991.98px) {
-    text-align: center;
+    margin-top: 2rem;
   }
 `;
 
-export const OurWorkProjectButton = styled.button`
-  color: #66fcf1;
-  background: transparent;
-  border: none;
-  margin-top: 2rem;
+export const TabsWrapper = styled.div`
+  .ant-tabs-bottom > .ant-tabs-nav:before,
+  .ant-tabs-bottom > div > .ant-tabs-nav:before,
+  .ant-tabs-top > .ant-tabs-nav:before,
+  .ant-tabs-top > div > .ant-tabs-nav:before {
+    border-bottom: none;
+  }
+
+  .ant-tabs .ant-tabs-tab {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+  .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-list,
+  .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-list {
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  .ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+    @media (max-width: 767.98px) {
+      margin: 0;
+    }
+  }
+
+  .ant-tabs .ant-tabs-tab-btn {
+    padding: 10px 30px;
+
+    @media (max-width: 767.98px) {
+      padding: 10px 30px 10px 5px;
+    }
+
+    &:active {
+      color: #66fcf1;
+    }
+  }
+
+  .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    background-color: #66fcf1;
+    color: #000;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .ant-tabs-ink-bar {
+    background: none;
+  }
+`;
+
+export const WorkContentTabDiv = styled.div`
+  overflow: hidden;
+`;
+
+export const ContentWrapper = styled.div`
+  margin-top: 4rem;
+
   @media (max-width: 991.98px) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 2rem;
+  }
+`;
+
+export const ImageDiv = styled.div`
+  img {
+    width: 100%;
+    height: 750px;
+    border-radius: 15px;
+
+    @media (max-width: 991.98px) {
+      height: auto;
+    }
+  }
+`;
+
+export const TextWrapper = styled.div`
+  margin-top: 4rem;
+`;
+
+export const ProjectTextDiv = styled.div``;
+
+export const InformationDiv = styled.div`
+  background-color: #121212;
+  transform: translateY(-100px);
+  padding: 2rem 1rem;
+  width: 220px;
+  border-radius: 10px;
+
+  @media (max-width: 991.98px) {
+    width: 100%;
+    margin-top: 4rem;
+    transform: translateY(00px);
+    margin-bottom: 2rem;
+  }
+`;
+
+export const InformationText = styled(OurWorkProjectHeading)`
+  font-size: 32px;
+  text-align: center;
+`;
+
+export const InformationContentDiv = styled.div`
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  margin-top: 1rem;
+  min-height: 120px;
+  border-radius: 10px;
+
+  .main-text {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .sub-text {
+    color: #fff;
+    margin: 0;
   }
 `;

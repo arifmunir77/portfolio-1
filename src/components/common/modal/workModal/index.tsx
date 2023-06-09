@@ -1,6 +1,11 @@
 import React, { useState } from "react";
-import { Button, Modal } from "antd";
-import { ModalWrapper, SwiperWrapper, WorkModalContainer } from "./element";
+import { Modal } from "antd";
+import {
+  ModalWrapper,
+  OurWorkProjectButton,
+  SwiperWrapper,
+  WorkModalContainer,
+} from "./element";
 import { BsArrowRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { OurWorkImgOne } from "assets";
@@ -35,9 +40,9 @@ const WorkModal = () => {
 
   return (
     <ModalWrapper>
-      <Button type="primary" onClick={showModal}>
-        Veiw Detail <BsArrowRight className="arrow-icon" />
-      </Button>
+      <OurWorkProjectButton onClick={showModal}>
+        View Project Image Gallery <BsArrowRight className="arrow-icon" />
+      </OurWorkProjectButton>
 
       <AnimatePresence>
         {isModalOpen && (

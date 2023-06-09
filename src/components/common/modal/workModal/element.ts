@@ -77,3 +77,15 @@ export const SwiperWrapper = styled(motion.div)`
     font-weight: 900;
   }
 `;
+
+export const OurWorkProjectButton = styled.button`
+  color: #66fcf1;
+  background: transparent;
+  border: none;
+  margin-top: 1rem;
+  font-size: 20px;
+
+  @media (max-width: 991.98px) {
+    margin-top: 1rem;
+  }
+`;
