@@ -22,10 +22,11 @@ const data = [
   { id: 3 },
 ];
 
-function WorkTabContent() {
+function WorkTabContent({ filteredData }) {
+  console.log("filtered", filteredData);
   return (
     <WorkContentTabDiv>
-      {data.map(() => (
+      {filteredData.map((item) => (
         <ContentWrapper>
           <ImageDiv>
             <Image fluid src={OurWorkImgOne} />
@@ -34,9 +35,7 @@ function WorkTabContent() {
             <MainRow>
               <MainCol lg={9}>
                 <ProjectTextDiv>
-                  <OurWorkProjectHeading>
-                    Givest - Non Profit Website
-                  </OurWorkProjectHeading>
+                  <OurWorkProjectHeading>{item?.title}</OurWorkProjectHeading>
                   <OurWorkProjectText>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatum ab autem sunt blanditiis nostrum, illum
