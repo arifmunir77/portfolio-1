@@ -82,9 +82,15 @@ function Testimonials() {
           preventClicks={true}
           preventClicksPropagation={true}
         >
-          {testimonialsData.map((data) => (
+          {testimonialsData.map((data, index) => (
             <SwiperSlide>
-              <TestimonialCard data={data} />
+              <motion.div
+                initial={{ opacity: 0, y: 200 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.15 }}
+              >
+                <TestimonialCard data={data} />
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
