@@ -85,7 +85,7 @@ function HeroSection() {
             </MainCol>
             <MainCol lg={5}>
               <motion.div
-                initial={{ opacity: 0, y: 200, scale: 1 }}
+                initial={{ opacity: 0, y: 200, scale: 0 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{
                   duration: 0.5,
@@ -104,8 +104,8 @@ function HeroSection() {
           {heroCardData.map((item, index) => (
             <MainCol lg={4}>
               <motion.div
-                initial={{ opacity: 0, y: 200 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 200, scale: 0 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
               >
                 <HeroCard item={item} index={index} />
