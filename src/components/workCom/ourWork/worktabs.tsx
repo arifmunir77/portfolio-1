@@ -35,6 +35,12 @@ const data = [
     description: "UI/UX description",
   },
   {
+    title: "UI/Ux 2",
+    category: "ui/ux",
+    image: "project1.jpg",
+    description: "UI/UX description",
+  },
+  {
     title: "Frontend",
     category: "frontend",
     image: "project2.jpg",

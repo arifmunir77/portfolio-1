@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import GlobalStyle from "globalStyles";
 import { useEffect } from "react";
 import { HomeCom, WorkCom, ServicesCom, AboutUsCom } from "components";
@@ -21,6 +26,12 @@ function App() {
       window.removeEventListener("mousemove", moveCursor);
     };
   }, []);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   return (
     <div>
