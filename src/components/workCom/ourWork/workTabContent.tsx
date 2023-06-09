@@ -23,7 +23,6 @@ const data = [
 ];
 
 function WorkTabContent({ filteredData }) {
-  console.log("filtered", filteredData);
   return (
     <WorkContentTabDiv>
       {filteredData.map((item) => (
