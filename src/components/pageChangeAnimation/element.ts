@@ -14,7 +14,7 @@ export const Page = styled(motion.div)`
   flex: 1;
   height: 100%;
   width: 100%;
-  border: 1px solid #66fcf1;
+  border: 1px solid rgb(102, 252, 241, 0.3) !important;
   border-top: none;
   border-bottom: none;
 `;
