@@ -6,8 +6,8 @@ import {
   WorkModalContainer,
   WorkModalHeading,
   WorkModalText,
+  NavLink,
 } from "./element";
-import { NavLink } from "react-bootstrap";
 import { AnimatePresence, motion } from "framer-motion";
 import { Modal } from "antd";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
