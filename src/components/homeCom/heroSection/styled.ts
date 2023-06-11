@@ -16,7 +16,7 @@ export const HeroSectionWrapper = styled(motion.div)`
 
 export const TextDiv = styled(motion.div)``;
 
-export const HeroCreativeText = styled.p`
+export const HeroCreativeText = styled(motion.p)`
   color: #fff;
   margin-top: 6rem;
 
@@ -30,7 +30,7 @@ export const HeroCreativeText = styled.p`
   }
 `;
 
-export const HeroHeading = styled.h1`
+export const HeroHeading = styled(motion.h1)`
   font-family: "Teko" !important;
   color: #fff;
   font-size: 80px;
@@ -101,7 +101,7 @@ export const InspirationWrapper = styled.div`
   }
 `;
 
-export const BorderBottom = styled.div`
+export const BorderBottom = styled(motion.div)`
   width: 100px;
   border-bottom: 2px solid #66fcf1;
   margin-top: 1.5rem;
@@ -113,7 +113,7 @@ export const BorderBottom = styled.div`
   }
 `;
 
-export const MapImgDiv = styled.div`
+export const MapImgDiv = styled(motion.div)`
   position: relative;
 
   @media (max-width: 991.98px) {

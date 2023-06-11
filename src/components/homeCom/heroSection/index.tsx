@@ -158,10 +158,32 @@ function HeroSection() {
         <InspirationWrapper>
           <MainRow>
             <MainCol lg={6} xl={5}>
-              <p className="about-text">About</p>
-              <HeroHeading>Inspiration Has No Borders</HeroHeading>
-              <BorderBottom />
-              <HeroCreativeText className="no-margin">
+              <motion.p
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.15 }}
+                className="about-text"
+              >
+                About
+              </motion.p>
+              <HeroHeading
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.35 }}
+              >
+                Inspiration Has No Borders
+              </HeroHeading>
+              <BorderBottom
+                initial={{ opacity: 0, width: "0" }}
+                whileInView={{ opacity: 1, width: "100px" }}
+                transition={{ duration: 1, delay: 0.45 }}
+              />
+              <HeroCreativeText
+                className="no-margin"
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 0.55 }}
+              >
                 In the realm of web development, inspiration knows no borders.
                 It fuels creativity, driving innovation beyond limitations. As a
                 web developer, I blend diverse ideas, embracing a global
@@ -170,7 +192,11 @@ function HeroSection() {
               </HeroCreativeText>
             </MainCol>
             <MainCol lg={6} xl={7}>
-              <MapImgDiv>
+              <MapImgDiv
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 1, delay: 0.25 }}
+              >
                 <Image fluid src={map} />
               </MapImgDiv>
             </MainCol>
