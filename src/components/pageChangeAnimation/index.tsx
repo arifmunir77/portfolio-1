@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
 import { Page, PageAnimatorWrapper } from "./element";
 
 const data = [{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }, { id: 5 }];
@@ -14,7 +12,7 @@ function PageAnimator() {
             initial={index % 2 === 0 ? { y: -1000 } : { y: 1000 }}
             animate={{ y: 0 }}
             transition={{ delay: index * 0.1, duration: 1 }}
-            exit={index % 2 === 0 ? { y: -1000 } : { y: 1000 }}
+            exit={index % 2 === 1 ? { y: -1000 } : { y: 1000 }}
           />
         ))}
       </PageAnimatorWrapper>
