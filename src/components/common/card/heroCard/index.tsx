@@ -3,7 +3,6 @@ import {
   HeroCardIcon,
   HeroCardHeading,
   HeroCardText,
-  BorderBottom,
 } from "./styles";
 
 const HeroCard = ({ item, index }) => {
@@ -12,7 +11,6 @@ const HeroCard = ({ item, index }) => {
       <HeroCardWrapper className={index === 0 && "margin-class"}>
         <HeroCardIcon>{item.icon} </HeroCardIcon>
         <HeroCardHeading>{item.heading}</HeroCardHeading>
-        <BorderBottom />
         <HeroCardText>{item.text}</HeroCardText>
       </HeroCardWrapper>
     </div>

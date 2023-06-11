@@ -20,6 +20,10 @@ export const HeroCreativeText = styled.p`
   color: #fff;
   margin-top: 6rem;
 
+  &.no-margin {
+    margin-top: 2rem;
+  }
+
   @media (max-width: 991.98px) {
     text-align: center;
     margin-top: 6rem;
@@ -57,5 +61,62 @@ export const HeroButton = styled(motion.button)`
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+`;
+
+export const MapDiv = styled.div`
+  margin-top: 4rem;
+`;
+
+export const InspirationWrapper = styled.div`
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: 991.98px) {
+    margin-top: 4rem;
+  }
+
+  img {
+    width: 100%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+
+    @media (max-width: 991.98px) {
+      margin-left: 0rem;
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+  }
+
+  .about-text {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 1rem;
+
+    @media (max-width: 991.98px) {
+      text-align: center;
+    }
+  }
+`;
+
+export const BorderBottom = styled.div`
+  width: 100px;
+  border-bottom: 2px solid #66fcf1;
+  margin-top: 1.5rem;
+
+  @media (max-width: 991.98px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
+export const MapImgDiv = styled.div`
+  position: relative;
+
+  @media (max-width: 991.98px) {
+    margin-top: 2rem;
   }
 `;

@@ -139,6 +139,12 @@ iframe
    }
 
 }
+
+
+.hero-icon {
+    font-size: 24px;
+    color: #66fcf1;
+  }
  
 `;
 

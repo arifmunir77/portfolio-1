@@ -29,17 +29,6 @@ export const HeroCardIcon = styled.div`
   }
 `;
 
-export const BorderBottom = styled.div`
-  width: 50px;
-  border-bottom: 2px solid #66fcf1;
-  margin-bottom: 20px;
-  @media (max-width: 575.98px) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-`;
-
 export const HeroCardHeading = styled.h1`
   font-family: "Teko";
   margin-top: 2rem;

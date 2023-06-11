@@ -22,3 +22,5 @@ export { default as vscode } from "./images/vscode.svg";
 export { default as nodatafound } from "./images/nodatafound.svg";
 export { default as user } from "./images/user.png";
 export { default as femaleuser } from "./images/femaleuser.png";
+export { default as map } from "./images/map.png";
+export { default as animatedmap } from "./lotties/map.json";

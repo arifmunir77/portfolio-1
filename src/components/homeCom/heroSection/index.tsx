@@ -5,15 +5,51 @@ import {
   HeroSectionWrapper,
   HeroCreativeText,
   TextDiv,
+  MapDiv,
+  InspirationWrapper,
+  BorderBottom,
+  MapImgDiv,
 } from "./styled";
 import Lottie from "react-lottie";
 import { heroCardData } from "components/data";
-import { HeroCard } from "components/common/card";
+import { HeroCard, HomeHeroCard } from "components/common/card";
 import { Navbar } from "components/common";
 import { useEffect, useRef } from "react";
 import { init } from "ityped";
 import { motion } from "framer-motion";
 import animationData from "../../../assets/lotties/srtars.json";
+import { FaHandshake, FaPencilAlt } from "react-icons/fa";
+import { IoDiamondOutline } from "react-icons/io5";
+import { BsLightning } from "react-icons/bs";
+import { map } from "assets";
+import { Image } from "react-bootstrap";
+
+const cardsData = [
+  {
+    id: 1,
+    icon: <FaPencilAlt className="hero-icon" />,
+    header: "Creative Design",
+    text: "Blending artistry to create memorable & boundary-pushing designs.",
+  },
+  {
+    id: 2,
+    icon: <IoDiamondOutline className="hero-icon" />,
+    header: "Pixel Perfect Coding",
+    text: `Pixel-perfect designs for memorable experiences.`,
+  },
+  {
+    id: 3,
+    icon: <BsLightning className="hero-icon" />,
+    header: "Performance Optimization",
+    text: "Optimizing website performance for optimal loading and rendering.",
+  },
+  {
+    id: 4,
+    icon: <FaHandshake className="hero-icon" />,
+    header: "Long Term Support",
+    text: "Providing responsive support for client satisfaction.",
+  },
+];
 
 function HeroSection() {
   const textRef = useRef();
@@ -99,20 +135,48 @@ function HeroSection() {
           </MainRow>
         </MainContainer>
       </HeroSectionWrapper>
-      <MainContainer className="bottom-container">
-        <MainRow>
-          {heroCardData.map((item, index) => (
-            <MainCol lg={4}>
-              <motion.div
-                initial={{ opacity: 0, y: 200 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-              >
-                <HeroCard item={item} index={index} />
-              </motion.div>
+
+      <MainContainer
+        className="bottom-container"
+        style={{ overflow: "hidden" }}
+      >
+        <MapDiv>
+          <MainRow>
+            {cardsData.map((item, index) => (
+              <MainCol md={6} lg={6} xl={3}>
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: index * 0.15 }}
+                >
+                  <HomeHeroCard item={item} />
+                </motion.div>
+              </MainCol>
+            ))}
+          </MainRow>
+        </MapDiv>
+        <InspirationWrapper>
+          <MainRow>
+            <MainCol lg={6} xl={5}>
+              <p className="about-text">About</p>
+              <HeroHeading>Inspiration Has No Borders</HeroHeading>
+              <BorderBottom />
+              <HeroCreativeText className="no-margin">
+                In the realm of web development, inspiration knows no borders.
+                It fuels creativity, driving innovation beyond limitations. As a
+                web developer, I blend diverse ideas, embracing a global
+                perspective to craft unique digital experiences that leave a
+                lasting impact.
+              </HeroCreativeText>
             </MainCol>
-          ))}
-        </MainRow>
+            <MainCol lg={6} xl={7}>
+              <MapImgDiv>
+                <Image fluid src={map} />
+              </MapImgDiv>
+            </MainCol>
+          </MainRow>
+          <HeroButton className="mt-4">More About Me</HeroButton>
+        </InspirationWrapper>
       </MainContainer>
     </div>
   );
