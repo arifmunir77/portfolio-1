@@ -8,7 +8,11 @@ function HomeHeroCard({ item }) {
       <Card>
         <Card.Body>
           {item.icon}
-          <BorderBottom />
+          <BorderBottom
+            initial={{ opacity: 0, width: "0" }}
+            whileInView={{ opacity: 1, width: "50px" }}
+            transition={{ duration: 1, delay: 0.45 }}
+          />
 
           <Card.Title>{item.header}</Card.Title>
           <Card.Text>{item.text} </Card.Text>
