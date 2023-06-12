@@ -69,7 +69,7 @@ function Worktabs() {
         onChange={handleTabChange}
         centered
       >
-        {items.map((item) => {
+        {items?.map((item) => {
           const tabData =
             item.key === items[0].key
               ? data // For "ALL" tab, show all data
