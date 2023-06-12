@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const WorkWrapper = styled.div`
   overflow: hidden;
@@ -51,7 +52,7 @@ export const FlexDiv = styled.div`
   }
 `;
 
-export const WorkHeading = styled.h1`
+export const WorkHeading = styled(motion.h1)`
   font-family: "Teko";
   color: #fff;
   font-size: 80px;
@@ -61,7 +62,7 @@ export const WorkHeading = styled.h1`
   }
 `;
 
-export const BorderDiv = styled.div`
+export const BorderDiv = styled(motion.div)`
   width: 50%;
   border-top: 2px solid #66fcf1;
   @media (max-width: 991.98px) {
@@ -69,7 +70,7 @@ export const BorderDiv = styled.div`
   }
 `;
 
-export const WorkText = styled.p`
+export const WorkText = styled(motion.p)`
   color: #66fcf1;
   @media (max-width: 991.98px) {
     margin-top: 1rem;
@@ -77,7 +78,7 @@ export const WorkText = styled.p`
   }
 `;
 
-export const WorkButton = styled.button`
+export const WorkButton = styled(motion.button)`
   padding: 20px 30px;
   border: 2px solid #66fcf1;
   background: transparent;

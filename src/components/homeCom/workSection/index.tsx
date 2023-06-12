@@ -17,22 +17,40 @@ const WorkSection = () => {
     <WorkWrapper>
       <div className="workContainer">
         <MainContainer>
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.75, delay: 0.5 }}
-          >
+          <motion.div>
             <FlexDiv>
               <div className="flex">
-                <BorderDiv />
-                <WorkHeading>Work</WorkHeading>
+                <BorderDiv
+                  initial={{ opacity: 0, width: "0" }}
+                  whileInView={{ opacity: 1, width: "100px" }}
+                  transition={{ duration: 0.5, delay: 0.15 }}
+                />
+                <WorkHeading
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 1 }}
+                >
+                  Work
+                </WorkHeading>
               </div>
               <Link to="/work">
-                <WorkButton>VIEW ALL</WorkButton>
+                <WorkButton
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 1 }}
+                >
+                  VIEW ALL
+                </WorkButton>
               </Link>
             </FlexDiv>
 
-            <WorkText>THINGS WE'VE MADE</WorkText>
+            <WorkText
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
+            >
+              THINGS WE'VE MADE
+            </WorkText>
           </motion.div>
         </MainContainer>
         <MainRow>
