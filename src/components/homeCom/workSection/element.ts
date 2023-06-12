@@ -1,16 +1,33 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const WorkWrapper = styled.div`
+  background-color: #0b0c10;
   overflow: hidden;
-  background-color: rgb(18, 18, 18);
 
-  .workContainer {
+  .container {
     margin-top: 8rem;
     margin-bottom: 8rem;
 
     @media (max-width: 991.98px) {
       margin-top: 4rem;
       margin-bottom: 4rem;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .border-div {
+    border-top: 2px solid #66fcf1;
+
+    @media (max-width: 991.98px) {
+      display: none;
     }
   }
 
@@ -29,14 +46,32 @@ export const WorkWrapper = styled.div`
       }
     }
   }
+`;
 
-  .flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    gap: 10px;
+export const ServicesHeading = styled.h1`
+  font-family: "Teko";
+  color: #fff;
+  font-size: 80px;
+  margin-bottom: 0;
+
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+`;
+
+export const ServicesText = styled.p`
+  color: #66fcf1;
+  @media (max-width: 991.98px) {
+    text-align: center;
+  }
+`;
+
+export const FlexBorderDiv = styled.div`
+  width: 100px;
+  border-top: 2px solid #66fcf1;
+  @media (max-width: 991.98px) {
+    width: 0%;
+    border: none;
   }
 `;
 
@@ -50,11 +85,12 @@ export const FlexDiv = styled.div`
   }
 `;
 
-export const WorkHeading = styled.h1`
+export const WorkHeading = styled(motion.h1)`
   font-family: "Teko";
   color: #fff;
   font-size: 80px;
   margin-bottom: 0;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
@@ -68,7 +104,7 @@ export const BorderDiv = styled.div`
   }
 `;
 
-export const WorkText = styled.p`
+export const WorkText = styled(motion.p)`
   color: #66fcf1;
   @media (max-width: 991.98px) {
     margin-top: 1rem;
@@ -76,7 +112,7 @@ export const WorkText = styled.p`
   }
 `;
 
-export const WorkButton = styled.button`
+export const WorkButton = styled(motion.button)`
   padding: 20px 30px;
   border: 2px solid #66fcf1;
   background: transparent;
