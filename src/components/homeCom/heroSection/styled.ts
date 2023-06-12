@@ -2,6 +2,15 @@ import styled from "styled-components";
 import { heroSectionImg } from "assets";
 import { motion } from "framer-motion";
 
+export const MainWrapper = styled.div`
+  overflow: hidden;
+
+  .border-div {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 4rem;
+  }
+`;
+
 export const HeroSectionWrapper = styled(motion.div)`
   background-position: center top;
   background-repeat: no-repeat;
@@ -69,12 +78,8 @@ export const MapDiv = styled.div`
 `;
 
 export const InspirationWrapper = styled.div`
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-bottom: 4rem;
-
-  @media (max-width: 991.98px) {
-    margin-top: 4rem;
-  }
 
   img {
     width: 100%;

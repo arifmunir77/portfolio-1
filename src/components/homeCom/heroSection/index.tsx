@@ -9,6 +9,7 @@ import {
   InspirationWrapper,
   BorderBottom,
   MapImgDiv,
+  MainWrapper,
 } from "./styled";
 import Lottie from "react-lottie";
 import { heroCardData } from "components/data";
@@ -82,7 +83,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <div>
+    <MainWrapper>
       <HeroSectionWrapper>
         <Navbar />
         <MainContainer className="top-container">
@@ -155,6 +156,12 @@ function HeroSection() {
             ))}
           </MainRow>
         </MapDiv>
+        <motion.div
+          className="border-div"
+          initial={{ opacity: 0, width: "0%" }}
+          whileInView={{ opacity: 1, width: "100%" }}
+          transition={{ duration: 2, delay: 0.5 }}
+        />
         <InspirationWrapper>
           <MainRow>
             <MainCol lg={6} xl={5}>
@@ -204,7 +211,7 @@ function HeroSection() {
           <HeroButton className="mt-4">More About Me</HeroButton>
         </InspirationWrapper>
       </MainContainer>
-    </div>
+    </MainWrapper>
   );
 }
 
