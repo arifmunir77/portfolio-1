@@ -164,7 +164,7 @@ function HeroSection() {
                 transition={{ duration: 1, delay: 0.15 }}
                 className="about-text"
               >
-                About
+                Philosophy
               </motion.p>
               <HeroHeading
                 initial={{ opacity: 0, y: 100 }}
