@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Divider } from "antd";
+import { motion } from "framer-motion";
 
 export const ServicesWrapper = styled.div`
   background-color: #0b0c10;
@@ -13,6 +15,22 @@ export const ServicesWrapper = styled.div`
       margin-bottom: 4rem;
     }
   }
+
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .border-div {
+    border-top: 2px solid #66fcf1;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
 `;
 
 export const ServicesHeading = styled.h1`
@@ -20,6 +38,7 @@ export const ServicesHeading = styled.h1`
   color: #fff;
   font-size: 80px;
   margin-bottom: 0;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
@@ -33,7 +52,7 @@ export const ServicesText = styled.p`
 `;
 
 export const FlexBorderDiv = styled.div`
-  width: 5%;
+  width: 100px;
   border-top: 2px solid #66fcf1;
   @media (max-width: 991.98px) {
     width: 0%;
@@ -51,11 +70,12 @@ export const FlexDiv = styled.div`
   }
 `;
 
-export const WorkHeading = styled.h1`
+export const WorkHeading = styled(motion.h1)`
   font-family: "Teko";
   color: #fff;
   font-size: 80px;
   margin-bottom: 0;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
@@ -69,7 +89,7 @@ export const BorderDiv = styled.div`
   }
 `;
 
-export const WorkText = styled.p`
+export const WorkText = styled(motion.p)`
   color: #66fcf1;
   @media (max-width: 991.98px) {
     margin-top: 1rem;
@@ -77,7 +97,7 @@ export const WorkText = styled.p`
   }
 `;
 
-export const WorkButton = styled.button`
+export const WorkButton = styled(motion.button)`
   padding: 20px 30px;
   border: 2px solid #66fcf1;
   background: transparent;

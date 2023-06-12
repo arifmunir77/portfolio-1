@@ -1,6 +1,5 @@
 import { MainCol, MainContainer, MainRow } from "components/common";
 import {
-  BorderDiv,
   FlexDiv,
   ServicesWrapper,
   WorkButton,
@@ -16,22 +15,41 @@ const ServicesSection = () => {
   return (
     <ServicesWrapper>
       <MainContainer>
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.5 }}
-        >
+        <motion.div>
           <FlexDiv>
             <div className="flex">
-              <BorderDiv />
-              <WorkHeading>Services</WorkHeading>
+              <motion.div
+                className="border-div"
+                initial={{ opacity: 0, width: "0px" }}
+                whileInView={{ opacity: 1, width: "100px" }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+              />
+              <WorkHeading
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1 }}
+              >
+                Services
+              </WorkHeading>
             </div>
             <Link to="/services">
-              <WorkButton>VIEW ALL</WorkButton>
+              <WorkButton
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1 }}
+              >
+                VIEW ALL
+              </WorkButton>
             </Link>
           </FlexDiv>
 
-          <WorkText>OUR SERVICES FOR CLIENTS</WorkText>
+          <WorkText
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            OUR SERVICES FOR CLIENTS
+          </WorkText>
         </motion.div>
 
         <MainRow>
@@ -40,7 +58,7 @@ const ServicesSection = () => {
               <motion.div
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.45 }}
+                transition={{ duration: 0.5, delay: index * 1 }}
               >
                 <ServicesCard item={item} index={index} />
               </motion.div>

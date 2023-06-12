@@ -32,7 +32,6 @@ export const WorkWrapper = styled.div`
 
   .flex {
     display: flex;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
