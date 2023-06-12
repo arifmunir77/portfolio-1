@@ -1,19 +1,13 @@
 import { Card } from "react-bootstrap";
 import { BorderBottom, HomeHeroWrapper } from "./element";
-import { motion } from "framer-motion";
+import { FaPencilAlt } from "react-icons/fa";
 
 function HomeHeroCard({ item }) {
   return (
     <HomeHeroWrapper>
       <Card>
         <Card.Body>
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.45 }}
-          >
-            {item.icon}
-          </motion.div>
+          {item.icon}
           <BorderBottom
             initial={{ opacity: 0, width: "0" }}
             whileInView={{ opacity: 1, width: "50px" }}

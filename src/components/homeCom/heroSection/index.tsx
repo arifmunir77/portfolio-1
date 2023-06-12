@@ -164,7 +164,7 @@ function HeroSection() {
                 transition={{ duration: 1, delay: 0.15 }}
                 className="about-text"
               >
-                Philosophy
+                About
               </motion.p>
               <HeroHeading
                 initial={{ opacity: 0, y: 100 }}
@@ -201,7 +201,7 @@ function HeroSection() {
               </MapImgDiv>
             </MainCol>
           </MainRow>
-          <HeroButton className="mt-4">About</HeroButton>
+          <HeroButton className="mt-4">More About Me</HeroButton>
         </InspirationWrapper>
       </MainContainer>
     </div>
