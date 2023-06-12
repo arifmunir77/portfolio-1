@@ -18,6 +18,14 @@ export const WorkingProcessWrapper = styled.div`
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
+
+  .border-div {
+    border-top: 2px solid #66fcf1;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
 `;
 
 export const LeftDiv = styled(motion.div)`
@@ -148,7 +156,7 @@ export const FlexBorderDiv = styled.div`
   }
 `;
 
-export const ServicesHeading = styled.h1`
+export const ServicesHeading = styled(motion.h1)`
   font-family: "Teko";
   color: #fff;
   font-size: 80px;
@@ -158,7 +166,7 @@ export const ServicesHeading = styled.h1`
   }
 `;
 
-export const ServicesText = styled.p`
+export const ServicesText = styled(motion.p)`
   color: #66fcf1;
   @media (max-width: 991.98px) {
     text-align: center;

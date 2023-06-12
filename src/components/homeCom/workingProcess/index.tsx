@@ -42,17 +42,28 @@ function WorkingProcess() {
   return (
     <WorkingProcessWrapper>
       <Container>
-        <motion.div
+        <FlexDiv>
+          <motion.div
+            className="border-div"
+            initial={{ opacity: 0, width: "0px" }}
+            whileInView={{ opacity: 1, width: "100px" }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          />
+          <ServicesHeading
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            Work Process
+          </ServicesHeading>
+        </FlexDiv>
+        <ServicesText
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.5 }}
+          transition={{ duration: 1, delay: 1 }}
         >
-          <FlexDiv>
-            <FlexBorderDiv />
-            <ServicesHeading> Work Process</ServicesHeading>
-          </FlexDiv>
-          <ServicesText>Work Process & Life Cycle Of A Project</ServicesText>
-        </motion.div>
+          Work Process & Life Cycle Of A Project
+        </ServicesText>
 
         <div className="wrapper">
           <Row>
@@ -60,7 +71,7 @@ function WorkingProcess() {
               <LeftDiv
                 initial={{ opacity: 0, y: 200 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 1, delay: 1 }}
               >
                 <img className="img-fluid working" src={workProcess} />
                 <WorkingLayoutDiv>
@@ -79,7 +90,7 @@ function WorkingProcess() {
                       <motion.div
                         initial={{ opacity: 0, x: -200 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                        transition={{ duration: 1, delay: index * 1 }}
                       >
                         <Card>
                           <Card.Body>
