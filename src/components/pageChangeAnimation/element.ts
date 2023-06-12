@@ -7,6 +7,12 @@ export const PageAnimatorWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-color: #000;
 `;
 
 export const Page = styled(motion.div)`
