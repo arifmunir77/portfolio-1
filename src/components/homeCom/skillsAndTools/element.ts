@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const SkillsAndToolsContainer = styled.div`
   overflow: hidden;
@@ -22,20 +23,30 @@ export const SkillsAndToolsContainer = styled.div`
     margin-top: 2rem;
     cursor: grab;
   }
+
+  .border-div {
+    border-top: 2px solid #66fcf1;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
 `;
 
-export const MainHeading = styled.h1`
+export const MainHeading = styled(motion.h1)`
   font-family: "Teko";
   color: #fff;
   font-size: 80px;
   margin-bottom: 0;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }
 `;
 
-export const SubText = styled.p`
+export const SubText = styled(motion.p)`
   color: #66fcf1;
+
   @media (max-width: 991.98px) {
     text-align: center;
   }

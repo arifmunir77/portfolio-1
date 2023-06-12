@@ -49,22 +49,30 @@ function Testimonials() {
   return (
     <TestimonialsContainer>
       <MainContainer>
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.5 }}
-        >
-          <FlexDiv>
-            <FlexBorderDiv />
-            <MainHeading>Testimonials</MainHeading>
-          </FlexDiv>
+        <FlexDiv>
+          <motion.div
+            className="border-div"
+            initial={{ opacity: 0, width: "0px" }}
+            whileInView={{ opacity: 1, width: "100px" }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          />
+          <MainHeading
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            Testimonials
+          </MainHeading>
+        </FlexDiv>
 
-          <SubText>
-            Kind words from colleagues and superiors, highlighting their
-            positive sentiments towards my professional collaboration and
-            contributions.
-          </SubText>
-        </motion.div>
+        <SubText
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          Kind words from colleagues and superiors, highlighting their positive
+          sentiments towards my professional collaboration and contributions.
+        </SubText>
       </MainContainer>
 
       <SwiperWrapper

@@ -100,21 +100,30 @@ function SkillsAndTools() {
   return (
     <SkillsAndToolsContainer>
       <MainContainer>
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, delay: 0.5 }}
-        >
-          <FlexDiv>
-            <FlexBorderDiv />
-            <MainHeading>Skills & Tools</MainHeading>
-          </FlexDiv>
+        <FlexDiv>
+          <motion.div
+            className="border-div"
+            initial={{ opacity: 0, width: "0px" }}
+            whileInView={{ opacity: 1, width: "100px" }}
+            transition={{ duration: 0.5, delay: 0.15 }}
+          />
+          <MainHeading
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            Skills & Tools
+          </MainHeading>
+        </FlexDiv>
 
-          <SubText>
-            The skills, tools and technologies I use to bring your products to
-            life
-          </SubText>
-        </motion.div>
+        <SubText
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          The skills, tools and technologies I use to bring your products to
+          life
+        </SubText>
         <IconContainer>
           <MainRow>
             {skillsData.map((item, index) => (
@@ -123,7 +132,7 @@ function SkillsAndTools() {
                   className="main-col"
                   initial={{ opacity: 0, x: -100 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                  transition={{ duration: 1, delay: index * 0.5 }}
                   drag
                 >
                   <IconHolder>{item.icon}</IconHolder>
