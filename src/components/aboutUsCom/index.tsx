@@ -8,7 +8,7 @@ const AboutUsCom = () => {
     <div>
       <HeroSection />
       <AboutMe />
-      <Experience />
+      {/* <Experience /> */}
       <CountUp />
     </div>
   );
