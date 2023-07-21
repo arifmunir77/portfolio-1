@@ -28,6 +28,7 @@ export const TextDiv = styled(motion.div)``;
 export const HeroCreativeText = styled(motion.p)`
   color: #fff;
   margin-top: 6rem;
+  text-transform: uppercase;
 
   &.no-margin {
     margin-top: 2rem;

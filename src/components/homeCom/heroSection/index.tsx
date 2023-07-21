@@ -24,6 +24,7 @@ import { IoDiamondOutline } from "react-icons/io5";
 import { BsLightning } from "react-icons/bs";
 import { map } from "assets";
 import { Image } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 const cardsData = [
   {
@@ -82,6 +83,8 @@ function HeroSection() {
     });
   }, []);
 
+  const navigate = useNavigate();
+
   return (
     <MainWrapper>
       <HeroSectionWrapper>
@@ -107,7 +110,7 @@ function HeroSection() {
                   <span ref={textRef}></span>
                 </HeroHeading>
               </TextDiv>
-              <HeroButton
+              {/* <HeroButton
                 initial={{ opacity: 0, x: -300, scale: 0.1, y: -100 }}
                 animate={{ opacity: 1, x: 0, scale: 1, y: 0 }}
                 transition={{
@@ -118,7 +121,7 @@ function HeroSection() {
                 exit={{ transition: { duration: 0.2 } }}
               >
                 GETTING STARTED
-              </HeroButton>
+              </HeroButton> */}
             </MainCol>
             <MainCol lg={5}>
               <motion.div
@@ -208,7 +211,9 @@ function HeroSection() {
               </MapImgDiv>
             </MainCol>
           </MainRow>
-          <HeroButton className="mt-4">More About Me</HeroButton>
+          <HeroButton className="mt-4" onClick={() => navigate("/about")}>
+            More About Me
+          </HeroButton>
         </InspirationWrapper>
       </MainContainer>
     </MainWrapper>

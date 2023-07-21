@@ -48,7 +48,7 @@ const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            OUR SERVICES FOR CLIENTS
+            SERVICES FOR YOU
           </WorkText>
         </motion.div>
 

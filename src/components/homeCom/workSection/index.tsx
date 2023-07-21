@@ -48,7 +48,7 @@ const WorkSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            THINGS I'VE MADE
+            SOME OF THINGS I'VE MADE
           </WorkText>
         </motion.div>
       </MainContainer>

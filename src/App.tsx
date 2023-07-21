@@ -93,7 +93,7 @@ function App() {
         <Route path="/" element={<HomeCom />} />
         <Route path="/work" element={<WorkCom />} />
         <Route path="/services" element={<ServicesCom />} />
-        <Route path="/about-us" element={<AboutUsCom />} />
+        <Route path="/about" element={<AboutUsCom />} />
       </Routes>
       <InQuirySection />
       <Footer />

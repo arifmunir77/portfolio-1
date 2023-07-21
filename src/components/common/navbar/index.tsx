@@ -77,7 +77,7 @@ function Topbar() {
                     Home
                   </NavLink>
                 </Link>
-                <Link to="/about-us">
+                <Link to="/about">
                   <NavLink
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
