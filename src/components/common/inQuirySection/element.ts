@@ -18,6 +18,10 @@ export const ContacUsWrapper = styled.div`
       margin-bottom: 4rem;
     }
   }
+
+  a {
+    color: #fff;
+  }
 `;
 
 export const ContacUsIconDiv = styled.div`
