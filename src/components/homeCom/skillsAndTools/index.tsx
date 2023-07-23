@@ -98,7 +98,7 @@ const skillsData = [
 
 function SkillsAndTools() {
   return (
-    <SkillsAndToolsContainer>
+    <SkillsAndToolsContainer id="skills">
       <MainContainer>
         <FlexDiv>
           <motion.div

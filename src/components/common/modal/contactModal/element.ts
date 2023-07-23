@@ -23,6 +23,23 @@ export const WorkModalContainer = styled(motion.div)`
   align-items: center;
   background-color: #121212;
   box-shadow: 0 0 20px 10px rgba(102, 252, 241, 0.8);
+  position: relative;
+
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+
+    &:hover {
+      color: #66fcf1;
+      scale: 1.2;
+      transition: 0.3s all ease-in-out;
+    }
+  }
 `;
 
 export const TextDiv = styled(motion.div)``;
@@ -37,6 +54,10 @@ export const WorkModalHeading = styled.h1`
   font-family: "Teko";
   font-size: 80px;
   color: #fff;
+
+  &:hover {
+    color: #66fcf1;
+  }
 
   @media (max-width: 767.98px) {
     font-size: 40px;
@@ -54,6 +75,8 @@ export const WorkModalIcon = styled.div`
 
     &:hover {
       color: #66fcf1;
+      scale: 1.2;
+      transition: 0.2s all ease-in-out;
     }
   }
 `;

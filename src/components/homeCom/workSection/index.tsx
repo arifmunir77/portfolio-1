@@ -13,7 +13,7 @@ import WorkCard from "components/common/card/workCard";
 
 const WorkSection = () => {
   return (
-    <WorkWrapper>
+    <WorkWrapper id="work">
       <MainContainer>
         <motion.div>
           <FlexDiv>

@@ -86,7 +86,7 @@ function HeroSection() {
   const navigate = useNavigate();
 
   return (
-    <MainWrapper>
+    <MainWrapper id="hero">
       <HeroSectionWrapper>
         <Navbar />
         <MainContainer className="top-container">

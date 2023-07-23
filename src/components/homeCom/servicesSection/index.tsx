@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   return (
-    <ServicesWrapper>
+    <ServicesWrapper id="services">
       <MainContainer>
         <motion.div>
           <FlexDiv>

@@ -12,6 +12,9 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Modal } from "antd";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
+import { BsDiscord } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
+import { IoCloseOutline } from "react-icons/io5";
 
 const ContactModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -49,6 +52,8 @@ const ContactModal = () => {
               transition={{ duration: 0.75, ease: "easeInOut" }}
               key={"container"}
             >
+              <IoCloseOutline className="close-icon" onClick={handleOk} />
+
               <TextDiv
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -62,12 +67,33 @@ const ContactModal = () => {
                   exit={{ y: 0, opacity: 0, transition: { duration: 0.4 } }}
                 >
                   <WorkModalText>Contact Us</WorkModalText>
-                  <WorkModalHeading>example@gmail.com</WorkModalHeading>
+
+                  <WorkModalHeading>
+                    <a
+                      href="mailto:dev.sardarabdul@gmail.com"
+                      style={{
+                        textDecoration: "none",
+                        color: "#fff",
+                        fontFamily: "teko",
+                      }}
+                    >
+                      dev.sardarabdul@gmail.com
+                    </a>
+                  </WorkModalHeading>
                   <WorkModalIcon>
-                    <FiFacebook className="icon" />
-                    <AiOutlineInstagram className="icon" />
-                    <FiTwitter className="icon" />
-                    <AiOutlineLinkedin className="icon" />
+                    <a href="https://discord.com" target="_blank">
+                      <BsDiscord className="icon" />
+                    </a>
+                    <a href="https://twitter.com/dev_abd_" target="_blank">
+                      <FiTwitter className="icon" />
+                    </a>
+
+                    <a
+                      href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
+                      target="_blank"
+                    >
+                      <FaLinkedinIn className="icon" />
+                    </a>
                   </WorkModalIcon>
                 </motion.div>
               </TextDiv>
