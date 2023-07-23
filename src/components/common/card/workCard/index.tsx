@@ -6,7 +6,7 @@ const WorkCard = ({ item }) => {
     <WorkFlex key={item.id}>
       <Image fluid src={item.img} />
       <TextContainer>
-        <p>Helo from hell</p>
+        <p>{item.text}</p>
       </TextContainer>
     </WorkFlex>
   );

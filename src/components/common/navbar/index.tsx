@@ -97,7 +97,7 @@ function Topbar() {
                   </NavLink>
                 </Link>
 
-                <Link to="/services">
+                {/* <Link to="/services">
                   <NavLink
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -105,7 +105,7 @@ function Topbar() {
                   >
                     Services
                   </NavLink>
-                </Link>
+                </Link> */}
                 <NavLink
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}

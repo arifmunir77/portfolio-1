@@ -32,15 +32,13 @@ const ServicesSection = () => {
                 Services
               </WorkHeading>
             </div>
-            <Link to="/services">
-              <WorkButton
+            {/* <WorkButton
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 1 }}
               >
                 VIEW ALL
-              </WorkButton>
-            </Link>
+              </WorkButton> */}
           </FlexDiv>
 
           <WorkText
@@ -53,7 +51,7 @@ const ServicesSection = () => {
         </motion.div>
 
         <MainRow>
-          {servicesCardData.slice(0, 3).map((item, index) => (
+          {servicesCardData.map((item, index) => (
             <MainCol lg={4}>
               <motion.div
                 initial={{ opacity: 0, x: -200 }}

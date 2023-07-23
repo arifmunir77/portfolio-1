@@ -211,9 +211,9 @@ function HeroSection() {
               </MapImgDiv>
             </MainCol>
           </MainRow>
-          <HeroButton className="mt-4" onClick={() => navigate("/about")}>
+          {/* <HeroButton className="mt-4" onClick={() => navigate("/about")}>
             More About Me
-          </HeroButton>
+          </HeroButton> */}
         </InspirationWrapper>
       </MainContainer>
     </MainWrapper>

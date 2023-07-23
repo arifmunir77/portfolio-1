@@ -1,10 +1,10 @@
-import { FaRegPaperPlane } from "react-icons/fa";
+import { FaLaptopCode, FaRegPaperPlane } from "react-icons/fa";
 import { GiBrain } from "react-icons/gi";
 import { RiLightbulbFlashLine } from "react-icons/ri";
 import { FcComboChart } from "react-icons/fc";
 import { BsPencil } from "react-icons/bs";
 import { FiUsers } from "react-icons/fi";
-import { AiOutlineGlobal } from "react-icons/ai";
+import { AiOutlineAntDesign, AiOutlineGlobal } from "react-icons/ai";
 import { BsBookmark } from "react-icons/bs";
 import { TfiBarChart } from "react-icons/tfi";
 
@@ -17,6 +17,8 @@ import {
   workImgSix,
   OurWorkImgOne,
 } from "assets";
+import { MdEngineering, MdOutlineDeveloperMode } from "react-icons/md";
+import { IoConstructOutline } from "react-icons/io5";
 
 export const heroCardData = [
   {
@@ -42,39 +44,39 @@ export const heroCardData = [
 export const servicesCardData = [
   {
     id: 1,
-    icon: <FcComboChart />,
-    heading: "Digital Strategy",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+    icon: <AiOutlineAntDesign />,
+    heading: "UI/UX Design",
+    text: "Elevating brands through intuitive and visually stunning UI/UX.",
   },
   {
     id: 2,
-    icon: <BsPencil />,
-    heading: "UX Designs",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+    icon: <FaLaptopCode />,
+    heading: "Web Development",
+    text: "Custom web development tailored to suit your unique business needs.​",
   },
   {
     id: 3,
-    icon: <FiUsers />,
-    heading: "UI Designs",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+    icon: <MdOutlineDeveloperMode />,
+    heading: "Mobile App Development",
+    text: "Seamless app development that keeps your users engaged and coming back for more.",
   },
   {
     id: 4,
-    icon: <AiOutlineGlobal />,
-    heading: "Social Media",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+    icon: <MdEngineering />,
+    heading: "Search Engine Optimization (SEO)",
+    text: "Boosting your online visibility and ranking in search engines.",
   },
   {
     id: 5,
     icon: <BsBookmark />,
-    heading: "Design Concept",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+    heading: "Consulting and Strategy",
+    text: "Guiding your digital journey with expert consulting and strategic insights.",
   },
   {
     id: 6,
-    icon: <TfiBarChart />,
-    heading: "Media Pairing",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.​",
+    icon: <IoConstructOutline />,
+    heading: "Website Maintenance & Support",
+    text: "Fast and responsive support to address any website issues promptly.",
   },
 ];
 
@@ -82,26 +84,32 @@ export const workCardData = [
   {
     id: 1,
     img: workImgOne,
+    text: "Testing",
   },
   {
     id: 2,
     img: workImgTwo,
+    text: "Testing",
   },
   {
     id: 3,
     img: workImgThree,
+    text: "Testing",
   },
   {
     id: 4,
     img: workImgFour,
+    text: "Testing",
   },
   {
     id: 5,
     img: workImgFive,
+    text: "Testing",
   },
   {
     id: 6,
     img: workImgSix,
+    text: "Testing",
   },
 ];
 

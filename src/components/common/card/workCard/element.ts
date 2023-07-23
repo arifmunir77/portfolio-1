@@ -44,4 +44,9 @@ export const TextContainer = styled.div`
   ${WorkFlex}:hover & {
     visibility: visible;
   }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+  }
 `;

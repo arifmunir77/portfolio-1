@@ -6,6 +6,7 @@ export const ServicesCardWrapper = styled.div`
     border: none;
     border-radius: 0px;
     border-bottom: 4px solid #fff;
+    min-height: 330px;
 
     &:hover {
       border-bottom: 4px solid #66fcf1;
