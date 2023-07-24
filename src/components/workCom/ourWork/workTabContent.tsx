@@ -20,41 +20,16 @@ function WorkTabContent({ filteredData }) {
       {filteredData.map((item) => (
         <ContentWrapper>
           <ImageDiv>
-            <Image fluid src={OurWorkImgOne} />
+            <Image fluid src={item.mainImage} />
           </ImageDiv>
           <TextWrapper>
             <MainRow>
               <MainCol lg={9}>
                 <ProjectTextDiv>
                   <OurWorkProjectHeading>{item?.title}</OurWorkProjectHeading>
-                  <OurWorkProjectText>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum ab autem sunt blanditiis nostrum, illum
-                    perferendis numquam harum quod explicabo molestiae libero
-                    accusamus dolore laborum fugiat maxime hic earum impedit!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum ab autem sunt blanditiis nostrum, illum
-                    perferendis numquam harum quod explicabo molestiae libero
-                    accusamus dolore laborum fugiat maxime hic earum impedit!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptatum ab autem sunt blanditiis nostrum, illum
-                    perferendis numquam harum quod explicabo molestiae libero
-                    accusamus dolore laborum fugiat maxime hic earum impedit!
-                    impedit! Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Voluptatum ab autem sunt blanditiis nostrum, illum
-                    perferendis numquam harum quod explicabo molestiae libero
-                    accusamus dolore laborum fugiat maxime hic earum impedit!
-                    impedit! Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Voluptatum ab autem sunt blanditiis nostrum, illum
-                    perferendis numquam harum quod explicabo molestiae libero
-                    accusamus dolore laborum fugiat maxime hic earum impedit!
-                    impedit! Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Voluptatum ab autem sunt blanditiis nostrum, illum
-                    perferendis numquam harum quod explicabo molestiae libero
-                    accusamus dolore laborum fugiat maxime hic earum impedit!
-                  </OurWorkProjectText>
+                  <OurWorkProjectText>{item.description}</OurWorkProjectText>
 
-                  <WorkModal />
+                  <WorkModal item={item} />
                 </ProjectTextDiv>
               </MainCol>
               <MainCol lg={3} className="bottom-col">
@@ -62,19 +37,19 @@ function WorkTabContent({ filteredData }) {
                   <InformationText>Details</InformationText>
                   <InformationContentDiv>
                     <h4 className="main-text"> Project Name:</h4>
-                    <p className="sub-text"> Givest</p>
+                    <p className="sub-text"> {item.title}</p>
                   </InformationContentDiv>
                   <InformationContentDiv>
-                    <h4 className="main-text"> Budget:</h4>
-                    <p className="sub-text"> $200</p>
+                    <h4 className="main-text"> Category:</h4>
+                    <p className="sub-text"> {item.category}</p>
                   </InformationContentDiv>
                   <InformationContentDiv>
                     <h4 className="main-text"> Duration:</h4>
-                    <p className="sub-text"> 1 Month</p>
+                    <p className="sub-text"> {item.duration}</p>
                   </InformationContentDiv>
                   <InformationContentDiv>
                     <h4 className="main-text"> Date:</h4>
-                    <p className="sub-text"> OCt 20, 2022</p>
+                    <p className="sub-text"> {item.date}</p>
                   </InformationContentDiv>
                 </InformationDiv>
               </MainCol>

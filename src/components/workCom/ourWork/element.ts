@@ -203,5 +203,6 @@ export const InformationContentDiv = styled.div`
   .sub-text {
     color: #fff;
     margin: 0;
+    text-transform: capitalize;
   }
 `;

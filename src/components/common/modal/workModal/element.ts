@@ -16,49 +16,82 @@ export const ModalWrapper = styled.div`
 
 export const WorkModalContainer = styled(motion.div)`
   background-color: #121212;
-  min-height: 500px;
   box-shadow: 0 0 20px 10px rgba(102, 252, 241, 0.8);
+  min-height: 0 !important;
+  height: 95vh !important;
+  border-radius: 10px;
+
+  @media (max-width: 991.98px) {
+    height: 50vh !important;
+  }
+
+  @media (max-width: 767.98px) {
+    height: 400px !important;
+  }
+
+  @media (max-width: 575.98px) {
+    height: 250px !important;
+  }
 `;
 
 export const SwiperWrapper = styled(motion.div)`
+  height: 95vh;
+
+  @media (max-width: 991.98px) {
+    height: 50vh;
+  }
+
+  @media (max-width: 767.98px) {
+    height: 400px !important;
+  }
+
+  @media (max-width: 575.98px) {
+    height: 250px !important;
+  }
+
   .swiper {
     width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    height: 95vh;
+
+    @media (max-width: 991.98px) {
+      height: 50vh;
+    }
+
+    @media (max-width: 767.98px) {
+      height: 400px !important;
+    }
+
+    @media (max-width: 575.98px) {
+      height: 250px !important;
+    }
   }
 
   .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    /* height: 300px; */
-    filter: blur(4px);
-  }
-
-  .swiper-slide-active {
-    filter: blur(0px);
+    width: 100%;
+    position: relative;
   }
 
   .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 350px;
     border: none;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 767.98px) {
+      position: static;
+    }
   }
 
-  .swiper-3d .swiper-slide-shadow-left {
-    background-image: none;
+  .swiper-pagination-bullet-active {
+    background-color: #66fcf1 !important;
   }
 
-  .swiper-3d .swiper-slide-shadow-right {
-    background-image: none;
-  }
-
-  .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    display: none;
+  .swiper-pagination-bullet {
+    background-color: #fff;
   }
 
   .swiper-button-prev,

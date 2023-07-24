@@ -23,7 +23,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, EffectCoverflow]);
 
-const WorkModal = () => {
+const WorkModal = ({ item }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -51,7 +51,7 @@ const WorkModal = () => {
             onOk={handleOk}
             onCancel={handleCancel}
             centered
-            width={1000}
+            width={"90vw"}
           >
             <WorkModalContainer
               style={{ overflow: "hidden" }}
@@ -74,61 +74,21 @@ const WorkModal = () => {
                 >
                   <Swiper
                     // activeSlideKey='2'
-                    effect={"coverflow"}
                     grabCursor={true}
                     centeredSlides={true}
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
                     slidesPerView={"auto"}
-                    coverflowEffect={{
-                      rotate: 0,
-                      stretch: 0,
-                      depth: 100,
-                      modifier: 2,
-                      slideShadows: true,
-                    }}
                     // scrollbar={{draggable:true}}
                     navigation={true}
                     initialSlide={2}
                     pagination={true}
-                    modules={[
-                      EffectCoverflow,
-                      Pagination,
-                      Navigation,
-                      Autoplay,
-                    ]}
                     className="mySwiper"
                   >
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <Image fluid src={OurWorkImgOne} />
-                    </SwiperSlide>
+                    {item?.images.map((x) => (
+                      <SwiperSlide>
+                        <Image fluid src={x} />
+                      </SwiperSlide>
+                    ))}
                   </Swiper>
                 </SwiperWrapper>
               </motion.div>

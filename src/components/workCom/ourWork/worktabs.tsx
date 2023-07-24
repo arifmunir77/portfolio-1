@@ -3,6 +3,7 @@ import { TabsWrapper } from "./element";
 import WorkTabContent from "./workTabContent";
 import { useState } from "react";
 import { NoDataCom } from "components";
+import { data } from "./data";
 
 const items = [
   {
@@ -24,27 +25,6 @@ const items = [
     key: "4",
     label: `Full Stack`,
     category: "full stack",
-  },
-];
-
-const data = [
-  {
-    title: "UI/Ux",
-    category: "ui/ux",
-    image: "project1.jpg",
-    description: "UI/UX description",
-  },
-  {
-    title: "UI/Ux 2",
-    category: "ui/ux",
-    image: "project1.jpg",
-    description: "UI/UX description",
-  },
-  {
-    title: "Frontend",
-    category: "frontend",
-    image: "project2.jpg",
-    description: "frontend description",
   },
 ];
 

@@ -30,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
    
 }
 
+.ant-modal .ant-modal-content {
+    background-color: red !important;
+    padding: 0 !important;
+  }
+
 iframe
 {
   /* position: absolute !important;
