@@ -32,6 +32,11 @@ export const OurWorkWrapper = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+  a {
+    text-decoration: none;
+    color: #66fcf1;
+  }
 `;
 
 export const OurWorkHeading = styled.h1`
@@ -64,6 +69,7 @@ export const OurWorkProjectHeading = styled.h1`
 export const OurWorkProjectText = styled.p`
   color: #fff;
   font-size: 18px;
+  white-space: pre-line;
 
   @media (max-width: 991.98px) {
     margin-top: 2rem;
@@ -204,5 +210,24 @@ export const InformationContentDiv = styled.div`
     color: #fff;
     margin: 0;
     text-transform: capitalize;
+  }
+`;
+
+export const WarningDiv = styled.div`
+  background-color: #1c2a2d;
+  color: #ffffff;
+  padding: 5px 20px;
+  border: 1px solid #00cea2;
+  margin-top: 1rem;
+  border-radius: 5px;
+  position: relative;
+
+  .close-icon {
+    color: #66fcf1;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
   }
 `;

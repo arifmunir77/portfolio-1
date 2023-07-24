@@ -73,14 +73,9 @@ const WorkModal = ({ item }) => {
                   transition={{ duration: 1, delay: 1 }}
                 >
                   <Swiper
-                    // activeSlideKey='2'
                     grabCursor={true}
-                    centeredSlides={true}
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
-                    slidesPerView={"auto"}
-                    // scrollbar={{draggable:true}}
                     navigation={true}
-                    initialSlide={2}
                     pagination={true}
                     className="mySwiper"
                   >

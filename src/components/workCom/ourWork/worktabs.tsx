@@ -1,9 +1,10 @@
 import { Tabs } from "antd";
-import { TabsWrapper } from "./element";
+import { TabsWrapper, WarningDiv } from "./element";
 import WorkTabContent from "./workTabContent";
 import { useState } from "react";
 import { NoDataCom } from "components";
 import { data } from "./data";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const items = [
   {
@@ -30,6 +31,7 @@ const items = [
 
 function Worktabs() {
   const [activeTab, setActiveTab] = useState(items[0].key); // Set the default active tab
+  const [showWarning, setShowWarning] = useState(true);
 
   const getCategoryByKey = (key) => {
     const item = items.find((item) => item.key === key);
@@ -60,7 +62,24 @@ function Worktabs() {
           return (
             <Tabs.TabPane key={item.key} tab={item.label}>
               {tabData.length > 0 ? (
-                <WorkTabContent filteredData={tabData} />
+                <>
+                  {activeTab == "3" && showWarning && (
+                    <WarningDiv>
+                      Please Note: I am solely responsible for the development
+                      of the frontend code and the frontend functionality of
+                      these web apps. The design of these web apps has been
+                      created by another individual. Furthermore, it is crucial
+                      to understand that most of these websites are properties
+                      of the company I work for, and I do not possess the rights
+                      to authorize their design usage or replication.
+                      <AiFillCloseCircle
+                        className="close-icon"
+                        onClick={() => setShowWarning(false)}
+                      />
+                    </WarningDiv>
+                  )}
+                  <WorkTabContent filteredData={tabData} />
+                </>
               ) : (
                 <NoDataCom />
               )}

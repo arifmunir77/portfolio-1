@@ -9,10 +9,13 @@ import {
   OurWorkProjectText,
   ProjectTextDiv,
   TextWrapper,
+  WarningDiv,
   WorkContentTabDiv,
 } from "./element";
 import { OurWorkImgOne } from "assets";
 import { MainCol, MainRow, WorkModal } from "components/common";
+import { AiFillCloseCircle } from "react-icons/ai";
+import { useState } from "react";
 
 function WorkTabContent({ filteredData }) {
   return (
@@ -28,6 +31,15 @@ function WorkTabContent({ filteredData }) {
                 <ProjectTextDiv>
                   <OurWorkProjectHeading>{item?.title}</OurWorkProjectHeading>
                   <OurWorkProjectText>{item.description}</OurWorkProjectText>
+
+                  {item.link && (
+                    <OurWorkProjectText>
+                      Project Link:
+                      <a href={item.link} target="_blank">
+                        {""} {item.link}
+                      </a>
+                    </OurWorkProjectText>
+                  )}
 
                   <WorkModal item={item} />
                 </ProjectTextDiv>
