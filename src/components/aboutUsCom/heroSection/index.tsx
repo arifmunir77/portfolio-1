@@ -12,12 +12,10 @@ const HeroSection = () => {
       <HeroWrapper>
         <Navbar />
         <MainContainer className="top-container">
-          <AboutUsHeading>About us.</AboutUsHeading>
+          {/* <AboutUsHeading>About us.</AboutUsHeading> */}
           <HeroSectionText>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-            deserunt vitae! Expedita illum ducimus natus similique sit dolorum
-            provident ullam. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. A, architecto?
+            ❝ Getting a quality software is not an expense but rather an
+            investment.❞ <br /> <span> ― Dr. Christopher Dayagdag</span>
           </HeroSectionText>
         </MainContainer>
       </HeroWrapper>

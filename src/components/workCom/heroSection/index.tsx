@@ -6,12 +6,10 @@ function HeroSection() {
     <HeroWrapper>
       <Navbar />
       <MainContainer className="top-container">
-        <HeroHeading>Our Works.</HeroHeading>
+        {/* <HeroHeading>Our Works.</HeroHeading> */}
         <HeroSectionText>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          deserunt vitae! Expedita illum ducimus natus similique sit dolorum
-          provident ullam. Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. A, architecto?
+          ❝ Your work is your best marketing strategy.❞ <br />{" "}
+          <span> - Jason Fried</span>
         </HeroSectionText>
       </MainContainer>
     </HeroWrapper>

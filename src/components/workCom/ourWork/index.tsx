@@ -16,8 +16,10 @@ const OurWork = () => {
     <OurWorkWrapper>
       <MainContainer>
         <div className="ourContainer">
-          <OurWorkHeading>Our Works</OurWorkHeading>
-          <OurWorkText>SEE ALL OUR WORKS</OurWorkText>
+          <OurWorkHeading>Recent Work</OurWorkHeading>
+          <OurWorkText>
+            Check out some of recent projects I've worked on:
+          </OurWorkText>
         </div>
 
         <Worktabs />

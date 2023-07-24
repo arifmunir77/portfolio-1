@@ -36,11 +36,18 @@ export const AboutUsHeading = styled.h1`
 
 export const HeroSectionText = styled.p`
   width: 50%;
-  color: #66fcf1;
+  color: #fff;
   text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  font-size: 48px;
+  font-weight: 600;
+
+  span {
+    color: #66fcf1;
+    font-size: 24px;
+  }
 
   @media (max-width: 991.98px) {
     width: 80%;
