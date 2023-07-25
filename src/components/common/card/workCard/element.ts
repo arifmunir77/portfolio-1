@@ -3,11 +3,13 @@ import styled from "styled-components";
 export const WorkFlex = styled.div`
   margin-top: 2rem;
   position: relative;
+  cursor: pointer;
 
   img {
-    height: 400px;
+    height: 350px;
     width: 100%;
     transition: all 0.3s;
+    border-radius: 10px;
 
     @media (max-width: 991.98px) {
       height: auto;

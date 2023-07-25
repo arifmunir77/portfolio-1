@@ -16,6 +16,9 @@ import {
   workImgFive,
   workImgSix,
   OurWorkImgOne,
+  ea1,
+  dalle1,
+  gulfmarina1,
 } from "assets";
 import { MdEngineering, MdOutlineDeveloperMode } from "react-icons/md";
 import { IoConstructOutline } from "react-icons/io5";
@@ -83,33 +86,23 @@ export const servicesCardData = [
 export const workCardData = [
   {
     id: 1,
-    img: workImgOne,
-    text: "Testing",
+    img: ea1,
+    text: "Enter App",
   },
   {
     id: 2,
-    img: workImgTwo,
-    text: "Testing",
+    img: workImgSix,
+    text: "Pager",
   },
   {
     id: 3,
-    img: workImgThree,
-    text: "Testing",
+    img: gulfmarina1,
+    text: "Gulf Marina",
   },
   {
     id: 4,
     img: workImgFour,
-    text: "Testing",
-  },
-  {
-    id: 5,
-    img: workImgFive,
-    text: "Testing",
-  },
-  {
-    id: 6,
-    img: workImgSix,
-    text: "Testing",
+    text: "Vlapify",
   },
 ];
 
