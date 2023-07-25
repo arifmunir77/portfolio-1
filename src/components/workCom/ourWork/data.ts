@@ -17,6 +17,13 @@ import {
   bits6,
   bits7,
   bits8,
+  bp1,
+  bp2,
+  bp3,
+  bp4,
+  bp5,
+  bp6,
+  bp7,
   cb1,
   cb2,
   cb3,
@@ -127,6 +134,7 @@ export const data = [
     duration: "2 Months",
     link: "https://tapera-members-access.web.app/",
   },
+
   {
     title: "Cyber Battle",
     category: "frontend",
@@ -137,6 +145,17 @@ export const data = [
     date: "June 23, 2022",
     duration: "10 Days",
     link: "https://cyber-landing-page.surge.sh/",
+  },
+  {
+    title: "Black Pepe",
+    category: "frontend",
+    mainImage: bp1,
+    description: `Black Pepe is a fun and adventurous website that takes a creative twist on the famous green Pepe meme. In this rendition, Pepe has transformed, adopting a bold black color and a whole new attitude. The website presents a captivating storyline, where Pepe's exposure to the real world led to a metamorphosis, inspiring him to put on black air forces and embark on a mission to face adversity and restore the world to its former state. Once the most memable meme, Pepe has now embraced his dark side, becoming our worst nightmare. However, this change is not for malevolence but for a greater purpose. Black Pepe's goal is to confront the challenges ahead and play a pivotal role in the realm of decentralized finance. \n The website's creative concept revolves around the transformation of Pepe into Black Pepe, showcasing a dark and adventurous theme. This unique take on the beloved meme adds an element of intrigue and excitement for visitors. he website features a dedicated tokenomics section, providing users with insights into the distribution, utility, and value of the tokens. This transparency fosters trust and clarity among community members. \n  Black Pepe invites users on an exhilarating journey through the world of decentralized finance. As the adventurous spirit of Black Pepe unfolds, users can expect exciting opportunities and experiences in the DeFi industry. \n Black Pepe's transformation and foray into the realm of decentralized finance make it a playful and intriguing project that captures the spirit of the meme culture while intertwining it with the innovative world of DeFi. By inviting users to join the adventure, Black Pepe opens the door to exciting possibilities and a thrilling journey in the ever-evolving landscape of decentralized finance.
+    `,
+    images: [bp1, bp2, bp3, bp4, bp5, bp6, bp7],
+    date: "July 10, 2023",
+    duration: "3 Days",
+    link: "https://black-pepe.web.app/",
   },
   {
     title: "Decentrapad",

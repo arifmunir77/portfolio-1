@@ -42,9 +42,9 @@ const WorkModal = ({ item }) => {
     <ModalWrapper>
       <OurWorkProjectButton
         onClick={showModal}
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 0.75, delay: 1 }}
       >
         View Project Image Gallery <BsArrowRight className="arrow-icon" />
       </OurWorkProjectButton>

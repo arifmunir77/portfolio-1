@@ -25,7 +25,7 @@ function WorkTabContent({ filteredData }) {
           <ImageDiv
             initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 0.75, delay: 0.5 }}
           >
             <Image fluid src={item.mainImage} />
           </ImageDiv>
@@ -34,25 +34,25 @@ function WorkTabContent({ filteredData }) {
               <MainCol lg={9}>
                 <ProjectTextDiv>
                   <OurWorkProjectHeading
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }}
+                    transition={{ duration: 0.75, delay: 0.5 }}
                   >
                     {item?.title}
                   </OurWorkProjectHeading>
                   <OurWorkProjectText
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.75 }}
+                    transition={{ duration: 0.75, delay: 0.75 }}
                   >
                     {item.description}
                   </OurWorkProjectText>
 
                   {item.link && (
                     <OurWorkProjectText
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 1, delay: 1 }}
+                      transition={{ duration: 0.75, delay: 1 }}
                     >
                       Project Link:
                       <a href={item.link} target="_blank">
