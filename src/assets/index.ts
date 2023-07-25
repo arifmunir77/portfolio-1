@@ -101,3 +101,4 @@ export { default as bp4 } from "./images/bp/bp4.png";
 export { default as bp5 } from "./images/bp/bp5.png";
 export { default as bp6 } from "./images/bp/bp6.png";
 export { default as bp7 } from "./images/bp/bp7.png";
+export { default as dp } from "./images/dp.png";
