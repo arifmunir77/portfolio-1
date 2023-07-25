@@ -17,7 +17,7 @@ const CountUp = () => {
 
               <div>
                 <div className="flex">
-                  <CountUpComponent end={258} duration={2} useEasing={true}>
+                  <CountUpComponent end={150} duration={2} useEasing={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="Icon-heading" ref={countUpRef} />
@@ -26,7 +26,7 @@ const CountUp = () => {
                   </CountUpComponent>
                   <span className="Icon-heading">+</span>
                 </div>
-                <IconText>Happy Cients</IconText>
+                <IconText>Happy Clients</IconText>
               </div>
             </IconWrapper>
           </MainCol>
@@ -53,7 +53,7 @@ const CountUp = () => {
               <AiOutlineCalendar className="IconContact" />
               <div>
                 <div className="flex">
-                  <CountUpComponent end={10} duration={5} useEasing={true}>
+                  <CountUpComponent end={5} duration={5} useEasing={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="Icon-heading" ref={countUpRef} />
