@@ -17,6 +17,11 @@ import {
   bits6,
   bits7,
   bits8,
+  cb1,
+  cb2,
+  cb3,
+  cb4,
+  cb5,
   dalle1,
   dalle2,
   dalle3,
@@ -56,6 +61,14 @@ import {
   mx6,
   mx7,
   mx8,
+  tp1,
+  tp2,
+  tp3,
+  tp4,
+  tp5,
+  tp6,
+  tp7,
+  tp8,
 } from "assets";
 
 export const data = [
@@ -100,8 +113,30 @@ export const data = [
     description: `MX100 was a visually captivating and futuristic website dedicated to promoting the first-ever awards event celebrating metaverse-based solutions. The website, adorned with a beautiful greenish color scheme, served as a hub of information for the prestigious event scheduled to take place on December 20, 2022, at the iconic Burj Khalifa in Dubai. MX100 embraced a futuristic design approach, reflecting the cutting-edge nature of metaverse-based solutions. The website's aesthetics and layout provided a glimpse of the innovative and immersive event to come. The greenish color theme of MX100 symbolized growth, innovation, and sustainability, aligning perfectly with the theme of metaverse technology and its potential to reshape the future. \n The website acted as a comprehensive repository of event information, including the date, time, and location of the award ceremony. It also featured details about the various award categories, nominations, and esteemed guests attending the event.  MX100 showcased various metaverse-based solutions and projects, offering visitors a glimpse into the cutting-edge technologies and applications driving the metaverse revolution. The website featured a roster of industry-leading speakers, experts, and visionaries who would be delivering keynote speeches and participating in panel discussions during the event. \n MX100 aimed to recognize the remarkable innovations and advancements in the metaverse space, bridging the gap between virtual and physical realities. As the first-of-its-kind awards event in this domain, MX100 held the potential to be a landmark occasion, inspiring future generations of creators and entrepreneurs to explore the limitless possibilities of the metaverse.
     `,
     images: [mx1, mx2, mx3, mx4, mx5, mx6, mx7, mx8],
-    date: "November 20, 2022",
-    duration: "15 Day",
+    date: "20 November, 2022",
+    duration: "20 Days",
+  },
+  {
+    title: "Tapera Jungle",
+    category: "frontend",
+    mainImage: tp1,
+    description: `Tapera Jungle is a remarkable private initiative led by Urupolpas and a group of passionate collaborators, including the Agrofrut cooperative in Urucara, and a community of botanical and nature enthusiasts. The primary goal of this project is to reclaim ownership of lands, revitalize and protect them, and celebrate the incredible biodiversity present in the area, boasting over 100 species of trees. Tapera Jungle leverages the power of blockchain technology and NFTs to support its conservation efforts. By minting NFTs, individuals can directly contribute to the project's mission and become active members in the journey of preserving the precious natural treasure. \n The project is dedicated to restoring and safeguarding the biodiversity of the region, acknowledging the importance of preserving diverse ecosystems and their ecological significance.  Tapera Jungle's captivating greenish theme complements its focus on nature and conservation. The design elements symbolize growth, vitality, and the beauty of the natural world. \n The platform fosters community engagement through a dedicated social app section, resembling a Facebook-like interface. Here, users can share videos, images, and blogs related to the project, fostering a sense of belonging and collaboration among members. As a frontend web lead for this project, I had the privilege to contribute my skills to this beautiful project, enhancing its user experience and visual appeal. \n Tapera Jungle stands as a shining example of how technology, community engagement, and environmental consciousness can converge to create a positive impact on our planet. By embracing blockchain and NFTs, the project paves the way for innovative funding and support mechanisms, ensuring the sustainability of its conservation endeavors. Through its greenish theme and vibrant community section, Tapera Jungle creates an inclusive space for nature enthusiasts and conservation advocates to come together and protect the natural wonders of our world.
+    `,
+    images: [tp1, tp2, tp3, tp4, tp5, tp6, tp7, tp8],
+    date: "June 1, 2023",
+    duration: "2 Months",
+    link: "https://tapera-members-access.web.app/",
+  },
+  {
+    title: "Cyber Battle",
+    category: "frontend",
+    mainImage: cb1,
+    description: `Cyber Battle is an awe-inspiring strategy game that delivers an intense and immersive gaming experience. The project boasts animated battle aircrafts and captivating background images that transport players into a futuristic world of epic battles and skilled gameplay. The game offers a unique twist by allowing players or members of the community to earn tokens through their strategic prowess and skilled performance.  Cyber Battle offers players an immersive gaming experience, engaging them in intense real-time strategy battles. The animated battle aircrafts and captivating background images enhance the overall atmosphere of the game, providing an enthralling gameplay environment. \n  One of the standout features of Cyber Battle is its integration of token rewards for skilled gameplay. Players who showcase exceptional performance and strategy can earn tokens, enhancing the competitive spirit and incentivizing active participation in the game's community. Cyber Battle's futuristic theme adds a touch of excitement and anticipation, immersing players in a world of advanced technology and thrilling combat scenarios. The project's beautiful animated battle aircrafts and captivating background images contribute to the overall visual appeal, creating an enticing gaming environment that captivates players. \n Cyber Battle stands as an ultimate real-time strategy game that combines skilled gameplay with token rewards, making it an enticing prospect for both gaming enthusiasts and crypto enthusiasts alike. With its futuristic setting and stunning visuals, the project offers an exhilarating journey through virtual warfare and strategic conquests, ensuring players are constantly engaged and eager to excel in the battlefield of Cyber Battle.
+    `,
+    images: [cb1, cb2, cb3, cb4, cb5],
+    date: "June 23, 2022",
+    duration: "10 Days",
+    link: "https://cyber-landing-page.surge.sh/",
   },
   {
     title: "Decentrapad",
