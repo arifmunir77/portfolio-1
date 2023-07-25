@@ -65,11 +65,14 @@ export const WorkModalHeading = styled.h1`
 `;
 
 export const WorkModalIcon = styled.div`
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
   .icon {
     color: #fff;
     font-size: 25px;
-    margin-right: 20px;
     cursor: pointer;
     transition: 0.2s all ease-in-out;
 
@@ -103,4 +106,14 @@ export const ContactUsButton = styled.button`
   background-color: transparent;
   border: 2px solid #66fcf1;
   color: #fff;
+`;
+
+export const ContacUsIconDiv = styled.div`
+  width: 50px;
+  height: 50px;
+  border: 1px solid #66fcf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
 `;

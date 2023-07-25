@@ -8,6 +8,7 @@ import {
   WorkModalText,
   NavLink,
   ContactUsButton,
+  ContacUsIconDiv,
 } from "./element";
 import { AnimatePresence, motion } from "framer-motion";
 import { Modal } from "antd";
@@ -63,7 +64,7 @@ const ContactModal = ({
                   transition={{ duration: 0.5 }}
                   exit={{ y: 0, opacity: 0, transition: { duration: 0.4 } }}
                 >
-                  <WorkModalText>Contact Us</WorkModalText>
+                  <WorkModalText>Contact Me:</WorkModalText>
 
                   <WorkModalHeading>
                     <a
@@ -79,17 +80,23 @@ const ContactModal = ({
                   </WorkModalHeading>
                   <WorkModalIcon>
                     <a href="https://discord.com" target="_blank">
-                      <BsDiscord className="icon" />
+                      <ContacUsIconDiv>
+                        <BsDiscord className="icon" />
+                      </ContacUsIconDiv>
                     </a>
                     <a href="https://twitter.com/dev_abd_" target="_blank">
-                      <FiTwitter className="icon" />
+                      <ContacUsIconDiv>
+                        <FiTwitter className="icon" />
+                      </ContacUsIconDiv>
                     </a>
 
                     <a
                       href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
                       target="_blank"
                     >
-                      <FaLinkedinIn className="icon" />
+                      <ContacUsIconDiv>
+                        <FaLinkedinIn className="icon" />
+                      </ContacUsIconDiv>
                     </a>
                   </WorkModalIcon>
                 </motion.div>
