@@ -102,3 +102,5 @@ export { default as bp5 } from "./images/bp/bp5.png";
 export { default as bp6 } from "./images/bp/bp6.png";
 export { default as bp7 } from "./images/bp/bp7.png";
 export { default as dp } from "./images/dp.png";
+export { default as resume } from "./pdf/abdulResume.pdf";
+export { default as aboutLottie } from "./lotties/about.json";

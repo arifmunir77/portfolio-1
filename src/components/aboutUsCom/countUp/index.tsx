@@ -53,7 +53,7 @@ const CountUp = () => {
               <AiOutlineCalendar className="IconContact" />
               <div>
                 <div className="flex">
-                  <CountUpComponent end={5} duration={5} useEasing={true}>
+                  <CountUpComponent end={3} duration={5} useEasing={true}>
                     {({ countUpRef, start }) => (
                       <VisibilitySensor onChange={start} delayedCall>
                         <span className="Icon-heading" ref={countUpRef} />

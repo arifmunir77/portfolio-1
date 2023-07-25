@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const AboutMeWrapper = styled.div`
   background-color: #0b0c10;
@@ -40,7 +41,7 @@ export const AboutMeCardHeading = styled.h1`
   color: #66fcf1;
 `;
 
-export const AboutHeader = styled.h2`
+export const AboutHeader = styled(motion.h2)`
   font-size: 62px;
   color: #fff;
   font-weight: 400;
@@ -58,31 +59,24 @@ export const AboutHeader = styled.h2`
 
 export const ContentWrapper = styled.div`
   margin-top: 4rem;
-
-  img {
-    width: 100%;
-    height: 720px;
-
-    @media (max-width: 1399.98px) {
-      height: 800px;
-    }
-
-    @media (max-width: 1199.98px) {
-      height: 700px;
-      width: 100%s;
-    }
-
-    @media (max-width: 575.98px) {
-      height: auto;
-    }
-  }
 `;
 
-export const DescriptionText = styled.p`
+export const DescriptionText = styled(motion.p)`
   color: #fff;
   font-size: 18px;
 
   @media (max-width: 575.98px) {
     font-size: 16px;
   }
+`;
+
+export const ResumeButton = styled(motion.button)`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 2px solid #66fcf1;
+  color: #fff;
+  margin-top: 4rem;
 `;
