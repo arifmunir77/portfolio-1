@@ -37,7 +37,7 @@ const ContacUs = () => {
   };
 
   return (
-    <ContacUsWrapper>
+    <ContacUsWrapper id="inquiry">
       <MainContainer className="contact-container" s>
         <ContacUsIconDiv>
           <ContacUsIcon>

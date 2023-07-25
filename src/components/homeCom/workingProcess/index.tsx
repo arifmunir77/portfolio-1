@@ -39,6 +39,13 @@ function WorkingProcess() {
       text: `Delivering is the final phase of a work process, where the completed project or product is delivered to the client or end-user. This phase involves testing of project to ensure that it meets the requirements.`,
     },
   ];
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <WorkingProcessWrapper>
       <Container>
@@ -78,7 +85,9 @@ function WorkingProcess() {
                   <WorkingProcessMainText>
                     Work Process - <br /> How I Work For <br /> Customers.
                   </WorkingProcessMainText>
-                  <ContactUsBtn>Contact </ContactUsBtn>
+                  <ContactUsBtn onClick={() => scrollToSection("inquiry")}>
+                    Contact{" "}
+                  </ContactUsBtn>
                 </WorkingLayoutDiv>
               </LeftDiv>
             </Col>
