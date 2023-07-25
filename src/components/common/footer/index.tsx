@@ -96,7 +96,7 @@ function Footer() {
               </>
             ) : (
               <ServicesText className="no-hover">
-                Go to Home Page First For Section Navigation.
+                Please Go to Home Page First For Section Navigation.
               </ServicesText>
             )}
           </MainCol>

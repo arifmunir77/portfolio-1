@@ -2,10 +2,9 @@ import {
   ContacUsIcon,
   ContacUsIconDiv,
   ContacUsWrapper,
-  ContactUsButton,
   ContactUsHeading,
 } from "./element";
-import { MainContainer } from "components/common";
+import { ContactModal, MainContainer } from "components/common";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
 import {
   AiOutlineInstagram,
@@ -18,6 +17,20 @@ import { useState } from "react";
 
 const ContacUs = () => {
   const [phoneNumber, setPhoneNumber] = useState("+923328730281");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showBtn, setShowBtn] = useState(true);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   const handlePhoneNumberClick = () => {
     window.open(`https://wa.me/${phoneNumber}`, "_blank");
@@ -49,7 +62,13 @@ const ContacUs = () => {
           </ContacUsIcon>
         </ContacUsIconDiv>
         <ContactUsHeading>Have any project in mind?</ContactUsHeading>
-        <ContactUsButton>MAKE INQUIRY</ContactUsButton>
+        <ContactModal
+          isModalOpen={isModalOpen}
+          showModal={showModal}
+          handleOk={handleOk}
+          handleCancel={handleCancel}
+          showBtn={showBtn}
+        />
       </MainContainer>
     </ContacUsWrapper>
   );

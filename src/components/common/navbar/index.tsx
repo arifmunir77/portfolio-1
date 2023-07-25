@@ -17,6 +17,20 @@ import { ContactModal } from "components/common";
 
 function Topbar() {
   const [navCollapsed, setNavCollapsed] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showBtn, setShowBtn] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <NavbarWrapper>
@@ -111,7 +125,13 @@ function Topbar() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.5, duration: 1.4 }}
                 >
-                  <ContactModal />
+                  <ContactModal
+                    isModalOpen={isModalOpen}
+                    showModal={showModal}
+                    handleOk={handleOk}
+                    handleCancel={handleCancel}
+                    showBtn={showBtn}
+                  />
                 </NavLink>
               </CollapsedNav>
             )}

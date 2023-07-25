@@ -94,3 +94,13 @@ export const NavLink = styled(motion.h4)`
     font-size: 24px;
   }
 `;
+
+export const ContactUsButton = styled.button`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 40px;
+  background-color: transparent;
+  border: 2px solid #66fcf1;
+  color: #fff;
+`;

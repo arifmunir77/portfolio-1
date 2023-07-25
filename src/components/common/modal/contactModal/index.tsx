@@ -7,6 +7,7 @@ import {
   WorkModalHeading,
   WorkModalText,
   NavLink,
+  ContactUsButton,
 } from "./element";
 import { AnimatePresence, motion } from "framer-motion";
 import { Modal } from "antd";
@@ -16,24 +17,20 @@ import { BsDiscord } from "react-icons/bs";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
 
-const ContactModal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
-
+const ContactModal = ({
+  isModalOpen,
+  handleOk,
+  handleCancel,
+  showModal,
+  showBtn,
+}) => {
   return (
     <ModalWrapper>
-      <NavLink onClick={showModal}>Contact</NavLink>
+      {showBtn ? (
+        <ContactUsButton onClick={showModal}>MAKE INQUIRY</ContactUsButton>
+      ) : (
+        <NavLink onClick={showModal}>Contact</NavLink>
+      )}
 
       <AnimatePresence>
         {isModalOpen && (

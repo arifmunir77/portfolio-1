@@ -71,7 +71,7 @@ function HeroSection() {
       showCursor: false,
       backDelay: 1500,
       strings: [
-        "Full Stack Magician.",
+        "Frontend Magician.",
         "Problem Solver.",
         "Visual Storyteller.",
         "Pixel Perfectionist.",
