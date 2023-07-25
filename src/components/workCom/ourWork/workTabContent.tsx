@@ -22,18 +22,38 @@ function WorkTabContent({ filteredData }) {
     <WorkContentTabDiv>
       {filteredData.map((item) => (
         <ContentWrapper>
-          <ImageDiv>
+          <ImageDiv
+            initial={{ opacity: 0, x: -200 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
             <Image fluid src={item.mainImage} />
           </ImageDiv>
           <TextWrapper>
             <MainRow>
               <MainCol lg={9}>
                 <ProjectTextDiv>
-                  <OurWorkProjectHeading>{item?.title}</OurWorkProjectHeading>
-                  <OurWorkProjectText>{item.description}</OurWorkProjectText>
+                  <OurWorkProjectHeading
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                  >
+                    {item?.title}
+                  </OurWorkProjectHeading>
+                  <OurWorkProjectText
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.75 }}
+                  >
+                    {item.description}
+                  </OurWorkProjectText>
 
                   {item.link && (
-                    <OurWorkProjectText>
+                    <OurWorkProjectText
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 1, delay: 1 }}
+                    >
                       Project Link:
                       <a href={item.link} target="_blank">
                         {""} {item.link}
@@ -45,21 +65,47 @@ function WorkTabContent({ filteredData }) {
                 </ProjectTextDiv>
               </MainCol>
               <MainCol lg={3} className="bottom-col">
-                <InformationDiv>
-                  <InformationText>Details</InformationText>
-                  <InformationContentDiv>
+                <InformationDiv
+                  initial={{ opacity: 0, x: 200 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 1, delay: 1 }}
+                >
+                  <InformationText
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1.25 }}
+                  >
+                    Details
+                  </InformationText>
+                  <InformationContentDiv
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1.35 }}
+                  >
                     <h4 className="main-text"> Project Name:</h4>
                     <p className="sub-text"> {item.title}</p>
                   </InformationContentDiv>
-                  <InformationContentDiv>
+                  <InformationContentDiv
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1.45 }}
+                  >
                     <h4 className="main-text"> Category:</h4>
                     <p className="sub-text"> {item.category}</p>
                   </InformationContentDiv>
-                  <InformationContentDiv>
+                  <InformationContentDiv
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1.55 }}
+                  >
                     <h4 className="main-text"> Duration:</h4>
                     <p className="sub-text"> {item.duration}</p>
                   </InformationContentDiv>
-                  <InformationContentDiv>
+                  <InformationContentDiv
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 1.65 }}
+                  >
                     <h4 className="main-text"> Date:</h4>
                     <p className="sub-text"> {item.date}</p>
                   </InformationContentDiv>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const OurWorkWrapper = styled.div`
   background-color: #0b0c10;
@@ -39,7 +40,7 @@ export const OurWorkWrapper = styled.div`
   }
 `;
 
-export const OurWorkHeading = styled.h1`
+export const OurWorkHeading = styled(motion.h1)`
   font-size: 80px;
   font-family: "Teko";
   text-align: center;
@@ -56,7 +57,7 @@ export const OurWorkImg = styled.img`
   border-radius: 15px;
 `;
 
-export const OurWorkProjectHeading = styled.h1`
+export const OurWorkProjectHeading = styled(motion.h1)`
   font-size: 60px;
   font-family: "Teko";
   color: #fff;
@@ -66,7 +67,7 @@ export const OurWorkProjectHeading = styled.h1`
     text-align: center;
   }
 `;
-export const OurWorkProjectText = styled.p`
+export const OurWorkProjectText = styled(motion.p)`
   color: #fff;
   font-size: 18px;
   white-space: pre-line;
@@ -76,7 +77,7 @@ export const OurWorkProjectText = styled.p`
   }
 `;
 
-export const TabsWrapper = styled.div`
+export const TabsWrapper = styled(motion.div)`
   .ant-tabs-bottom > .ant-tabs-nav:before,
   .ant-tabs-bottom > div > .ant-tabs-nav:before,
   .ant-tabs-top > .ant-tabs-nav:before,
@@ -140,7 +141,7 @@ export const TabsWrapper = styled.div`
   }
 `;
 
-export const WorkContentTabDiv = styled.div`
+export const WorkContentTabDiv = styled(motion.div)`
   overflow: hidden;
 `;
 
@@ -152,7 +153,7 @@ export const ContentWrapper = styled.div`
   }
 `;
 
-export const ImageDiv = styled.div`
+export const ImageDiv = styled(motion.div)`
   img {
     width: 100%;
     height: 750px;
@@ -168,9 +169,9 @@ export const TextWrapper = styled.div`
   margin-top: 4rem;
 `;
 
-export const ProjectTextDiv = styled.div``;
+export const ProjectTextDiv = styled(motion.div)``;
 
-export const InformationDiv = styled.div`
+export const InformationDiv = styled(motion.div)`
   background-color: #121212;
   transform: translateY(-100px);
   padding: 2rem 1rem;
@@ -190,7 +191,7 @@ export const InformationText = styled(OurWorkProjectHeading)`
   text-align: center;
 `;
 
-export const InformationContentDiv = styled.div`
+export const InformationContentDiv = styled(motion.div)`
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -213,7 +214,7 @@ export const InformationContentDiv = styled.div`
   }
 `;
 
-export const WarningDiv = styled.div`
+export const WarningDiv = styled(motion.div)`
   background-color: #1c2a2d;
   color: #ffffff;
   padding: 5px 20px;

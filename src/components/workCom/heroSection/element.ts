@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { workHeroSectionImg } from "assets";
+import { motion } from "framer-motion";
 
 export const HeroWrapper = styled.div`
   background-image: url(${workHeroSectionImg});
@@ -30,7 +31,7 @@ export const HeroHeading = styled.h1`
   margin-bottom: 0;
 `;
 
-export const HeroSectionText = styled.p`
+export const HeroSectionText = styled(motion.p)`
   width: 50%;
   color: #fff;
   text-align: center;

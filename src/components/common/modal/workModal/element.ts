@@ -111,7 +111,7 @@ export const SwiperWrapper = styled(motion.div)`
   }
 `;
 
-export const OurWorkProjectButton = styled.button`
+export const OurWorkProjectButton = styled(motion.button)`
   color: #66fcf1;
   background: transparent;
   border: none;

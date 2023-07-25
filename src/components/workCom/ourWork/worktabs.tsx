@@ -5,6 +5,7 @@ import { useState } from "react";
 import { NoDataCom } from "components";
 import { data } from "./data";
 import { AiFillCloseCircle } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -64,7 +65,11 @@ function Worktabs() {
               {tabData.length > 0 ? (
                 <>
                   {activeTab == "3" && showWarning && (
-                    <WarningDiv>
+                    <WarningDiv
+                      initial={{ opacity: 0, y: 100 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 1, delay: 0.25 }}
+                    >
                       Please Note: I am solely responsible for the development
                       of the frontend code and the frontend functionality of
                       these web apps. The design of these web apps has been
@@ -81,7 +86,13 @@ function Worktabs() {
                   <WorkTabContent filteredData={tabData} />
                 </>
               ) : (
-                <NoDataCom />
+                <motion.div
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                  <NoDataCom />
+                </motion.div>
               )}
             </Tabs.TabPane>
           );
