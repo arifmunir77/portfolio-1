@@ -38,7 +38,7 @@ export const WorkWrapper = styled.div`
     margin: 0;
 
     &:hover {
-      flex: 1.5;
+      flex: 1.15;
       transition: 0.3s ease-in-out all;
 
       @media (max-width: 991.98px) {
