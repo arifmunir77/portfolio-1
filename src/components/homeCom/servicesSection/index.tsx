@@ -56,7 +56,7 @@ const ServicesSection = () => {
               <motion.div
                 initial={{ opacity: 0, x: -200 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, delay: index * 1 }}
+                transition={{ duration: 0.5, delay: index * 0.5 }}
               >
                 <ServicesCard item={item} index={index} />
               </motion.div>
