@@ -104,3 +104,5 @@ export { default as bp7 } from "./images/bp/bp7.png";
 export { default as dp } from "./images/dp.png";
 export { default as resume } from "./pdf/abdulResume.pdf";
 export { default as aboutLottie } from "./lotties/about.json";
+export { default as largeFace } from "./images/largeFace.png";
+export { default as smallFace } from "./images/smallFace.png";
