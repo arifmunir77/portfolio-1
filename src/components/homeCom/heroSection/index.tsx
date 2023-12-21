@@ -71,7 +71,10 @@ function HeroSection() {
       showCursor: false,
       backDelay: 1500,
       strings: [
+        "Web & Mobile App Developer",
         "Frontend Magician.",
+        "Backend developer",
+        "Full Stack Web Developer",
         "Problem Solver.",
         "Visual Storyteller.",
         "Pixel Perfectionist.",
@@ -106,7 +109,7 @@ function HeroSection() {
                   CREATIVE MIND, CREATIVE WORKS.
                 </HeroCreativeText>
                 <HeroHeading>
-                  Hey, I'm Abdullah - <br /> A &nbsp;
+                  Hey, I'm Arif Munir - <br /> A &nbsp;
                   <span ref={textRef}></span>
                 </HeroHeading>
               </TextDiv>

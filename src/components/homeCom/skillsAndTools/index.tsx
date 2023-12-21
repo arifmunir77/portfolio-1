@@ -16,6 +16,7 @@ import {
   AiFillSetting,
 } from "react-icons/ai";
 import {
+  FaAws,
   FaCss3Alt,
   FaFigma,
   FaPhoenixFramework,
@@ -93,6 +94,16 @@ const skillsData = [
     id: 7,
     icon: <AiFillGithub className="icon" />,
     text: "Github",
+  },
+  {
+    id: 8,
+    icon: <FaReact className="icon" />,
+    text: "React Native",
+  },
+  {
+    id: 9,
+    icon: <FaAws  className="icon" />,
+    text: "AWS",
   },
 ];
 
