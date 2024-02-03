@@ -76,6 +76,14 @@ import {
   tp6,
   tp7,
   tp8,
+  tz1,
+  tz2,
+  tz3,
+  tz4,
+  tzm1,
+  tzm2,
+  tzm3,
+  tzm4,
 } from "assets";
 
 export const data = [
@@ -188,5 +196,54 @@ export const data = [
     images: [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10],
     date: "April 20, 2023",
     duration: "2 Months",
+  },
+  {
+    title: "Tezintel Web App",
+    category: "frontend",
+    mainImage: tz1,
+    description: `
+    Unlock the power of automated valuation and forecasting with our cutting-edge app tailored for c-store/gas station professionals and expanding to include various commercial types.
+Key Features:
+Commercial Expertise: Specializing in c-store/gas stations with future plans for additional commercial types.
+Residential Valuation: Explore accurate residential valuations, currently available for Texas.
+Automated Valuation Model (AVM): Harness the efficiency of our automated valuation model for precise property valuations.
+Automated Forecasting Model (AFM): Utilize advanced forecasting projections through our automated forecasting model.
+Vendor Collaboration: Vendors are invited to join our exclusive list at no cost, fostering collaboration within our dynamic community.
+Continuous Improvement: Our commitment to excellence means ongoing enhancements for both commercial and residential types.
+Targeted Leads: Financial Institutions, Contractors, Engineers, and more can leverage our app to access high-quality leads.
+Experience the future of property valuation and forecasting. Join us as we revolutionize the way professionals navigate the real estate landscape.
+
+
+    `,
+    images: [tz1, tz2, tz3, tz4],
+    date: "Since June 20, 2023",
+    duration: "Still in progress" ,
+    link: "https://www.tezintel.com/",
+    
+  },
+  
+  {
+    title: "Tezintel Mobile App (Android, iOS)",
+    category: "mobileapp",
+    mainImage: tzm1,
+    description: `
+    Unlock the power of automated valuation and forecasting with our cutting-edge app tailored for c-store/gas station professionals and expanding to include various commercial types.
+Key Features:
+Commercial Expertise: Specializing in c-store/gas stations with future plans for additional commercial types.
+Residential Valuation: Explore accurate residential valuations, currently available for Texas.
+Automated Valuation Model (AVM): Harness the efficiency of our automated valuation model for precise property valuations.
+Automated Forecasting Model (AFM): Utilize advanced forecasting projections through our automated forecasting model.
+Vendor Collaboration: Vendors are invited to join our exclusive list at no cost, fostering collaboration within our dynamic community.
+Continuous Improvement: Our commitment to excellence means ongoing enhancements for both commercial and residential types.
+Targeted Leads: Financial Institutions, Contractors, Engineers, and more can leverage our app to access high-quality leads.
+Experience the future of property valuation and forecasting. Join us as we revolutionize the way professionals navigate the real estate landscape.
+
+
+    `,
+    images: [tzm1, tzm2, tzm3, tzm4],
+    date: "Since June 20, 2023",
+    duration: "Still in progress" ,
+    androidLink: "https://play.google.com/store/apps/details?id=com.tezIntelMobile",
+    iosLink:"https://apps.apple.com/us/app/tezintel/id6470182263"
   },
 ];

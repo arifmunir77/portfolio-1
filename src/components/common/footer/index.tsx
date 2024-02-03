@@ -60,19 +60,19 @@ function Footer() {
             <FooterContactHeading>Contact Me</FooterContactHeading>
             <TelephoneWrapper>
               <BsTelephone className="margin" />
-              <IconNumber>+92 332 8730 281</IconNumber>
+              <IconNumber>+92 330 8476060</IconNumber>
             </TelephoneWrapper>
             <EmailWrapper>
               <GoMail className="Mail" />
-              <EmailText>dev.sardarabdul@gmail.com</EmailText>
+              <EmailText>arifmunir37@gmail.com</EmailText>
             </EmailWrapper>
             <LocationWrapper>
               <AiOutlineWhatsApp className="Mail" />
-              <LocationText>+92 332 8730 281</LocationText>
+              <LocationText>+92 330 8476060</LocationText>
             </LocationWrapper>
             <CalenderWrapper>
               <BsDiscord className="Mail" />
-              <CalenderWrapper>Abdullah Abbasi#2665</CalenderWrapper>
+              <CalenderWrapper>ArifKhan#7610</CalenderWrapper>
             </CalenderWrapper>
           </MainCol>
           <MainCol lg={3}>
@@ -127,12 +127,12 @@ function Footer() {
             <a href="https://discord.com" target="_blank">
               <BsDiscord className="icon" />
             </a>
-            <a href="https://twitter.com/dev_abd_" target="_blank">
+            <a href="https://twitter.com/ArifKha61130247" target="_blank">
               <FiTwitter className="icon" />
             </a>
 
             <a
-              href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
+              href="https://www.linkedin.com/in/arif-munir-24b65a204/"
               target="_blank"
             >
               <FaLinkedinIn className="icon" />

@@ -157,6 +157,8 @@ export const ImageDiv = styled(motion.div)`
   img {
     width: 100%;
     height: 750px;
+    
+   
     border-radius: 15px;
 
     @media (max-width: 991.98px) {
@@ -164,6 +166,22 @@ export const ImageDiv = styled(motion.div)`
     }
   }
 `;
+
+export const MobileImageDiv = styled(motion.div)`
+  img {
+    width: 300px;
+    height: 600px;
+    
+   
+    border-radius: 15px;
+
+    @media (max-width: 991.98px) {
+      height: auto;
+    }
+  }
+`;
+
+
 
 export const TextWrapper = styled.div`
   margin-top: 4rem;

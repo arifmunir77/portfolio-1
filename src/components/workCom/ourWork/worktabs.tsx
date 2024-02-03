@@ -23,15 +23,11 @@ const items = [
     label: `Frontend`,
     category: "frontend",
   },
+ 
   {
     key: "4",
-    label: `Full Stack`,
-    category: "full stack",
-  },
-  {
-    key: "5",
     label: `Mobile App Development`,
-    category: "mobile app",
+    category: "mobileapp",
   },
 ];
 

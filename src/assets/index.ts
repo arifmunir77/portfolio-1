@@ -102,7 +102,20 @@ export { default as bp5 } from "./images/bp/bp5.png";
 export { default as bp6 } from "./images/bp/bp6.png";
 export { default as bp7 } from "./images/bp/bp7.png";
 export { default as dp } from "./images/dp.png";
-export { default as resume } from "./pdf/abdulResume.pdf";
+export { default as resume } from "./pdf/Arif_MUNIR_Full_Stack_Developer.pdf";
 export { default as aboutLottie } from "./lotties/about.json";
 export { default as largeFace } from "./images/largeFace.png";
 export { default as smallFace } from "./images/smallFace.png";
+
+
+export { default as tz1 } from "./images/tezintel/bg1.png";
+export { default as tz2 } from "./images/tezintel/bg2.png";
+export { default as tz3 } from "./images/tezintel/bg3.png";
+export { default as tz4 } from "./images/tezintel/bg4.png";
+
+
+// tezintel app
+export { default as tzm1 } from "./images/tezintel/2.png";
+export { default as tzm2 } from "./images/tezintel/2.png";
+export { default as tzm3 } from "./images/tezintel/3.png";
+export { default as tzm4 } from "./images/tezintel/4.png";

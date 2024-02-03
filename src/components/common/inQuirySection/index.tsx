@@ -16,7 +16,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { useState } from "react";
 
 const ContacUs = () => {
-  const [phoneNumber, setPhoneNumber] = useState("+923328730281");
+  const [phoneNumber, setPhoneNumber] = useState("+923308476060");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [showBtn, setShowBtn] = useState(true);
 
@@ -49,12 +49,12 @@ const ContacUs = () => {
             <a href="https://discord.com" target="_blank">
               <BsDiscord className="icon" />
             </a>
-            <a href="https://twitter.com/dev_abd_" target="_blank">
+            <a href="https://twitter.com/ArifKha61130247" target="_blank">
               <FiTwitter className="icon" />
             </a>
 
             <a
-              href="https://www.linkedin.com/in/abdullah-abbasi-296b1a277/"
+              href="https://www.linkedin.com/in/arif-munir-24b65a204/"
               target="_blank"
             >
               <FaLinkedinIn className="icon" />

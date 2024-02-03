@@ -5,6 +5,7 @@ import {
   InformationContentDiv,
   InformationDiv,
   InformationText,
+  MobileImageDiv,
   OurWorkProjectHeading,
   OurWorkProjectText,
   ProjectTextDiv,
@@ -18,17 +19,31 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { useState } from "react";
 
 function WorkTabContent({ filteredData }) {
+  console.log("filteredData", filteredData);
   return (
     <WorkContentTabDiv>
-      {filteredData.map((item) => (
+      {filteredData.map((item, index) => (
         <ContentWrapper>
-          <ImageDiv
-            initial={{ opacity: 0, x: -200 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.75, delay: 0.5 }}
-          >
-            <Image fluid src={item.mainImage} />
-          </ImageDiv>
+          {item.category === "mobileapp" ? (
+            <MobileImageDiv
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.75, delay: 0.5 }}
+              key={index}
+            >
+              <Image fluid src={item.mainImage} />
+            </MobileImageDiv>
+          ) : (
+            <ImageDiv
+              initial={{ opacity: 0, x: -200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.75, delay: 0.5 }}
+              key={index}
+            >
+              <Image fluid src={item.mainImage} />
+            </ImageDiv>
+          )}
+
           <TextWrapper>
             <MainRow>
               <MainCol lg={9}>
@@ -47,8 +62,30 @@ function WorkTabContent({ filteredData }) {
                   >
                     {item.description}
                   </OurWorkProjectText>
-
-                  {item.link && (
+                  {item.category == "mobileapp" ? (
+                    <>
+                      <OurWorkProjectText
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.75, delay: 1 }}
+                      >
+                        Android Link:
+                        <a href={item.androidLink} target="_blank">
+                          {""} {item.androidLink}
+                        </a>
+                      </OurWorkProjectText>
+                      <OurWorkProjectText
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.75, delay: 1 }}
+                      >
+                        IOS Link:
+                        <a href={item.iosLink} target="_blank">
+                          {""} {item.iosLink}
+                        </a>
+                      </OurWorkProjectText>
+                    </>
+                  ) : (
                     <OurWorkProjectText
                       initial={{ opacity: 0, y: 50 }}
                       whileInView={{ opacity: 1, y: 0 }}
